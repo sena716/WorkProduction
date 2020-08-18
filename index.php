@@ -8,5 +8,6 @@
 <body>
     <h1>作品制作</h1>
     <a href="map/map.html">mapへ</a>
+    <p>develop-senaブランチを作成してみた</p>
 </body>
 </html>
