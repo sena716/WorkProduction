@@ -10,5 +10,6 @@
     <a href="map/map.html">mapへ</a>
     <p>develop-senaブランチを作成してみた</p>
     <p>23:57自動変更確認</p>
+    <p>0:06自動変更確認</p>
 </body>
 </html>
