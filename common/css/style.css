@@ -26,6 +26,11 @@ body .header {
   max-height: 200px;
 }
 
+body .header--teamLogo img {
+  width: auto;
+  height: 100%;
+}
+
 body .header--pageLink {
   list-style-type: none;
 }
