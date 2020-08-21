@@ -21,9 +21,13 @@ body *, body *::before, body *::after {
   box-sizing: border-box;
 }
 
+body ul {
+  padding: 0;
+}
+
 body .header {
   display: flex;
-  max-height: 200px;
+  max-height: 150px;
 }
 
 body .header--teamLogo img {

@@ -24,13 +24,18 @@ body{
         box-sizing: border-box;
     }
 
+    ul{
+        padding: 0;
+    }
+
     .header{
         display: flex;
-        min-height: 200px;
+        max-height: 150px;
 
         &--teamLogo{
             img{
-                
+                width: auto;
+                height: 100%;
             }
         }
         &--pageLink{
