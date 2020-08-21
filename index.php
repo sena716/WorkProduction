@@ -8,7 +8,12 @@
     <title>Document</title>
 </head>
 <body>
+    
     <h1>作品制作</h1>
+
+    <p>
+        <img src="common/images/teamlogo.PNG" alt="チームロゴ画像">
+    </p>
 
     <ul>
         <li><a href="../map/map.html">地図から探す</a></li>
