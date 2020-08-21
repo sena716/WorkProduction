@@ -1,14 +1,21 @@
 @charset "UTF-8";
 
-@import url(sanitize.css);
+@import url(sanitize/sanitize.css);
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+@font-face{
+    font-family: 'MyFont';
+    src: url(/location/font/corp_round_v1.ttf);
+}
 
 html{
     font-size: 62.5%;   // 基本フォントサイズ10px
 }
 
 body{
-    font-family: 'Noto Sans Japanese', serif;
+    // font-family: 'Noto Sans Japanese', serif;
+    font-family: MyFont;
+    font-size: 1.6rem;
     margin: 0;
     padding: 0;
     background-color: #EEEEEE;
