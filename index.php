@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common/css/style.css">
+    <link rel="stylesheet" href="css/index/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -17,5 +19,9 @@
     <p>1:11自動変更確認</p>
     <p>10:54自動変更確認</p>
     <p>10:09自動変更確認</p>
+
+    <script src="js/plugin/jquery-3.5.1.min.js"></script>
+    <script src="common/js/main.js"></script>
+    <script src="js/index/main.js"></script>
 </body>
 </html>
