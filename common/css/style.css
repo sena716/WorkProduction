@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 @font-face {
   font-family: 'MyFont';
-  src: url(/location/font/corp_round_v1.ttf);
+  src: url("font/corp_round_v1.ttf");
 }
 
 html {
