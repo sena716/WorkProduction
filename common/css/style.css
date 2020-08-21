@@ -23,7 +23,7 @@ body *, body *::before, body *::after {
 
 body .header {
   display: flex;
-  min-height: 200px;
+  max-height: 200px;
 }
 
 body .header--pageLink {
