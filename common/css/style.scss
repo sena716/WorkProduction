@@ -23,4 +23,23 @@ body{
     *,*::before, *::after{
         box-sizing: border-box;
     }
+
+    .header{
+        display: flex;
+        min-height: 200px;
+
+        &--teamLogo{
+            img{
+                
+            }
+        }
+        &--pageLink{
+            list-style-type: none;
+
+            li{
+
+            }
+        }
+    }
+
 }

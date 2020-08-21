@@ -20,3 +20,12 @@ body {
 body *, body *::before, body *::after {
   box-sizing: border-box;
 }
+
+body .header {
+  display: flex;
+  min-height: 200px;
+}
+
+body .header--pageLink {
+  list-style-type: none;
+}
