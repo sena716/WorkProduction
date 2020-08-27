@@ -27,7 +27,12 @@ body ul {
 
 body .header {
   display: flex;
+  justify-content: space-between;
   max-height: 150px;
+}
+
+body .header--teamLogo {
+  width: 0px;
 }
 
 body .header--teamLogo img {
@@ -36,5 +41,11 @@ body .header--teamLogo img {
 }
 
 body .header--pageLink {
+  display: flex;
   list-style-type: none;
+  padding-right: 50px;
+}
+
+body .header--pageLink li {
+  padding: 0 15px;
 }

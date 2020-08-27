@@ -30,19 +30,24 @@ body{
 
     .header{
         display: flex;
+        justify-content: space-between;
         max-height: 150px;
 
         &--teamLogo{
+            width: 0px;
+
             img{
                 width: auto;
                 height: 100%;
             }
         }
         &--pageLink{
+            display: flex;
             list-style-type: none;
+            padding-right: 50px;
 
             li{
-
+                padding: 0 15px;
             }
         }
     }
