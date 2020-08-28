@@ -18,7 +18,7 @@
         <ul class="top--pageLink">
             <li>
                 <a href="map/map.html">
-                    <p></p>
+                    <p class="top--pageLink__map-logo"></p>
                     <p>地図から探す</p>
                 </a>
             </li>
