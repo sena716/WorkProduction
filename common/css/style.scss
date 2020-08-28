@@ -12,8 +12,13 @@ html{
     font-size: 62.5%;   // 基本フォントサイズ10px
 }
 
+// 変数
+$sm: 450px;
+$tb: 768px;
+$pc: 1200px;
+
 body{
-    // font-family: 'Noto Sans Japanese', serif;
+    font-family: 'Noto Sans Japanese', serif;
     font-family: MyFont;
     font-size: 1.6rem;
     margin: 0;
@@ -24,10 +29,15 @@ body{
         box-sizing: border-box;
     }
 
+    a{
+        text-decoration: none;  // 初期underbar削除
+    }
+
     ul{
         padding: 0;
     }
 
+    // ヘッダー
     .header{
         display: flex;
         justify-content: space-between;
@@ -35,21 +45,31 @@ body{
 
         &--teamLogo{
             width: 0px;
+            padding: 15px 15px 15px 30px;
 
             img{
                 width: auto;
                 height: 100%;
             }
         }
-        &--pageLink{
-            display: flex;
-            list-style-type: none;
+        &--pageLink, ul{
             padding-right: 50px;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
 
             li{
+                font-size: 20px;
                 padding: 0 15px;
             }
         }
+    }
+
+    // メイン
+    .main{
+        margin: 0 auto;
+        max-width: $pc;
+        
     }
 
 }

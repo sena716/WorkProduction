@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  font-family: 'Noto Sans Japanese', serif;
   font-family: MyFont;
   font-size: 1.6rem;
   margin: 0;
@@ -19,6 +20,10 @@ body {
 
 body *, body *::before, body *::after {
   box-sizing: border-box;
+}
+
+body a {
+  text-decoration: none;
 }
 
 body ul {
@@ -33,6 +38,7 @@ body .header {
 
 body .header--teamLogo {
   width: 0px;
+  padding: 15px 15px 15px 30px;
 }
 
 body .header--teamLogo img {
@@ -40,12 +46,19 @@ body .header--teamLogo img {
   height: 100%;
 }
 
-body .header--pageLink {
-  display: flex;
-  list-style-type: none;
+body .header--pageLink, body .header ul {
   padding-right: 50px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
 }
 
-body .header--pageLink li {
+body .header--pageLink li, body .header ul li {
+  font-size: 20px;
   padding: 0 15px;
+}
+
+body .main {
+  margin: 0 auto;
+  max-width: 1200px;
 }
