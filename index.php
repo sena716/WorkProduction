@@ -8,20 +8,20 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="header">
+    <section class="top">
 
-        <p class="header--teamLogo">
-            <img src="common/images/teamlogo.PNG" alt="チームロゴ画像">
+        <p class="top--logo">
+            <img src="common/images/titlePcLogo.svg" alt="チームロゴ画像">
         </p>
 
-        <ul class="header--pageLink">
+        <ul class="top--pageLink">
             <li><a href="map/map.html">地図から探す</a></li>
             <li><a href="photo/photo.html">写真から探す</a></li>
             <li><a href="conditions/conditions.html">条件から探す</a></li>
             <li><a href="name/name.html">名前から探す</a></li>
             <li><a href="ranking/ranking.html">ランキング</a></li>
         </ul>
-
+        
     </section>
 
     <h1>作品制作</h1>
