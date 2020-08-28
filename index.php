@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="common/css/style.css">
+    <link rel="stylesheet" href="common/css/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/index/style.css">
-    <title>Document</title>
+    <title>titlepage</title>
 </head>
 <body>
     <section class="top">
@@ -15,7 +16,12 @@
         </p>
 
         <ul class="top--pageLink">
-            <li><a href="map/map.html">地図から探す</a></li>
+            <li>
+                <a href="map/map.html">
+                    <p></p>
+                    <p>地図から探す</p>
+                </a>
+            </li>
             <li><a href="photo/photo.html">写真から探す</a></li>
             <li><a href="conditions/conditions.html">条件から探す</a></li>
             <li><a href="name/name.html">名前から探す</a></li>
