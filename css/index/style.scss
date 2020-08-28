@@ -7,6 +7,8 @@ body{
                 &-logo{
 
                     ::before{
+                        width: 30px;
+                        height: 30px;
                         color: #fff;
                         content: "\f039";
                         font-family: 'Font Awesome 5 Free';
