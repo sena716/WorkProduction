@@ -9,6 +9,11 @@ body .top {
   text-align: center;
 }
 
+body .top--teamLogo img {
+  width: 150px;
+  height: auto;
+}
+
 body .top--logo {
   margin: 0;
 }
