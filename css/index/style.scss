@@ -9,10 +9,11 @@ body{
 
         &--teamLogo{
             height: 0;
-            padding: 50px 0 0 50px;
+            padding: 25px 0 0 25px;
             margin: 0;
             text-align: left;
-            
+            position: absolute;
+
             img{
                 width: 150px;
                 height: auto;
