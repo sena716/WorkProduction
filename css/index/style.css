@@ -59,6 +59,11 @@ body .animal p {
   position: absolute;
 }
 
+body .animal p img {
+  width: 200px;
+  height: auto;
+}
+
 body .animal--tori {
   top: 20%;
   left: 0%;

@@ -59,6 +59,11 @@ body{
 
         p{
             position: absolute;
+
+            img{
+                width: 200px;
+                height: auto;
+            }
         }
         &--tori{
             top: 20%;
