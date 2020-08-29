@@ -32,7 +32,6 @@ body .top--titleLogo img {
 }
 
 body .top--pageLink ul {
-  font-size: 3rem;
   display: flex;
   justify-content: center;
 }
@@ -40,4 +39,12 @@ body .top--pageLink ul {
 body .top--pageLink ul li {
   padding: 0 50px;
   text-align: center;
+}
+
+body .top--pageLink ul li a i {
+  font-size: 5rem;
+}
+
+body .top--pageLink ul li a p {
+  font-size: 3rem;
 }

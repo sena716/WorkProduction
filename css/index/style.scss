@@ -30,7 +30,6 @@ body{
         &--pageLink{
             
             ul{
-                font-size: 3rem;
                 display: flex;
                 justify-content: center;
 
@@ -39,11 +38,11 @@ body{
                     text-align: center;
 
                     a{
-
                         i{
+                            font-size: 5rem;
                         }
                         p{
-
+                            font-size: 3rem;
                         }
                     }
                 }
