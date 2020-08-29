@@ -51,8 +51,6 @@
         </div>
 
     </section>
-
-    <h1>作品制作</h1>
     
     <script src="js/plugin/jquery-3.5.1.min.js"></script>
     <script src="common/js/main.js"></script>
