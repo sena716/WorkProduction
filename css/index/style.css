@@ -9,16 +9,20 @@ body .top {
   text-align: center;
 }
 
+body .top--teamLogo {
+  margin: 0;
+}
+
 body .top--teamLogo img {
   width: 150px;
   height: auto;
 }
 
-body .top--logo {
+body .top--titleLogo {
   margin: 0;
 }
 
-body .top--logo img {
+body .top--titleLogo img {
   width: 50%;
   height: auto;
 }

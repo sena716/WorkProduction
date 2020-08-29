@@ -8,13 +8,14 @@ body{
         text-align: center;
 
         &--teamLogo{
+            margin: 0;
             img{
                 width: 150px;
                 height: auto;
             }
         }
 
-        &--logo{
+        &--titleLogo{
             margin: 0;
             img{
                 width: 50%;

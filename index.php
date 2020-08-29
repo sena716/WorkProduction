@@ -15,7 +15,7 @@
             <img src="common/images/teamlogo.png" alt="チームロゴ">
         </p>
 
-        <h1 class="top--logo">
+        <h1 class="top--titleLogo">
             <img src="common/images/titlepcLogo.svg" alt="絶滅危惧種図鑑">
         </h1>
 
