@@ -1,3 +1,4 @@
+@import url(../../common/css/style.css);
 html {
   overflow: hidden;
 }
@@ -37,7 +38,7 @@ body .top--titleLogo img {
 }
 
 body .top--pageLink {
-  width: 980px;
+  width: 1080px;
   margin: 0 auto;
 }
 
@@ -47,7 +48,6 @@ body .top--pageLink ul {
 }
 
 body .top--pageLink ul li {
-  padding: 0 50px;
   text-align: center;
 }
 
