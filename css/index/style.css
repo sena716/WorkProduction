@@ -62,10 +62,6 @@ body .top--pageLink ul li a p {
   white-space: nowrap;
 }
 
-body .top--animal {
-  display: none;
-}
-
 body .top--animal p {
   margin: 0;
   position: absolute;
