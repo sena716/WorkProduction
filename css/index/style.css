@@ -62,7 +62,7 @@ body .top--animal p {
 }
 
 body .top--animal p img {
-  width: 30%;
+  width: 300px;
   height: auto;
 }
 
@@ -86,5 +86,5 @@ body .top--animal__kame {
 }
 
 body .top--animal__kame img {
-  width: 20%;
+  width: 200px;
 }
