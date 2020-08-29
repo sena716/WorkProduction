@@ -33,7 +33,7 @@ body .top--titleLogo {
 }
 
 body .top--titleLogo img {
-  width: 50%;
+  width: 750px;
   height: auto;
 }
 
@@ -43,7 +43,7 @@ body .top--pageLink {
 }
 
 body .top--pageLink ul {
-  margin: 0 120px;
+  margin: 0 60px;
   display: flex;
   justify-content: space-around;
 }
@@ -59,6 +59,10 @@ body .top--pageLink ul li a i {
 body .top--pageLink ul li a p {
   font-size: 2rem;
   white-space: nowrap;
+}
+
+body .top--animal {
+  display: none;
 }
 
 body .top--animal p {

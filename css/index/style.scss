@@ -1,5 +1,10 @@
 @import url(../../common/css/style.css);
 
+// 変数
+$sm: 450px;
+$tb: 768px;
+$pc: 1080px;
+
 html{
     overflow: hidden;
 }
@@ -30,16 +35,19 @@ body{
         &--titleLogo{
             margin: 0;
             img{
-                width: 50%;
+                width: 750px;
                 height: auto;
             }
         }
         &--pageLink{
             width: 960px;
             margin: 0 auto;
+            @media( max-width: $pc ){
+
+            }
 
             ul{
-                margin: 0 120px;
+                margin: 0 60px;
                 display: flex;
                 justify-content: space-around;
                 
@@ -62,7 +70,7 @@ body{
 
         // 動物画像
         &--animal{
-
+            display: none;
             p{
                 margin: 0;
                 position: absolute;
