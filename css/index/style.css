@@ -19,7 +19,9 @@ body .top--logo img {
 }
 
 body .top--pageLink ul {
+  font-size: 2rem;
   display: flex;
+  justify-content: center;
 }
 
 body .top--pageLink ul li {
