@@ -64,17 +64,17 @@ body .top--animal p img {
   height: auto;
 }
 
-body .top--animal--tori {
+body .top--animal__ori {
   top: 20%;
   left: 0%;
 }
 
-body .top--animal--kuma {
+body .top--animal__kuma {
   top: 0%;
   right: 20%;
 }
 
-body .top--animal--kame {
+body .top--animal__kame {
   bottom: 5%;
   left: 10%;
 }
