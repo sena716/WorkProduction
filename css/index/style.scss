@@ -5,5 +5,27 @@ body{
             width: 100px;
             height: 100px;
         }
+        &--pageLink{
+            
+            ul{
+                display: flex;
+
+                li{
+
+                    a{
+
+                        i{
+                            width: 10px;
+                            height: 10px;
+                            background: blue;
+                        }
+                        p{
+
+                        }
+                    }
+                }
+
+            }
+        }
     }
 }

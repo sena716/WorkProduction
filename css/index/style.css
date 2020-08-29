@@ -2,3 +2,13 @@ body .top--logo {
   width: 100px;
   height: 100px;
 }
+
+body .top--pageLink ul {
+  display: flex;
+}
+
+body .top--pageLink ul li a i {
+  width: 10px;
+  height: 10px;
+  background: blue;
+}

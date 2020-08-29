@@ -15,19 +15,21 @@
             <img src="common/images/titlepcLogo.svg" alt="チームロゴ画像">
         </p>
 
-        <ul class="top--pageLink">
-            <li>
-                <a href="map/map.html">
-                    <p class="top--pageLink__map-logo"></p>
-                    <p>地図から探す</p>
-                </a>
-            </li>
-            <li><a href="photo/photo.html">写真から探す</a></li>
-            <li><a href="conditions/conditions.html">条件から探す</a></li>
-            <li><a href="name/name.html">名前から探す</a></li>
-            <li><a href="ranking/ranking.html">ランキング</a></li>
-        </ul>
-        
+        <div class="top--pageLink">
+            <ul>
+                <li>
+                    <a href="map/map.html">
+                        <i class="fab fa-twitter"></i>
+                        <p>地図から探す</p>
+                    </a>
+                </li>
+                <li><a href="photo/photo.html">写真から探す</a></li>
+                <li><a href="conditions/conditions.html">条件から探す</a></li>
+                <li><a href="name/name.html">名前から探す</a></li>
+                <li><a href="ranking/ranking.html">ランキング</a></li>
+            </ul>
+        </div>
+
     </section>
 
     <h1>作品制作</h1>
