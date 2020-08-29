@@ -1,3 +1,7 @@
+html {
+  overflow: hidden;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -75,7 +79,7 @@ body .top--animal__kuma img {
 }
 
 body .top--animal__kame {
-  bottom: 0%;
+  bottom: -8%;
   left: 5%;
 }
 
