@@ -19,14 +19,34 @@
             <ul>
                 <li>
                     <a href="map/map.html">
-                        <i class="fab fa-twitter"></i>
+                        <i class="fas fa-map-marked-alt"></i>
                         <p>地図から探す</p>
                     </a>
                 </li>
-                <li><a href="photo/photo.html">写真から探す</a></li>
-                <li><a href="conditions/conditions.html">条件から探す</a></li>
-                <li><a href="name/name.html">名前から探す</a></li>
-                <li><a href="ranking/ranking.html">ランキング</a></li>
+                <li>
+                    <a href="photo/photo.html">
+                        <i class="fas fa-camera"></i>
+                        <p>写真から探す</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="conditions/conditions.html">
+                        <i class="fas fa-search-plus"></i>
+                        <p>条件から探す</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="name/name.html">
+                        <i class="fas fa-signature"></i>
+                        <p>名前から探す</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="ranking/ranking.html">
+                        <i class="fas fa-crown"></i>
+                        <p>ランキング</p>
+                    </a>
+                </li>
             </ul>
         </div>
 
