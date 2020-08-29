@@ -54,6 +54,7 @@ body .top--pageLink ul li a i {
 
 body .top--pageLink ul li a p {
   font-size: 3rem;
+  white-space: nowrap;
 }
 
 body .top--animal p {
