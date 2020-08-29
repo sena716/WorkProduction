@@ -77,16 +77,18 @@ body{
                 position: absolute;
 
                 img{
-                    width: 300px;
+                    width: 100%;
                     height: auto;
                 }
             }
             &__tori{
+                width: 20%;
                 top: 20%;
                 left: 0%;
                 
             }
             &__kuma{
+                width: 20%;
                 top: 0%;
                 right: 10%;
 
@@ -95,12 +97,9 @@ body{
                 }
             }
             &__kame{
-                bottom: -8%;
+                width: 15%;
+                bottom: -5%;
                 left: 5%;
-
-                img{
-                    width: 200px;
-                }
             }
         }
     }
