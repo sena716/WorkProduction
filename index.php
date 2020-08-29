@@ -55,6 +55,20 @@
         </div>
 
     </section>
+
+    <section class="animal">
+        
+        <p class="animal--tori">
+            <img src="common/images/tori.svg" alt="鳥">
+        </p>
+        <p class="animal--kuma">
+            <img src="common/images/kuma1.svg" alt="熊">
+        </p>
+        <p class="animal--kame">
+            <img src="common/images/kame.svg" alt="亀">
+        </p>
+
+    </section>
     
     <script src="js/plugin/jquery-3.5.1.min.js"></script>
     <script src="common/js/main.js"></script>

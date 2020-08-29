@@ -50,4 +50,27 @@ body{
             }
         }
     }
+
+    // 動物画像
+    .animal{
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        p{
+            position: absolute;
+        }
+        &--tori{
+            top: 20%;
+            left: 0%;
+        }
+        &--kuma{
+            top: 0%;
+            right: 20%;
+        }
+        &--kame{
+            bottom: 5%;
+            left: 10%;
+        }
+    }
 }
