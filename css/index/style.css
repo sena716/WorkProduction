@@ -43,7 +43,7 @@ body .top--pageLink {
 }
 
 body .top--pageLink ul {
-  margin: 0 60px;
+  margin: 0 120px;
   display: flex;
   justify-content: space-around;
 }
