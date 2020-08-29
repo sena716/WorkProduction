@@ -9,6 +9,10 @@ body .top {
   text-align: center;
 }
 
+body .top--logo {
+  margin: 0;
+}
+
 body .top--logo img {
   width: 50%;
   height: auto;
