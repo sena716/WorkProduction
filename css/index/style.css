@@ -10,7 +10,10 @@ body .top {
 }
 
 body .top--teamLogo {
+  height: 0;
+  padding: 50px 0 0 50px;
   margin: 0;
+  text-align: left;
 }
 
 body .top--teamLogo img {
