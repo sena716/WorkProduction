@@ -36,9 +36,12 @@ body .top--titleLogo img {
   height: auto;
 }
 
-body .top--pageLink ul {
-  width: 70%;
+body .top--pageLink {
+  width: 980px;
   margin: 0 auto;
+}
+
+body .top--pageLink ul {
   display: flex;
   justify-content: space-around;
 }
@@ -49,11 +52,11 @@ body .top--pageLink ul li {
 }
 
 body .top--pageLink ul li a i {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 body .top--pageLink ul li a p {
-  font-size: 3rem;
+  font-size: 2rem;
   white-space: nowrap;
 }
 
