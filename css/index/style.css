@@ -51,6 +51,7 @@ body .top--pageLink ul li a p {
 }
 
 body .top--animal p {
+  margin: 0;
   position: absolute;
 }
 
@@ -67,6 +68,10 @@ body .top--animal__tori {
 body .top--animal__kuma {
   top: 0%;
   right: 20%;
+}
+
+body .top--animal__kuma img {
+  transform: rotateX(180deg);
 }
 
 body .top--animal__kame {

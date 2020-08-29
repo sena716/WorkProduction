@@ -55,6 +55,7 @@ body{
         &--animal{
 
             p{
+                margin: 0;
                 position: absolute;
 
                 img{
@@ -69,6 +70,10 @@ body{
             &__kuma{
                 top: 0%;
                 right: 20%;
+
+                img{
+                    transform: rotateX( 180deg );
+                }
             }
             &__kame{
                 bottom: 5%;
