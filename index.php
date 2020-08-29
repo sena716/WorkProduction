@@ -12,7 +12,7 @@
     <section class="top">
 
         <p class="top--logo">
-            <img src="common/images/titlePcLogo.svg" alt="チームロゴ画像">
+            <img src="common/images/titlepcLogo.svg" alt="チームロゴ画像">
         </p>
 
         <ul class="top--pageLink">
