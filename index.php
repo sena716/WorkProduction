@@ -53,16 +53,16 @@
                 </li>
             </ul>
         </div>
-        
+
         <section class="top--animal">
         
-            <p class="animal--tori">
+            <p class="top--animal__tori">
                 <img src="common/images/tori.svg" alt="鳥">
             </p>
-            <p class="animal--kuma">
+            <p class="top--animal__kuma">
                 <img src="common/images/kuma1.svg" alt="熊">
             </p>
-            <p class="animal--kame">
+            <p class="top--animal__kame">
                 <img src="common/images/kame.svg" alt="亀">
             </p>
 
