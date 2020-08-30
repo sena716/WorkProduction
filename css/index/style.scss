@@ -52,10 +52,8 @@ body{
         // ページリンク
         &--pageLink{
             width: 960px;
+            padding-bottom: 10%;
             margin: 0 auto;
-            @media( max-width: $pc ){
-
-            }
 
             ul{
                 margin: 0 60px;
