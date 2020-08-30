@@ -1,4 +1,3 @@
-@import url(../../common/css/style.css);
 html {
   overflow: hidden;
 }
@@ -13,6 +12,13 @@ body .top {
   height: 100%;
   position: relative;
   text-align: center;
+}
+
+body .top .logo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 body .top--teamLogo {
