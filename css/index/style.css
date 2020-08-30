@@ -34,7 +34,7 @@ body .top--titleLogo {
 }
 
 body .top--titleLogo img {
-  width: 750px;
+  width: 800px;
   height: auto;
 }
 
@@ -85,7 +85,7 @@ body .top--animal__tori {
 body .top--animal__kuma {
   width: 20%;
   top: 0%;
-  right: 10%;
+  right: 3%;
 }
 
 body .top--animal__kuma img {
