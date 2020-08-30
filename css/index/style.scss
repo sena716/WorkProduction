@@ -17,13 +17,6 @@ body{
         position: relative;
         text-align: center;
 
-        .logo{
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-
         // チームロゴ
         &--teamLogo{
             height: 0;
@@ -38,46 +31,50 @@ body{
             }
         }
 
-        // タイトルロゴ
-        &--titleLogo{
-            // padding-top: 3%;
-            margin: 0;
+        &--main{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
 
-            img{
-                width: 800px;
-                height: auto;
+            // タイトルロゴ
+            &__titleLogo{
+                margin: 0;
+
+                img{
+                    width: 800px;
+                    height: auto;
+                }
             }
-        }
 
-        // ページリンク
-        &--pageLink{
-            width: 960px;
-            padding-bottom: 10%;
-            margin: 0 auto;
+            // ページリンク
+            &__pageLink{
+                width: 960px;
+                padding-bottom: 7%;
+                margin: 0 auto;
 
-            ul{
-                margin: 0 60px;
-                display: flex;
-                justify-content: space-around;
-                
-                li{
-                    text-align: center;
+                ul{
+                    margin: 0 60px;
+                    display: flex;
+                    justify-content: space-around;
+                    
+                    li{
+                        text-align: center;
 
-                    a{
-
-                        &:hover{
-                            color: pink;
-                        }
-                        i{
-                            font-size: 4rem;
-                        }
-                        p{
-                            font-size: 2rem;
-                            white-space: nowrap;
+                        a{
+                            &:hover{
+                                color: pink;
+                            }
+                            i{
+                                font-size: 4rem;
+                            }
+                            p{
+                                font-size: 2rem;
+                                white-space: nowrap;
+                            }
                         }
                     }
                 }
-
             }
         }
 

@@ -15,12 +15,12 @@
             <img src="common/images/teamLogo.png" alt="チームロゴ">
         </p>
 
-        <div class="logo">
-            <h1 class="top--titleLogo">
+        <div class="top--main">
+            <h1 class="top--main__titleLogo">
                 <img src="common/images/titlepcLogo.svg" alt="絶滅危惧種図鑑">
             </h1>
 
-            <div class="top--pageLink">
+            <div class="top--main__pageLink">
             <ul>
                 <li>
                     <a href="map/map.html">
