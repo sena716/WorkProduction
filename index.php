@@ -14,12 +14,10 @@
         <p class="top--teamLogo">
             <img src="common/images/teamLogo.png" alt="チームロゴ">
         </p>
-        
-        <div class="top--titleLogo">
-            <h1>
-                <img src="common/images/titlepcLogo.svg" alt="絶滅危惧種図鑑">
-            </h1>
-        </div>
+    
+        <h1 class="top--titleLogo">
+            <img src="common/images/titlepcLogo.svg" alt="絶滅危惧種図鑑">
+        </h1>
 
         <div class="top--pageLink">
             <ul>
