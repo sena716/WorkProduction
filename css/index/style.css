@@ -53,6 +53,10 @@ body .top--pageLink ul li {
   text-align: center;
 }
 
+body .top--pageLink ul li a:hover {
+  color: pink;
+}
+
 body .top--pageLink ul li a i {
   font-size: 4rem;
 }
