@@ -62,12 +62,12 @@
                 <img src="common/images/tori.svg" alt="鳥">
             </p>
             <p class="top--animal__kuma">
-                <img src="common/images/kuma1.svg" alt="熊">
+                <img src="common/images/kuma_before.svg" alt="熊">
             </p>
             <p class="top--animal__kame">
                 <div class="css_work_farst">
                     <div class="css_work_last">
-                        <img src="common/images/kame.svg" alt="亀">
+                        <img src="common/images/kame_after.svg" alt="亀">
                     </div>
                 </div>
             </p>
