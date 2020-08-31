@@ -10,15 +10,15 @@ function mouseOff(){
     obj.src = "../../common/images/after.svg";
 }
 
-//マウスオーバー時の処理
-function mouseOn_mini(){
-    var obj = document.getElementById("mini_bear_hand");
-    obj.src = "../../common/images/before.svg";
-}
+// //マウスオーバー時の処理
+// function mouseOn_mini(){
+//     var obj = document.getElementById("mini_bear_hand");
+//     obj.src = "../../common/images/before.svg";
+// }
 
-//マウスアウト時の処理
-function mouseOff_mini(){
-    var obj = document.getElementById("mini_bear_hand");
-    obj.src = "../../common/images/after.svg";
-}
+// //マウスアウト時の処理
+// function mouseOff_mini(){
+//     var obj = document.getElementById("mini_bear_hand");
+//     obj.src = "../../common/images/after.svg";
+// }
   

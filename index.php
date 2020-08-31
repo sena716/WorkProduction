@@ -62,7 +62,7 @@
                 <img src="common/images/tori.svg" alt="鳥">
             </p>
             <p class="top--animal__kuma">
-                <img src="common/images/kuma_before.svg" alt="熊">
+                <img id="bear_hand"  src="common/images/kuma_before.svg" alt="熊" onmouseover="mouseOn();" onmouseout="mouseOff();">
             </p>
             <p class="top--animal__kame">
                 <div class="css_work_farst">
