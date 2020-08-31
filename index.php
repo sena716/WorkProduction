@@ -76,7 +76,7 @@
             </div> -->
             <div class ="image_animal">
   <div class="bear">
-    <img id="bear_hand" src="img/くまからだ全体.svg" onmouseover="mouseOn();" onmouseout="mouseOff();"/>
+    <img id="bear_hand" src="common/images/kame.svg" onmouseover="mouseOn();" onmouseout="mouseOff();"/>
   </div>
   <div class="mini_bear">
     <img id="mini_bear_hand" src="img/くまからだ全体.svg" onmouseover="mouseOn_mini();" onmouseout="mouseOff_mini();"/>
