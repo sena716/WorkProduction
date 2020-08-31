@@ -90,6 +90,9 @@ body{
                 }
             }
             &__tori{
+                position: absolute;top: 350px;
+                transform: rotate(0.05turn);
+                left:-70px;
                 width: 20%;
                 top: 20%;
                 left: 0%;
