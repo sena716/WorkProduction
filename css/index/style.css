@@ -103,3 +103,38 @@ body .top--animal__kame {
   bottom: -5%;
   left: 5%;
 }
+
+@keyframes In {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(300%);
+  }
+}
+
+@keyframes Shake {
+  from {
+    transform: translate(0, 0px);
+  }
+  to {
+    transform: translate(0, -20px);
+  }
+}
+
+body .top--animal__kame .css_work_farst {
+  width: 320px;
+  animation-name: In;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  transition-timing-function: linear;
+}
+
+body .top--animal__kame .css_work_last {
+  animation-name: Shake;
+  animation-timing-function: cubic-bezier(0, 0, 1, 1.02);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 0.3s;
+  overflow: hidden;
+}

@@ -108,7 +108,94 @@ body{
                 width: 15%;
                 bottom: -5%;
                 left: 5%;
+
+                @keyframes In{
+                    from
+                    {
+                      transform: translateX(-100%);
+                    }
+                    to
+                    {
+                      // transition: transform 0.5s linear cubic-bezier(0.4, 0, 1, 1);
+                      transform: translateX(300%);
+                    } 
+                  }
+                  @keyframes Shake{
+                    from {
+                        transform: translate(0,0px);
+                    }
+                  
+                    to {
+                        transform: translate(0,-20px)
+                    }
+                  }
+                  .css_work_farst
+                  {
+                    width: 320px;
+                    animation-name:In;
+                    animation-duration: 10s;
+                    animation-iteration-count: infinite;
+                    transition-timing-function: linear;
+                  }
+                  .css_work_last
+                  {
+                    animation-name:Shake;
+                    animation-timing-function: cubic-bezier(0, 0, 1, 1.02);
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    animation-duration: 0.3s;
+                    overflow: hidden;
+                  }
             }
         }
     }
 }
+
+
+// .image_animal
+// {
+//   position: relative;
+// .bear
+// {
+//   top: 0px;
+//   position: absolute;
+//   #bear_hand{
+//     position: absolute;
+//     transform: rotate(0.5turn);
+//     left:70%;
+//     width: 300px;
+//     top: 0px;
+//   }  
+// }
+// .top_rogo
+// {
+//   text-align: center;
+//   .rogo img{
+//     width: 70%;
+//     // position: relative;
+//   }
+// }
+
+// .mini_bear
+// {
+//   #mini_bear_hand
+//   {
+//     position: absolute;
+//     transform: rotate(0.5turn);
+//     left:55%;
+//     width: 200px;
+//     top: 0px;
+//   }
+// }
+
+// .bard img
+// {
+//   width:20%;
+//   position: absolute;
+//   top: 350px;
+//   transform: rotate(0.05turn);
+//   left:-70px;
+// }
+
+
+// }
