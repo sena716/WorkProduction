@@ -110,42 +110,37 @@ body{
                 left: 5%;
 
                 @keyframes In{
-                    from
-                    {
+                    from{
                       transform: translateX(-100%);
                     }
-                    to
-                    {
+                    to{
                       // transition: transform 0.5s linear cubic-bezier(0.4, 0, 1, 1);
                       transform: translateX(300%);
                     } 
-                  }
-                  @keyframes Shake{
-                    from {
-                        transform: translate(0,0px);
-                    }
-                  
-                    to {
-                        transform: translate(0,-20px)
-                    }
-                  }
-                  .css_work_farst
-                  {
+                }
+                @keyframes Shake{
+                from {
+                    transform: translate(0,0px);
+                }
+                to {
+                    transform: translate(0,-20px)
+                }
+                }
+                .css_work_farst{
                     width: 320px;
                     animation-name:In;
                     animation-duration: 10s;
                     animation-iteration-count: infinite;
                     transition-timing-function: linear;
-                  }
-                  .css_work_last
-                  {
+                }
+                .css_work_last{
                     animation-name:Shake;
                     animation-timing-function: cubic-bezier(0, 0, 1, 1.02);
                     animation-iteration-count: infinite;
                     animation-direction: alternate;
                     animation-duration: 0.3s;
                     overflow: hidden;
-                  }
+                }
             }
         }
     }
