@@ -14,7 +14,6 @@
         <p class="top--teamLogo">
             <img src="common/images/teamLogo.png" alt="チームロゴ">
         </p>
-
         <div class="top--main">
             <h1 class="top--main__titleLogo">
                 <img src="common/images/titlepcLogo.svg" alt="絶滅危惧種図鑑">
