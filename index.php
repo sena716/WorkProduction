@@ -55,7 +55,7 @@
         </div>
 
         <div class="top--animal">
-                <div class="top--animal__bear">
+                <!-- <div class="top--animal__bear">
                     <img id="bear_hand" src="img/くまからだ全体.svg" onmouseover="mouseOn();" onmouseout="mouseOff();"/>
                 </div>
                 <div class="top--animal__mini_bear">
@@ -73,7 +73,28 @@
             <div class="top--animal__css_work_farst__css_work_last">
                 <img src="img/亀差分.svg" alt="亀歩き（終）">
             </div>
-            </div>
+            </div> -->
+            <div class ="image_animal">
+  <div class="bear">
+    <img id="bear_hand" src="img/くまからだ全体.svg" onmouseover="mouseOn();" onmouseout="mouseOff();"/>
+  </div>
+  <div class="mini_bear">
+    <img id="mini_bear_hand" src="img/くまからだ全体.svg" onmouseover="mouseOn_mini();" onmouseout="mouseOff_mini();"/>
+  </div>
+  <div class="top_rogo">
+  <div class="rogo">
+    <img src="img/PCロゴ.svg" alt="ロゴ">
+  </div>
+</div>
+<div class ="bard">
+  <img src="img/鳥.svg" alt="ロゴ">
+</div>
+  <div class="css_work_farst">
+    <div class="css_work_last">
+      <img src="img/亀差分.svg" alt="亀歩き（終）">
+    </div>
+  </div>
+</div>
         </div>
     </section>
 

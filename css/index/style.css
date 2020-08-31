@@ -76,11 +76,11 @@ body .top--animal .image_animal {
   position: relative;
 }
 
-body .top--animal .image_animal--bear {
+body .top--animal .image_animal .bear {
   top: 0px;
 }
 
-body .top--animal .image_animal--bear #bear_hand {
+body .top--animal .image_animal .bear #bear_hand {
   position: absolute;
   transform: rotate(0.5turn);
   left: 70%;
@@ -88,7 +88,15 @@ body .top--animal .image_animal--bear #bear_hand {
   top: 0px;
 }
 
-body .top--animal .image_animal--mini_bear #mini_bear_hand {
+body .top--animal .image_animal .top_rogo {
+  text-align: center;
+}
+
+body .top--animal .image_animal .top_rogo .rogo img {
+  width: 70%;
+}
+
+body .top--animal .image_animal .mini_bear #mini_bear_hand {
   position: absolute;
   transform: rotate(0.5turn);
   left: 55%;
@@ -96,15 +104,7 @@ body .top--animal .image_animal--mini_bear #mini_bear_hand {
   top: 0px;
 }
 
-body .top--animal .image_animal--top_rogo {
-  text-align: center;
-}
-
-body .top--animal .image_animal--top_rogo .rogo img {
-  width: 70%;
-}
-
-body .top--animal .image_animal--bard {
+body .top--animal .image_animal .bard img {
   width: 20%;
   position: absolute;
   top: 350px;
@@ -130,7 +130,7 @@ body .top--animal .image_animal--bard {
   }
 }
 
-body .top--animal .image_animal--css_work_farst {
+body .top--animal .image_animal .css_work_farst {
   width: 320px;
   animation-name: In;
   animation-duration: 10s;
@@ -138,7 +138,7 @@ body .top--animal .image_animal--css_work_farst {
   transition-timing-function: linear;
 }
 
-body .top--animal .image_animal--css_work_farst--css_work_last {
+body .top--animal .image_animal .css_work_last {
   animation-name: Shake;
   animation-timing-function: cubic-bezier(0, 0, 1, 1.02);
   animation-iteration-count: infinite;
