@@ -72,38 +72,77 @@ body .top--main__pageLink ul li a p {
   white-space: nowrap;
 }
 
-body .top--animal p {
-  margin: 0;
+body .top--animal .image_animal {
+  position: relative;
+}
+
+body .top--animal .image_animal .bear {
+  top: 0px;
+}
+
+body .top--animal .image_animal .bear #bear_hand {
   position: absolute;
+  transform: rotate(0.5turn);
+  left: 70%;
+  width: 300px;
+  top: 0px;
 }
 
-body .top--animal p img {
-  width: 100%;
-  height: auto;
+body .top--animal .image_animal .top_rogo {
+  text-align: center;
 }
 
-body .top--animal__tori {
+body .top--animal .image_animal .top_rogo .rogo img {
+  width: 70%;
+}
+
+body .top--animal .image_animal .mini_bear #mini_bear_hand {
+  position: absolute;
+  transform: rotate(0.5turn);
+  left: 55%;
+  width: 200px;
+  top: 0px;
+}
+
+body .top--animal .image_animal .bard img {
+  width: 20%;
   position: absolute;
   top: 350px;
   transform: rotate(0.05turn);
   left: -70px;
-  width: 20%;
-  top: 20%;
-  left: 0%;
 }
 
-body .top--animal__kuma {
-  width: 20%;
-  top: 0%;
-  right: 3%;
+@keyframes In {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(300%);
+  }
 }
 
-body .top--animal__kuma img {
-  transform: rotateX(180deg);
+@keyframes Shake {
+  from {
+    transform: translate(0, 0px);
+  }
+  to {
+    transform: translate(0, -20px);
+  }
 }
 
-body .top--animal__kame {
-  width: 15%;
-  bottom: -5%;
-  left: 5%;
+body .top--animal .image_animal .css_work_farst {
+  width: 320px;
+  animation-name: In;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  transition-timing-function: linear;
+}
+
+body .top--animal .image_animal .css_work_last {
+  animation-name: Shake;
+  animation-timing-function: cubic-bezier(0, 0, 1, 1.02);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 0.3s;
+  overflow: hidden;
 }

@@ -55,15 +55,27 @@
         </div>
 
         <div class="top--animal">
-            <p class="top--animal__tori">
-                <img src="common/images/tori.svg" alt="鳥">
-            </p>
-            <p class="top--animal__kuma">
-                <img src="common/images/kuma1.svg" alt="熊">
-            </p>
-            <p class="top--animal__kame">
-                <img src="common/images/kame.svg" alt="亀">
-            </p>
+<div class ="image_animal">
+  <div class="bear">
+    <img id="bear_hand" src="img/くまからだ全体.svg" onmouseover="mouseOn();" onmouseout="mouseOff();"/>
+  </div>
+  <div class="mini_bear">
+    <img id="mini_bear_hand" src="img/くまからだ全体.svg" onmouseover="mouseOn_mini();" onmouseout="mouseOff_mini();"/>
+  </div>
+  <div class="top_rogo">
+  <div class="rogo">
+    <img src="img/PCロゴ.svg" alt="ロゴ">
+  </div>
+</div>
+<div class ="bard">
+  <img src="img/鳥.svg" alt="ロゴ">
+</div>
+  <div class="css_work_farst">
+    <div class="css_work_last">
+      <img src="img/亀差分.svg" alt="亀歩き（終）">
+    </div>
+  </div>
+</div>
         </div>
 
     </section>
