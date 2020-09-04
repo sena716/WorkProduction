@@ -10,13 +10,13 @@ function mouseOff(){
     obj.src = "../../common/images/kuma_after.svg";
 }
 //マウスオーバー時の処理
-function mouseOn(){
+function mouseOn_mini(){
     var obj = document.getElementById("minibear_hand");
     obj.src = "../../common/images/kuma_before.svg";
 }
 
 //マウスアウト時の処理
-function mouseOff(){
+function mouseOff_mini(){
     var obj = document.getElementById("minibear_hand");
     obj.src = "../../common/images/kuma_after.svg";
 }
