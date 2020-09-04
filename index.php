@@ -66,7 +66,7 @@
                 <img id="minibear_hand"  src="common/images/kuma_before.svg" alt="子熊" onmouseover="mouseOn_minikuma();" onmouseout="mouseOff_minikuma();">
             </p>
             <p class="top--animal__rakko">
-                <img src="common/images/rakko.svg" alt="ラッコ" name = "rakko_">
+                <img src="common/images/rakko.svg" alt="ラッコ" id = "rakko_move">
             </p>
             <p class="top--animal__kame">
                 <div class="css_work_farst">

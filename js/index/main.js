@@ -21,15 +21,20 @@ function mouseOff_minikuma(){
     obj.src = "../../common/images/kuma_after.svg";
 }
 
-img = new Array("common/images/rakko.svg","common/images/kuma_before.svg");
-count = -1;
-ingTimer();
+var pics_src = new Array("common/images/rakko.svg","common/images/kuma_before.svg");
+var num = -1; 
 
-function imgTimer(){
-    count++;
-    if(count == img.length) count = 0;
-    document.rakko_.src = img[count];
-    serTimeout("imgTimer()",1000);
+slideshow_timer();
+
+function slideshow_timer(){
+    if (num == 2){ 
+        num = 0;
+    }
+    else {
+        num ++;
+    }
+    document.getElementById("rakko_move").src=pics_src[num];
+    setTimeout("slideshow_timer()",200); 
 }
 
 // //マウスオーバー時の処理
