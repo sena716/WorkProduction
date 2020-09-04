@@ -21,7 +21,25 @@ function mouseOff_minikuma(){
     obj.src = "../../common/images/kuma_after.svg";
 }
 
-var pics_src = new Array("common/images/rakko.svg","common/images/kuma_before.svg");
+//鳥の目
+var pics_tori_src = new Array("common/images/tori.svg","common/images/tori_eye.svg");
+var num = -1; 
+
+slideshow_timer_tori();
+
+function slideshow_timer_tori(){
+    if (num == 1){ 
+        num = 0;
+    }
+    else {
+        num ++;
+    }
+    document.getElementById("tori_eye_move").src=pics_src[num];
+    setTimeout("sslideshow_timer_tori()",2000); 
+}
+
+//ラッコ動作
+var pics_rakko_src = new Array("common/images/rakko.svg","common/images/kuma_before.svg");
 var num = -1; 
 
 slideshow_timer_rakko();
@@ -37,21 +55,6 @@ function slideshow_timer_rakko(){
     setTimeout("slideshow_timer_rakko()",2000); 
 }
 
-var pics_src = new Array("common/images/tori.svg","common/images/tori_eye.svg");
-var num = -1; 
-
-slideshow_timer_tori();
-
-function slideshow_timer_tori(){
-    if (num == 1){ 
-        num = 0;
-    }
-    else {
-        num ++;
-    }
-    document.getElementById("tori_eye_move").src=pics_src[num];
-    setTimeout("sslideshow_timer_tori()",2000); 
-}
 
 // //マウスオーバー時の処理
 // function mouseOn_mini(){
