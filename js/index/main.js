@@ -34,7 +34,7 @@ function slideshow_timer(){
         num ++;
     }
     document.getElementById("rakko_move").src=pics_src[num];
-    setTimeout("slideshow_timer()",200); 
+    setTimeout("slideshow_timer()",2000); 
 }
 
 // //マウスオーバー時の処理
