@@ -1,7 +1,3 @@
-html {
-  overflow: hidden;
-}
-
 body {
   width: 100vw;
   height: 100vh;
@@ -39,7 +35,7 @@ body .top--main__titleLogo {
 }
 
 body .top--main__titleLogo img {
-  width: 900px;
+  width: 800px;
   height: auto;
 }
 

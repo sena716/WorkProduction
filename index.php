@@ -60,10 +60,14 @@
                 <img src="common/images/tori.svg" alt="鳥">
             </p>
             <p class="top--animal__kuma">
-                <img src="common/images/kuma1.svg" alt="熊">
+                <img id="bear_hand"  src="common/images/kuma_before.svg" alt="熊" onmouseover="mouseOn();" onmouseout="mouseOff();">
             </p>
             <p class="top--animal__kame">
-                <img src="common/images/kame.svg" alt="亀">
+                <div class="css_work_farst">
+                    <div class="css_work_last">
+                        <img src="common/images/kame_before.svg" alt="亀">
+                    </div>
+                </div>
             </p>
         </div>
 
