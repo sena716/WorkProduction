@@ -27,7 +27,7 @@ var num = -1;
 slideshow_timer();
 
 function slideshow_timer(){
-    if (num == 2){ 
+    if (num == 1){ 
         num = 0;
     }
     else {
