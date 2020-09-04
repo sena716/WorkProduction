@@ -98,13 +98,13 @@ body .top--animal__kuma img {
   transform: rotateX(180deg);
 }
 
-body .top--animal__kuma {
+body .top--animal__minikuma {
   width: 10%;
   top: 0%;
   right: 7%;
 }
 
-body .top--animal__kuma img {
+body .top--animal__minikuma img {
   transform: rotateX(180deg);
 }
 
