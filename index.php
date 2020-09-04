@@ -10,6 +10,7 @@
 </head>
 <body>
     <section class="top">
+    
 
         <p class="top--teamLogo">
             <img src="common/images/teamLogo.png" alt="チームロゴ">

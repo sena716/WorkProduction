@@ -1,1 +1,22 @@
-null
+.main__checkbox .checkboxCommon .category {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__checkbox .checkboxCommon .category li {
+  padding: 10px 0;
+}
+
+.main__checkbox .checkboxCommon .category li .region {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-bottom: 5px;
+}
+
+.main__checkbox .checkboxCommon .category li ul {
+  display: flex;
+}
+
+.main__checkbox .checkboxCommon .category li ul li {
+  padding: 0 10px;
+}
