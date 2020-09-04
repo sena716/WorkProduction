@@ -22,7 +22,7 @@ function mouseOff_minikuma(){
 }
 
 //鳥の目
-var pics_tori_src = new Array("common/images/tori.svg","common/images/tori_eye.svg");
+var pics_src = new Array("common/images/tori.svg","common/images/tori_eye.svg");
 var num = -1; 
 
 slideshow_timer_tori();
@@ -39,7 +39,7 @@ function slideshow_timer_tori(){
 }
 
 //ラッコ動作
-var pics_rakko_src = new Array("common/images/rakko.svg","common/images/kuma_before.svg");
+var pics_src = new Array("common/images/rakko.svg","common/images/kuma_before.svg");
 var num = -1; 
 
 slideshow_timer_rakko();
