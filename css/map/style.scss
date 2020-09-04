@@ -1,0 +1,42 @@
+.main{
+
+    &__checkbox{
+
+        .checkboxCommon{
+
+            .category{
+                display: flex;
+                flex-direction: column;
+
+                li{
+                    padding: 10px 0;
+
+                    // 地域名
+                    .region{
+                        font-weight: bold;
+                        font-size: 2rem;
+                        padding-bottom: 5px;
+                    }
+
+                    ul{
+                        display: flex;
+
+                        li{
+                            padding: 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &--east{
+            
+            &-category{
+
+
+                ul{
+                }
+            }
+        }
+    }
+}
