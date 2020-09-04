@@ -27,34 +27,30 @@
 
     </section>
 
-    <section>
-
-    </section>
-
     <section class="main">
         <h1>地図から探す</h1>
 
-        <div class="main__checkbox">
+        <form class="main__checkbox">
 
             <!-- 東日本 -->
             <div class="main__checkbox--east checkboxCommon">
                 <ul class="main__checkbox--east-category category">
                     <li>
                         <label for="East">
-                            <input id="East" type="checkbox" name="map-1"> 東日本 
+                            <input value="checkbox" id="East" type="checkbox" name="map-1" onClick="eastAllCheck();"> 東日本 
                         </label>
                     </li>
                     <li>
                         <div class="region">
                             <label for="hokkaidouRegion">
-                                <input type="checkbox" name="map-1-1" id="hokkaidouRegion" onClick="hokkaidouAllCheck();"> 北海道地方
+                                <input value="checkbox" type="checkbox" name="map-1-1" id="hokkaidouRegion" onClick="hokkaidouAllCheck();"> 北海道地方
                             </label>
                         </div>
 
                         <ul>
                             <li>
                                 <label for="hokkaidou">
-                                    <input type="checkbox" name="map-1-1-1" id="hokkaidou"> 北海道
+                                    <input value="checkbox" type="checkbox" name="map-1-1-1" id="hokkaidou"> 北海道
                                 </label>
                             </li>
                         </ul>
@@ -62,39 +58,39 @@
                     <li>
                         <div class="region">
                             <label for="touhokuRegion">
-                                <input type="checkbox" name="map-1-2" id="touhokuRegion"> 東北地方
+                                <input value="checkbox" type="checkbox" name="map-1-2" id="touhokuRegion" onClick="touhokuAllCheck();"> 東北地方
                             </label>
                         </div>
 
                         <ul>
                             <li>
                                 <label for="aomori">
-                                    <input type="checkbox" name="map-1-2-1" id="aomori"> 青森県
+                                    <input value="checkbox" type="checkbox" name="map-1-2-1" id="aomori"> 青森県
                                 </label>
                             </li>
                             <li>
                                 <label for="iwate">
-                                    <input type="checkbox" name="map-1-2-2" id="iwate"> 岩手県
+                                    <input value="checkbox" type="checkbox" name="map-1-2-2" id="iwate"> 岩手県
                                 </label>
                             </li>
                             <li>
                                 <label for="miyagi">
-                                    <input type="checkbox" name="map-1-2-3" id="miyagi"> 宮城県
+                                    <input value="checkbox" type="checkbox" name="map-1-2-3" id="miyagi"> 宮城県
                                 </label>
                             </li>
                             <li>
                                 <label for="akita">
-                                    <input type="checkbox" name="map-1-2-4" id="akita"> 秋田県
+                                    <input value="checkbox" type="checkbox" name="map-1-2-4" id="akita"> 秋田県
                                 </label>
                             </li>
                             <li>
                                 <label for="yamagata">
-                                    <input type="checkbox" name="map-1-2-5" id="yamagata"> 山形県
+                                    <input value="checkbox" type="checkbox" name="map-1-2-5" id="yamagata"> 山形県
                                 </label>
                             </li>
                             <li>
                                 <label for="hukushima">
-                                    <input type="checkbox" name="map-1-2-6" id="hukushima"> 福島県
+                                    <input value="checkbox" type="checkbox" name="map-1-2-6" id="hukushima"> 福島県
                                 </label>
                             </li>
                         </ul>
@@ -103,39 +99,39 @@
                     <li>
                         <div class="region">
                             <label for="kantouRegion">
-                                <input type="checkbox" id="kantouRegion"> 関東地方
+                                <input value="checkbox" type="checkbox" name="map-1-3" id="kantouRegion" onClick="kantouAllCheck();"> 関東地方
                             </label>
                         </div>
 
                         <ul>
                             <li>
                                 <label for="toukyou">
-                                    <input type="checkbox" id="toukyou"> 東京都
+                                    <input value="checkbox" type="checkbox" name="map-1-3-1" id="toukyou"> 東京都
                                 </label>
                             </li>
                             <li>
                                 <label for="ibaragi">
-                                    <input type="checkbox" id="ibaragi"> 茨城県
+                                    <input value="checkbox" type="checkbox" name="map-1-3-2" id="ibaragi"> 茨城県
                                 </label>
                             </li>
                             <li>
                                 <label for="totigi">
-                                    <input type="checkbox" id="totigi"> 栃木県
+                                    <input value="checkbox" type="checkbox" name="map-1-3-3" id="totigi"> 栃木県
                                 </label>
                             </li>
                             <li>
                                 <label for="gunma">
-                                    <input type="checkbox" id="gunma"> 群馬県
+                                    <input value="checkbox" type="checkbox" name="map-1-3-4" id="gunma"> 群馬県
                                 </label>
                             </li>
                             <li>
                                 <label for="saitama">
-                                    <input type="checkbox" id="saitama"> 埼玉県
+                                    <input value="checkbox" type="checkbox" name="map-1-3-5" id="saitama"> 埼玉県
                                 </label>
                             </li>
                             <li>
                                 <label for="tiba">
-                                    <input type="checkbox" id="tiba"> 千葉県
+                                    <input value="checkbox" type="checkbox" name="map-1-3-6" id="tiba"> 千葉県
                                 </label>
                             </li>
                         </ul>
@@ -143,54 +139,54 @@
                     <li>
                         <div class="region">
                             <label for="tyubuRegion">
-                                <input type="checkbox" id="tyubuRegion"> 中部地方
+                                <input value="checkbox" type="checkbox" name="map-1-4" id="tyubuRegion" onClick="tyubuAllCheck();"> 中部地方
                             </label>
                         </div>
 
                         <ul>
                             <li>
                                 <label for="nigata">
-                                    <input type="checkbox" id="nigata"> 新潟県
+                                    <input value="checkbox" type="checkbox" name="map-1-4-1" id="nigata"> 新潟県
                                 </label>
                             </li>
                             <li>
                                 <label for="toyama">
-                                    <input type="checkbox" id="toyama"> 富山県
+                                    <input value="checkbox" type="checkbox" name="map-1-4-2" id="toyama"> 富山県
                                 </label>
                             </li>
                             <li>
                                 <label for="ishikawa">
-                                    <input type="checkbox" id="ishikawa"> 石川県
+                                    <input value="checkbox" type="checkbox" name="map-1-4-3" id="ishikawa"> 石川県
                                 </label>
                             </li>
                             <li>
                                 <label for="hukui">
-                                    <input type="checkbox" id="hukui"> 福井県
+                                    <input value="checkbox" type="checkbox" name="map-1-4-4" id="hukui"> 福井県
                                 </label>
                             </li>
                             <li>
                                 <label for="yamanashi">
-                                    <input type="checkbox" id="yamanashi"> 山梨県
+                                    <input value="checkbox" type="checkbox" name="map-1-4-5" id="yamanashi"> 山梨県
                                 </label>
                             </li>
                             <li>
                                 <label for="nagano">
-                                    <input type="checkbox" id="nagano"> 長野県
+                                    <input value="checkbox" type="checkbox" name="map-1-4-6" id="nagano"> 長野県
                                 </label>
                             </li>
                             <li>
                                 <label for="gihu">
-                                    <input type="checkbox" id="gihu"> 岐阜県
+                                    <input value="checkbox" type="checkbox" name="map-1-4-7" id="gihu"> 岐阜県
                                 </label>
                             </li>
                             <li>
                                 <label for="shizuoka">
-                                    <input type="checkbox" id="shizuoka"> 静岡県
+                                    <input value="checkbox" type="checkbox" name="map-1-4-8" id="shizuoka"> 静岡県
                                 </label>
                             </li>
                             <li>
                                 <label for="aiti">
-                                    <input type="checkbox" id="aiti"> 愛知県
+                                    <input value="checkbox" type="checkbox" name="map-1-4-9" id="aiti"> 愛知県
                                 </label>
                             </li>
                         </ul>
@@ -203,49 +199,49 @@
                 <ul class="main__checkbox--west-category category">
                     <li>
                         <label for="Wast">
-                            <input id="Wast" type="checkbox"> 西日本 
+                            <input value="checkbox" id="Wast" name="map-2" type="checkbox" onClick="wastAllCheck();"> 西日本 
                         </label>
                     </li>
                     <li>
                         <div class="region">
                             <label for="kinkiRegion">
-                                <input type="checkbox" id="kinkiRegion"> 近畿地方
+                                <input value="checkbox" type="checkbox" name="map-2-1" id="kinkiRegion" onClick="kinkiAllCheck();"> 近畿地方
                             </label>
                         </div>
                         <ul>
                             <li>
                                 <label for="kyoto">
-                                    <input type="checkbox" id="kyoto"> 京都府
+                                    <input value="checkbox" type="checkbox" name="map-2-1-1" id="kyoto"> 京都府
                                 </label>
                             </li>
                             <li>
                                 <label for="oosaka">
-                                    <input type="checkbox" id="oosaka"> 大阪府
+                                    <input value="checkbox" type="checkbox" name="map-2-1-2" id="oosaka"> 大阪府
                                 </label>
                             </li>
                             <li>
                                 <label for="mie">
-                                    <input type="checkbox" id="mie"> 三重県
+                                    <input value="checkbox" type="checkbox" name="map-2-1-3" id="mie"> 三重県
                                 </label>
                             </li>
                             <li>
                                 <label for="shiga">
-                                    <input type="checkbox" id="shiga"> 滋賀県
+                                    <input value="checkbox" type="checkbox" name="map-2-1-4" id="shiga"> 滋賀県
                                 </label>
                             </li>
                             <li>
                                 <label for="hyougo">
-                                    <input type="checkbox" id="hyougo"> 兵庫県
+                                    <input value="checkbox" type="checkbox" name="map-2-1-5" id="hyougo"> 兵庫県
                                 </label>
                             </li>
                             <li>
                                 <label for="nara">
-                                    <input type="checkbox" id="nara"> 奈良県
+                                    <input value="checkbox" type="checkbox" name="map-2-1-6" id="nara"> 奈良県
                                 </label>
                             </li>
                             <li>
                                 <label for="wakayama">
-                                    <input type="checkbox" id="wakayama"> 和歌山県
+                                    <input value="checkbox" type="checkbox" name="map-2-1-7" id="wakayama"> 和歌山県
                                 </label>
                             </li>
                         </ul>
@@ -253,33 +249,33 @@
                     <li>
                         <div class="region">
                             <label for="tyugokuRegion">
-                                <input type="checkbox" id="tyugokuRegion"> 中国地方
+                                <input value="checkbox" type="checkbox" name="map-2-2" id="tyugokuRegion" onClick="tyugokuAllCheck();"> 中国地方
                             </label>
                         </div>
                         <ul>
                             <li>
                                 <label for="tottori">
-                                    <input type="checkbox" id="tottori"> 鳥取県
+                                    <input value="checkbox" type="checkbox" name="map-2-2-1" id="tottori"> 鳥取県
                                 </label>
                             </li>
                             <li>
                                 <label for="shimane">
-                                    <input type="checkbox" id="shimane"> 島根県
+                                    <input value="checkbox" type="checkbox" name="map-2-2-2" id="shimane"> 島根県
                                 </label>
                             </li>
                             <li>
                                 <label for="okayama">
-                                    <input type="checkbox" id="okayama"> 岡山県
+                                    <input value="checkbox" type="checkbox" name="map-2-2-3" id="okayama"> 岡山県
                                 </label>
                             </li>
                             <li>
                                 <label for="hiroshima">
-                                    <input type="checkbox" id="hiroshima"> 広島県
+                                    <input value="checkbox" type="checkbox" name="map-2-2-4" id="hiroshima"> 広島県
                                 </label>
                             </li>
                             <li>
                                 <label for="yamaguti">
-                                    <input type="checkbox" id="yamaguti"> 山口県
+                                    <input value="checkbox" type="checkbox" name="map-2-2-5" id="yamaguti"> 山口県
                                 </label>
                             </li>
                         </ul>
@@ -287,28 +283,28 @@
                     <li>
                         <div class="region">
                             <label for="shikokuRegion">
-                                <input type="checkbox" id="shikokuRegion"> 四国地方
+                                <input value="checkbox" type="checkbox" name="map-2-3" id="shikokuRegion" onClick="shikokuAllCheck();"> 四国地方
                             </label>
                         </div>
                         <ul>
                             <li>
                                 <label for="kagawa">
-                                    <input type="checkbox" id="kagawa"> 香川県
+                                    <input value="checkbox" type="checkbox" name="map-2-3-1" id="kagawa"> 香川県
                                 </label>
                             </li>
                             <li>
                                 <label for="tokushima">
-                                    <input type="checkbox" id="tokushima"> 徳島県
+                                    <input value="checkbox" type="checkbox" name="map-2-3-2" id="tokushima"> 徳島県
                                 </label>
                             </li>
                             <li>
                                 <label for="ehime">
-                                    <input type="checkbox" id="ehime"> 愛媛県
+                                    <input value="checkbox" type="checkbox" name="map-2-3-3" id="ehime"> 愛媛県
                                 </label>
                             </li>
                             <li>
                                 <label for="kouti">
-                                    <input type="checkbox" id="kouti"> 高知県
+                                    <input value="checkbox" type="checkbox" name="map-2-3-4" id="kouti"> 高知県
                                 </label>
                             </li>
                         </ul>
@@ -316,43 +312,43 @@
                     <li>
                         <div class="region">
                             <label for="kyusyuRegion">
-                                <input type="checkbox" id="kyusyuRegion"> 九州地方
+                                <input value="checkbox" type="checkbox" name="map-2-4" id="kyusyuRegion" onClick="kyusyuAllCheck();"> 九州地方
                             </label>
                         </div>
                         <ul>
                             <li>
                                 <label for="hukuoka">
-                                    <input type="checkbox" id="hukuoka"> 福岡県
+                                    <input value="checkbox" type="checkbox" name="map-2-4-1" id="hukuoka"> 福岡県
                                 </label>
                             </li>
                             <li>
                                 <label for="saga">
-                                    <input type="checkbox" id="saga"> 佐賀県
+                                    <input value="checkbox" type="checkbox" name="map-2-4-2" id="saga"> 佐賀県
                                 </label>
                             </li>
                             <li>
                                 <label for="nagasaki">
-                                    <input type="checkbox" id="nagasaki"> 長崎県
+                                    <input value="checkbox" type="checkbox" name="map-2-4-3" id="nagasaki"> 長崎県
                                 </label>
                             </li>
                             <li>
                                 <label for="kumamoto">
-                                    <input type="checkbox" id="kumamoto"> 熊本県
+                                    <input value="checkbox" type="checkbox" name="map-2-4-4" id="kumamoto"> 熊本県
                                 </label>
                             </li>
                             <li>
                                 <label for="ooita">
-                                    <input type="checkbox" id="ooita"> 大分県
+                                    <input value="checkbox" type="checkbox" name="map-2-4-5" id="ooita"> 大分県
                                 </label>
                             </li>
                             <li>
                                 <label for="kagoshima">
-                                    <input type="checkbox" id="kagoshima"> 鹿児島県
+                                    <input value="checkbox" type="checkbox" name="map-2-4-6" id="kagoshima"> 鹿児島県
                                 </label>
                             </li>
                             <li>
                                 <label for="okinawa">
-                                    <input type="checkbox" id="okinawa"> 沖縄県
+                                    <input value="checkbox" type="checkbox" name="map-2-4-7" id="okinawa"> 沖縄県
                                 </label>
                             </li>
                         </ul>
@@ -361,7 +357,11 @@
 
                 </ul>
             </div>
-        </div>
+
+            <div class="main__checkbox--sent">
+                <input value="送信" type="submit" onClick="mapDate();">
+            </div>
+        </form>
         
     </section>
 
