@@ -10,6 +10,7 @@ html{
 body{
     width: 100vw;
     height: 100vh;
+    background-color: white;
 
     .top{
         width: 100%;
@@ -107,7 +108,7 @@ body{
             &__minikuma{
                 width: 10%;
                 top: 0%;
-                right: 20%;
+                right: 22%;
     
                 img{
                      transform: rotateX( 180deg );

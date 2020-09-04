@@ -5,6 +5,7 @@ html {
 body {
   width: 100vw;
   height: 100vh;
+  background-color: white;
 }
 
 body .top {
@@ -101,7 +102,7 @@ body .top--animal__kuma img {
 body .top--animal__minikuma {
   width: 10%;
   top: 0%;
-  right: 20%;
+  right: 22%;
 }
 
 body .top--animal__minikuma img {
