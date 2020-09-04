@@ -21,22 +21,22 @@ function mouseOff_minikuma(){
     obj.src = "../../common/images/kuma_after.svg";
 }
 
-// //鳥の目
-// var pics_tori_src = new Array("common/images/tori.svg","common/images/tori_eye.svg");
-// var num = -1; 
+//鳥の目
+var pics_tori_src = new Array("common/images/tori.svg","common/images/tori_eye.svg");
+var num = -1; 
 
-// slideshow_timer_tori();
+slideshow_timer_tori();
 
-// function slideshow_timer_tori(){
-//     if (num == 1){ 
-//         num = 0;
-//     }
-//     else {
-//         num ++;
-//     }
-//     document.getElementById("tori_eye_move").src=pics_tori_src[num];
-//     setTimeout("slideshow_timer_tori()",1000); 
-// }
+function slideshow_timer_tori(){
+    if (num == 1){ 
+        num = 0;
+    }
+    else {
+        num ++;
+    }
+    document.getElementById("tori_eye_move").src=pics_tori_src[num];
+    setTimeout("slideshow_timer_tori()",1000); 
+}
 
 // //ラッコ動作
 // var pics_rakko_src = new Array("common/images/rakko.svg","common/images/kuma_before.svg");
@@ -56,22 +56,22 @@ function mouseOff_minikuma(){
 // }
 
 //かめ歩き
-var pics_kame_work_src = new Array("common/images/kame_before.svg","common/images/kame_other.svg");
-var num = -1; 
+// var pics_kame_work_src = new Array("common/images/kame_before.svg","common/images/kame_other.svg");
+// var num = -1; 
 
-slideshow_timer_kame();
+// slideshow_timer_kame();
 
-function slideshow_timer_kame(){
-    if (num == 1){ 
-        num = 0;
-    }
-    else {
-        num ++;
-    }
-    document.getElementById("kame_work").src=pics_kame_work_src[num];
-    setTimeout("slideshow_timer_kame()",500); 
+// function slideshow_timer_kame(){
+//     if (num == 1){ 
+//         num = 0;
+//     }
+//     else {
+//         num ++;
+//     }
+//     document.getElementById("kame_work").src=pics_kame_work_src[num];
+//     setTimeout("slideshow_timer_kame()",500); 
 
-}
+// }
 // //マウスオーバー時の処理
 // function mouseOn_mini(){
 //     var obj = document.getElementById("mini_bear_hand");
