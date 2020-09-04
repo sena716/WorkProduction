@@ -71,7 +71,7 @@
             <p class="top--animal__kame">
                 <div class="css_work_farst">
                     <div class="css_work_last">
-                        <img src="common/images/kame_before.svg" alt="亀">
+                        <img src="common/images/kame_before.svg" alt="亀" id = "kame_work">
                     </div>
                 </div>
             </p>

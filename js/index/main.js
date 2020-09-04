@@ -55,6 +55,22 @@ function slideshow_timer_tori(){
 //     setTimeout("slideshow_timer_rakko()",2000); 
 // }
 
+//かめ歩き
+var pics_kame_work_src = new Array("common/images/kame_before.svg","common/images/kame_other.svg");
+var num = -1; 
+
+slideshow_timer_kame();
+
+function slideshow_timer_kame(){
+    if (num == 1){ 
+        num = 0;
+    }
+    else {
+        num ++;
+    }
+    document.getElementById("kame_work").src=pics_kame_work_src[num];
+    setTimeout("slideshow_timer_kame()",500); 
+
 
 // //マウスオーバー時の処理
 // function mouseOn_mini(){
