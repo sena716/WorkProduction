@@ -109,6 +109,12 @@ body .top--animal__minikuma img {
   transform: rotateX(180deg);
 }
 
+body .top--animal__rakko {
+  width: 20%;
+  top: 30%;
+  right: 10%;
+}
+
 body .top--animal__kame {
   width: 15%;
   bottom: -5%;
