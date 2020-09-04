@@ -37,6 +37,22 @@ function slideshow_timer(){
     setTimeout("slideshow_timer()",2000); 
 }
 
+var pics_src = new Array("common/images/tori.svg","common/images/tori_eye.svg");
+var num = -1; 
+
+slideshow_timer();
+
+function slideshow_timer(){
+    if (num == 1){ 
+        num = 0;
+    }
+    else {
+        num ++;
+    }
+    document.getElementById("tori_eye_move").src=pics_src[num];
+    setTimeout("slideshow_timer()",2000); 
+}
+
 // //マウスオーバー時の処理
 // function mouseOn_mini(){
 //     var obj = document.getElementById("mini_bear_hand");
