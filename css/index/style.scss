@@ -104,6 +104,15 @@ body{
                     transform: rotateX( 180deg );
                 }
             }
+            &__kuma{
+                width: 20%;
+                top: 0%;
+                right: 3%;
+    
+                img{
+                     transform: rotateX( 180deg );
+                }
+            }
             &__kame{
                 width: 15%;
                 bottom: -5%;

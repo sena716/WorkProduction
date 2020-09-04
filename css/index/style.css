@@ -98,6 +98,16 @@ body .top--animal__kuma img {
   transform: rotateX(180deg);
 }
 
+body .top--animal__kuma {
+  width: 20%;
+  top: 0%;
+  right: 3%;
+}
+
+body .top--animal__kuma img {
+  transform: rotateX(180deg);
+}
+
 body .top--animal__kame {
   width: 15%;
   bottom: -5%;
