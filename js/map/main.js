@@ -6,7 +6,7 @@ headers: {
 })
 .then(res => res.json())
 .then(json => {
-    document.getElementById("name").innerHTML = json.name;
+    document.getElementById("name").innerHTML = json.contents[0].name;
 })
 
 
