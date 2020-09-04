@@ -38,22 +38,22 @@ function slideshow_timer_tori(){
     setTimeout("slideshow_timer_tori()",2000); 
 }
 
-//ラッコ動作
-var pics_rakko_src = new Array("common/images/rakko.svg","common/images/kuma_before.svg");
-var num = -1; 
+// //ラッコ動作
+// var pics_rakko_src = new Array("common/images/rakko.svg","common/images/kuma_before.svg");
+// var num = -1; 
 
-slideshow_timer_rakko();
+// slideshow_timer_rakko();
 
-function slideshow_timer_rakko(){
-    if (num == 1){ 
-        num = 0;
-    }
-    else {
-        num ++;
-    }
-    document.getElementById("rakko_move").src=pics_rakko_src[num];
-    setTimeout("slideshow_timer_rakko()",2000); 
-}
+// function slideshow_timer_rakko(){
+//     if (num == 1){ 
+//         num = 0;
+//     }
+//     else {
+//         num ++;
+//     }
+//     document.getElementById("rakko_move").src=pics_rakko_src[num];
+//     setTimeout("slideshow_timer_rakko()",2000); 
+// }
 
 
 // //マウスオーバー時の処理
