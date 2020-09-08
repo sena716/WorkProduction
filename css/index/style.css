@@ -5,8 +5,9 @@ html {
 body {
   width: 100vw;
   height: 100vh;
+  background-color: white;
   background-image: url("../../common/images/ground.svg");
-  background-size: contain;
+  background-size: cover;
 }
 
 body .top {
@@ -86,8 +87,12 @@ body .top--animal p img {
 
 body .top--animal__tori {
   width: 20%;
-  top: 20%;
-  left: 0%;
+  top: 30%;
+  left: -5%;
+}
+
+body .top--animal__tori img {
+  transform: rotate(10deg);
 }
 
 body .top--animal__kuma {
@@ -113,7 +118,7 @@ body .top--animal__minikuma img {
 body .top--animal__rakko {
   width: 15%;
   top: 45%;
-  right: 15%;
+  right: 10%;
 }
 
 body .top--animal__kame {

@@ -10,9 +10,9 @@ html{
 body{
     width: 100vw;
     height: 100vh;
-    // background-color: rgb(192, 226, 222);
+    background-color: rgb(255, 255, 255);
     background-image: url("../../common/images/ground.svg");
-    background-size: contain;
+    background-size: cover;
 
     .top{
         width: 100%;
@@ -94,9 +94,13 @@ body{
             }
             &__tori{
                 width: 20%;
-                top: 20%;
-                left: 0%;
-                
+                top: 30%;
+                left: -5%;
+
+                img{
+                    transform: rotate( 10deg );
+                }
+
             }
             &__kuma{
                 width: 20%;
@@ -119,7 +123,7 @@ body{
             &__rakko{
                 width: 15%;
                 top: 45%;
-                right: 15%;
+                right: 10%;
             }
             &__kame{
                 width: 15%;

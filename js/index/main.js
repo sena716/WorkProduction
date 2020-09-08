@@ -35,7 +35,7 @@ function slideshow_timer_tori(){
         num ++;
     }
     document.getElementById("tori_eye_move").src=pics_tori_src[num];
-    setTimeout("slideshow_timer_tori()",1000); 
+    setTimeout("slideshow_timer_tori()",500); 
 }
 
 // //ラッコ動作
