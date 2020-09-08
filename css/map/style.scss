@@ -1,5 +1,11 @@
 .main{
 
+    // 日本地図
+    &__map{
+        text-align: center;
+    }
+
+    // 都道府県チェックボックス
     &__checkbox{
 
         .checkboxCommon{

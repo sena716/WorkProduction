@@ -15,7 +15,7 @@ html{
 // 変数
 $sm: 450px;
 $tb: 768px;
-$pc: 1080px;
+$pc: 980px;
 
 body{
     font-family: 'Noto Sans Japanese', serif;
@@ -69,6 +69,7 @@ body{
 
     // メイン
     .main{
+        padding: 0 50px;
         margin: 0 auto;
         max-width: $pc;
     }

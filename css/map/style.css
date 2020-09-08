@@ -1,3 +1,7 @@
+.main__map {
+  text-align: center;
+}
+
 .main__checkbox .checkboxCommon .category {
   display: flex;
   flex-direction: column;
