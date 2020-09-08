@@ -6,7 +6,6 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #a7d7e6;
-  background-image: url("common/images/ground.svg");
 }
 
 body .top {
