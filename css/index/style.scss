@@ -43,6 +43,7 @@ body{
             // タイトルロゴ
             &__titleLogo{
                 margin: 0;
+                animation-name:Animate;
 
                 img{
                     width: 900px;
@@ -130,11 +131,6 @@ body{
                 bottom: -5%;
                 left: 5%;
             }
-            &__koumori{
-                width: 15%;
-                top: 45%;
-                right: 10%;
-            }
         }
     }
 }
@@ -153,9 +149,17 @@ body{
         transform: translate(0,0px);
     }
     to {
-        transform: translate(0,-20px)
+        transform: translate(0,-20px);
     }
 }
+// @keyframes Animate{
+//     0%{
+//         width: 100%;
+//     }
+//     100%{
+//         width: 50%;
+//     }
+// }
 .css_work_farst{
     position: absolute;
     bottom: 0;
@@ -176,3 +180,4 @@ body{
         width: 200px;
     }
 }
+

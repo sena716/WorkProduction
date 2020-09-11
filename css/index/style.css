@@ -39,6 +39,7 @@ body .top--main {
 
 body .top--main__titleLogo {
   margin: 0;
+  animation-name: Animate;
 }
 
 body .top--main__titleLogo img {
@@ -125,12 +126,6 @@ body .top--animal__kame {
   width: 15%;
   bottom: -5%;
   left: 5%;
-}
-
-body .top--animal__koumori {
-  width: 15%;
-  top: 45%;
-  right: 10%;
 }
 
 @keyframes In {

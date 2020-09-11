@@ -11,7 +11,7 @@
 <body>
     <section class="top">
         <p class="top--teamLogo">
-            <img src="common/images/teamLogo.png" alt="チームロゴ">
+            <img src="common/images/teamLogo.svg" alt="チームロゴ">
         </p>
 
         <div class="top--main">
@@ -66,7 +66,7 @@
                 <img id="minibear_hand"  src="common/images/kuma_before.svg" alt="子熊" onmouseover="mouseOn_minikuma();" onmouseout="mouseOff_minikuma();">
             </p>
             <p class="top--animal__rakko">
-                <img src="common/images/rakko.svg" alt="ラッコ" id = "rakko_move">
+                <img id = "rakko_move" src="common/images/rakko.svg" alt="ラッコ">
             </p>
             <p class="top--animal__kame">
                 <div class="css_work_farst">
@@ -74,9 +74,6 @@
                         <img id = "kame_work" src="common/images/kame_before.svg" alt="亀">
                     </div>
                 </div>
-            </p>
-            <p class="top--animal__koumori">
-                <img src="common/images/kuma_koumori.svg" alt="コウモリ">
             </p>
         </div>
 
