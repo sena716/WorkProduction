@@ -1,24 +1,24 @@
 //マウスオーバー時の処理
 function mouseOn(){
     var obj = document.getElementById("bear_hand");
-    obj.src = "../../common/images/kuma_before.svg";
+    obj.src = "common/images/kuma_before.svg";
 }
 
 //マウスアウト時の処理
 function mouseOff(){
     var obj = document.getElementById("bear_hand");
-    obj.src = "../../common/images/kuma_after.svg";
+    obj.src = "common/images/kuma_after.svg";
 }
 //マウスオーバー時の処理
 function mouseOn_minikuma(){
     var obj = document.getElementById("minibear_hand");
-    obj.src = "../../common/images/kuma_before.svg";
+    obj.src = "common/images/kuma_before.svg";
 }
 
 //マウスアウト時の処理
 function mouseOff_minikuma(){
     var obj = document.getElementById("minibear_hand");
-    obj.src = "../../common/images/kuma_after.svg";
+    obj.src = "common/images/kuma_after.svg";
 }
 
 //鳥の目
@@ -55,21 +55,22 @@ function slideshow_timer_tori(){
 //     setTimeout("slideshow_timer_rakko()",2000); 
 // }
 
-//かめ歩き
-// var pics_kame_work_src = new Array("common/images/kame_before.svg","common/images/kame_other.svg");
-// var num = -1; 
+// かめ歩き
+var pics_kame_work_src = new Array("common/images/kame_before.svg","common/images/kame_after.svg");
+var num = -1; 
 
-// slideshow_timer_kame();
+slideshow_timer_kame();
 
-// function slideshow_timer_kame(){
-//     if (num == 1){ 
-//         num = 0;
-//     }
-//     else {
-//         num ++;
-//     }
-//     document.getElementById("kame_work").src=pics_kame_work_src[num];
-//     setTimeout("slideshow_timer_kame()",500); 
+function slideshow_timer_kame(){
+    if (num == 1){ 
+        num = 0;
+    }
+    else {
+        num ++;
+    }
+    document.getElementById("kame_work").src=pics_kame_work_src[num];
+    setTimeout("slideshow_timer_kame()",300); 
+}
 
 // }
 // //マウスオーバー時の処理

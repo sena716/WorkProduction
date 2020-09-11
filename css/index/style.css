@@ -127,6 +127,12 @@ body .top--animal__kame {
   left: 5%;
 }
 
+body .top--animal__koumori {
+  width: 15%;
+  top: 45%;
+  right: 10%;
+}
+
 @keyframes In {
   from {
     transform: translateX(-100%);

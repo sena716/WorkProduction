@@ -57,7 +57,7 @@
 
         <div class="top--animal">
             <p class="top--animal__tori">
-                <img src="common/images/tori.svg" alt="鳥" id = "tori_eye_move">
+                <img id = "tori_eye_move" src="common/images/tori.svg" alt="鳥">
             </p>
             <p class="top--animal__kuma">
                 <img id="bear_hand"  src="common/images/kuma_before.svg" alt="熊" onmouseover="mouseOn();" onmouseout="mouseOff();">
@@ -71,9 +71,12 @@
             <p class="top--animal__kame">
                 <div class="css_work_farst">
                     <div class="css_work_last">
-                        <img src="common/images/kame_before.svg" alt="亀" id = "kame_work">
+                        <img id = "kame_work" src="common/images/kame_before.svg" alt="亀">
                     </div>
                 </div>
+            </p>
+            <p class="top--animal__koumori">
+                <img src="common/images/kuma_koumori.svg" alt="コウモリ">
             </p>
         </div>
 
