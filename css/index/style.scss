@@ -101,8 +101,16 @@ body{
                 img{
                     transform: rotate( 10deg );
                 }
-
             }
+            // &__minitori{
+            //     width: 15%;
+            //     top: 40%;
+            //     left: -5%;
+
+            //     img{
+            //         transform: rotate( 10deg );
+            //     }
+            // }
             &__kuma{
                 width: 20%;
                 top: 0%;
@@ -122,9 +130,15 @@ body{
                 }
             }
             &__rakko{
-                width: 15%;
-                top: 45%;
+                width: 20%;
+                top: 40%;
                 right: 10%;
+                animation: Yurayura 6s ease infinite;
+            }
+            &__koumori{
+                width: 20%;
+                top: 5%;
+                left: 20%;
             }
             &__kame{
                 width: 15%;
@@ -132,6 +146,19 @@ body{
                 left: 5%;
             }
         }
+    }
+}
+
+@keyframes Yurayura{
+    0% { 
+        transform:translateX(-30px) 
+    }
+    50% { 
+        transform:translateX(-50px)
+        translateY(10px) 
+    }
+    100% { 
+        transform:translateX(-30px) 
     }
 }
 

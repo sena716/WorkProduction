@@ -39,7 +39,7 @@ function slideshow_timer_tori(){
 }
 
 // ラッコ動作
-var pics_rakko_src = new Array("common/images/rakko.svg","common/images/kuma_before.svg");
+var pics_rakko_src = new Array("common/images/rakko.svg","common/images/rakko_other.svg");
 var num = -1; 
 
 slideshow_timer_rakko();
@@ -52,7 +52,7 @@ function slideshow_timer_rakko(){
         num ++;
     }
     document.getElementById("rakko_move").src=pics_rakko_src[num];
-    setTimeout("slideshow_timer_rakko()",100); 
+    setTimeout("slideshow_timer_rakko()",600); 
 }
 
 // かめ歩き

@@ -117,15 +117,34 @@ body .top--animal__minikuma img {
 }
 
 body .top--animal__rakko {
-  width: 15%;
-  top: 45%;
+  width: 20%;
+  top: 40%;
   right: 10%;
+  animation: Yurayura 6s ease infinite;
+}
+
+body .top--animal__koumori {
+  width: 20%;
+  top: 5%;
+  left: 20%;
 }
 
 body .top--animal__kame {
   width: 15%;
   bottom: -5%;
   left: 5%;
+}
+
+@keyframes Yurayura {
+  0% {
+    transform: translateX(-30px);
+  }
+  50% {
+    transform: translateX(-50px) translateY(10px);
+  }
+  100% {
+    transform: translateX(-30px);
+  }
 }
 
 @keyframes In {
