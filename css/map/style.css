@@ -7,14 +7,27 @@
   flex-direction: column;
 }
 
+.main__checkbox .checkboxCommon .category label:hover {
+  cursor: pointer;
+}
+
+.main__checkbox .checkboxCommon .category label input[type=checkbox] {
+  width: 15px;
+  height: 15px;
+}
+
 .main__checkbox .checkboxCommon .category li {
   padding: 10px 0;
 }
 
+.main__checkbox .checkboxCommon .category li .Ew {
+  font-size: 3rem;
+}
+
 .main__checkbox .checkboxCommon .category li .region {
   font-weight: bold;
-  font-size: 2rem;
-  padding-bottom: 5px;
+  font-size: 2.3rem;
+  padding-bottom: 10px;
 }
 
 .main__checkbox .checkboxCommon .category li ul {
@@ -22,5 +35,6 @@
 }
 
 .main__checkbox .checkboxCommon .category li ul li {
-  padding: 0 10px;
+  font-size: 1.8rem;
+  padding: 0 10px 0  0;
 }

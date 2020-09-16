@@ -398,10 +398,3 @@ function kyusyuAllCheck(){
 function mapDate(){
     
 }
-
-let vals = $('input[value=checkbox]');
-
-let j = vals.length;
-for( let i = 0; j > i; i++ ){
-    console.log( vals[i].id );
-}
