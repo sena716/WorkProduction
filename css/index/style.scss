@@ -10,7 +10,7 @@ html{
 body{
     width: 100vw;
     height: 100vh;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 232, 189);
     background-image: url("../../common/images/ground.svg");
     background-size: cover;
 
@@ -102,15 +102,6 @@ body{
                     transform: rotate( 10deg );
                 }
             }
-            // &__minitori{
-            //     width: 15%;
-            //     top: 40%;
-            //     left: -5%;
-
-            //     img{
-            //         transform: rotate( 10deg );
-            //     }
-            // }
             &__kuma{
                 width: 20%;
                 top: 0%;
@@ -131,18 +122,18 @@ body{
             }
             &__rakko{
                 width: 20%;
-                top: 40%;
+                top: 35%;
                 right: 10%;
-                animation: Yurayura 6s ease infinite;
+                animation: Yurayura 10s ease infinite;
             }
             &__koumori{
                 width: 20%;
-                top: 5%;
-                left: 20%;
+                top: -5%;
+                left: 15%;
             }
             &__kame{
                 width: 15%;
-                bottom: -5%;
+                bottom: -10%;
                 left: 5%;
             }
         }
@@ -154,7 +145,7 @@ body{
         transform:translateX(-30px) 
     }
     50% { 
-        transform:translateX(-50px)
+        transform:translateX(-100px)
         translateY(10px) 
     }
     100% { 
@@ -179,19 +170,19 @@ body{
         transform: translate(0,-20px);
     }
 }
-// @keyframes Animate{
-//     0%{
-//         width: 100%;
-//     }
-//     100%{
-//         width: 50%;
-//     }
-// }
+@keyframes Animate{
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: 50%;
+    }
+}
 .css_work_farst{
     position: absolute;
-    bottom: 0;
+    bottom: -5%;
     animation-name:In;
-    animation-duration: 10s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     transition-timing-function: linear;
 }
@@ -200,7 +191,7 @@ body{
     animation-timing-function: cubic-bezier(0, 0, 1, 1.02);
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-duration: 0.3s;
+    animation-duration: 0.7s;
     overflow: hidden;
 
     img{

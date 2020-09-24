@@ -69,10 +69,10 @@ function slideshow_timer_kame(){
         num_c ++;
     }
     document.getElementById("kame_work").src=pics_kame_work_src[num_c];
-    setTimeout("slideshow_timer_kame()",300); 
+    setTimeout("slideshow_timer_kame()",500); 
 }
 
-// かめ歩き
+// 蝙蝠
 var pics_koumori_src = new Array("common/images/koumori.svg","common/images/koumori_move_1.svg","common/images/koumori_move_2.svg");
 var num_d = -1; 
 
@@ -86,7 +86,7 @@ function slideshow_timer_koumori(){
         num_d ++;
     }
     document.getElementById("komori_move").src=pics_koumori_src[num_d];
-    setTimeout("slideshow_timer_koumori()",300); 
+    setTimeout("slideshow_timer_koumori()",200); 
 }
 
 // }

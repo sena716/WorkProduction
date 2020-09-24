@@ -59,9 +59,6 @@
             <p class="top--animal__tori">
                 <img id = "tori_eye_move" src="common/images/tori.svg" alt="鳥">
             </p>
-            <!-- <p class="top--animal__minitori">
-                <img src="common/images/tori.svg" alt="子鳥">
-            </p> -->
             <p class="top--animal__kuma">
                 <img id="bear_hand"  src="common/images/kuma_before.svg" alt="熊" onmouseover="mouseOn();" onmouseout="mouseOff();">
             </p>

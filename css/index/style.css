@@ -5,7 +5,7 @@ html {
 body {
   width: 100vw;
   height: 100vh;
-  background-color: white;
+  background-color: #ffe8bd;
   background-image: url("../../common/images/ground.svg");
   background-size: cover;
 }
@@ -32,14 +32,21 @@ body .top--teamLogo img {
 
 body .top--main {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 body .top--main__titleLogo {
   margin: 0;
-  animation-name: Animate;
+  -webkit-animation-name: Animate;
+          animation-name: Animate;
 }
 
 body .top--main__titleLogo img {
@@ -55,8 +62,11 @@ body .top--main__pageLink {
 
 body .top--main__pageLink ul {
   margin: 0 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 body .top--main__pageLink ul li {
@@ -93,7 +103,8 @@ body .top--animal__tori {
 }
 
 body .top--animal__tori img {
-  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
 }
 
 body .top--animal__kuma {
@@ -103,7 +114,8 @@ body .top--animal__kuma {
 }
 
 body .top--animal__kuma img {
-  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
 }
 
 body .top--animal__minikuma {
@@ -113,76 +125,150 @@ body .top--animal__minikuma {
 }
 
 body .top--animal__minikuma img {
-  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
 }
 
 body .top--animal__rakko {
   width: 20%;
-  top: 40%;
+  top: 35%;
   right: 10%;
-  animation: Yurayura 6s ease infinite;
+  -webkit-animation: Yurayura 10s ease infinite;
+          animation: Yurayura 10s ease infinite;
 }
 
 body .top--animal__koumori {
   width: 20%;
-  top: 5%;
-  left: 20%;
+  top: -5%;
+  left: 15%;
 }
 
 body .top--animal__kame {
   width: 15%;
-  bottom: -5%;
+  bottom: -10%;
   left: 5%;
+}
+
+@-webkit-keyframes Yurayura {
+  0% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  50% {
+    -webkit-transform: translateX(-100px) translateY(10px);
+            transform: translateX(-100px) translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
 }
 
 @keyframes Yurayura {
   0% {
-    transform: translateX(-30px);
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
   }
   50% {
-    transform: translateX(-50px) translateY(10px);
+    -webkit-transform: translateX(-100px) translateY(10px);
+            transform: translateX(-100px) translateY(10px);
   }
   100% {
-    transform: translateX(-30px);
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+}
+
+@-webkit-keyframes In {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
   }
 }
 
 @keyframes In {
   from {
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   to {
-    transform: translateX(100vw);
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+}
+
+@-webkit-keyframes Shake {
+  from {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  to {
+    -webkit-transform: translate(0, -20px);
+            transform: translate(0, -20px);
   }
 }
 
 @keyframes Shake {
   from {
-    transform: translate(0, 0px);
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
   }
   to {
-    transform: translate(0, -20px);
+    -webkit-transform: translate(0, -20px);
+            transform: translate(0, -20px);
+  }
+}
+
+@-webkit-keyframes Animate {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes Animate {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 50%;
   }
 }
 
 .css_work_farst {
   position: absolute;
-  bottom: 0;
-  animation-name: In;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  transition-timing-function: linear;
+  bottom: -5%;
+  -webkit-animation-name: In;
+          animation-name: In;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
 .css_work_last {
-  animation-name: Shake;
-  animation-timing-function: cubic-bezier(0, 0, 1, 1.02);
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-duration: 0.3s;
+  -webkit-animation-name: Shake;
+          animation-name: Shake;
+  -webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1.02);
+          animation-timing-function: cubic-bezier(0, 0, 1, 1.02);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
   overflow: hidden;
 }
 
 .css_work_last img {
   width: 200px;
 }
+/*# sourceMappingURL=style.css.map */
