@@ -16,7 +16,7 @@
 
         <div class="top--main">
             <h1 class="top--main__titleLogo">
-                <img src="common/images/titlepcLogo.svg" alt="絶滅危惧種図鑑">
+                <img src="common/images/teamLogo_New.svg" alt="絶滅危惧種図鑑">
             </h1>
 
             <div class="top--main__pageLink">
