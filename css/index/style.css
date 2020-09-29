@@ -7,6 +7,7 @@ body {
   height: 100vh;
   background-color: #ffeada;
   background-image: url("../../common/images/ground_New.svg");
+  background-position: center bottom;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -88,13 +89,13 @@ body .top--animal p img {
 }
 
 body .top--animal__tori {
-  width: 20%;
-  top: 30%;
-  left: -5%;
+  width: 15%;
+  top: -10%;
+  left: 15%;
 }
 
 body .top--animal__tori img {
-  transform: rotate(10deg);
+  transform: rotate(180deg);
 }
 
 body .top--animal__kuma {
@@ -126,8 +127,8 @@ body .top--animal__rakko {
 
 body .top--animal__koumori {
   width: 20%;
-  top: -5%;
-  left: 15%;
+  top: 30%;
+  left: -5%;
   animation: Fly 20s ease infinite;
 }
 
