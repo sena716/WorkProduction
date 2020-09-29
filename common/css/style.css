@@ -21,8 +21,7 @@ body {
 }
 
 body *, body *::before, body *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body a {
@@ -91,12 +90,8 @@ body .Toggle.active span:nth-child(3) {
 }
 
 body .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   max-height: 150px;
 }
 
@@ -119,12 +114,8 @@ body .header--titleLogo img {
 body .header--pageLink, body .header ul {
   padding-right: 50px;
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 body .header--pageLink li, body .header ul li {
@@ -133,8 +124,14 @@ body .header--pageLink li, body .header ul li {
 }
 
 body .main {
+  width: 980px;
   padding: 0 50px;
   margin: 0 auto;
-  max-width: 980px;
 }
-/*# sourceMappingURL=style.css.map */
+
+@media (max-width: 768px) {
+  body .main {
+    width: 768px;
+    padding: 0 30px;
+  }
+}

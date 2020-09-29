@@ -9,8 +9,6 @@
     src: url('font/corp_round_v1.ttf');
 }
 
-
-
 // 変数
 $sm: 450px;
 $tb: 768px;
@@ -18,9 +16,6 @@ $pc: 980px;
 
 html{
     font-size: 62.5%;   // 基本フォントサイズ10px
-    // @media (max-width: $tb ){
-    //     font-size: 93.75%;  // 基本タブレット以下時フォントサイズ15px
-    // }
 }
 
 body{
@@ -131,8 +126,13 @@ body{
 
     // メイン
     .main{
+        width: $pc;
         padding: 0 50px;
         margin: 0 auto;
-        max-width: $pc;
+
+        @media (max-width: $tb ){
+            width: $tb;
+            padding: 0 30px;
+        }
     }
 }
