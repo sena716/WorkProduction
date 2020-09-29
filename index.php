@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="common/css/style.css">
     <link rel="stylesheet" href="common/css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="common/css/animateCss/animate.min.css">
     <link rel="stylesheet" href="css/index/style.css">
     <title>絶滅危惧種図鑑</title>
 </head>
