@@ -10,9 +10,10 @@ html{
 body{
     width: 100vw;
     height: 100vh;
-    background-color: rgb(255, 238, 227);
-    background-image: url("../../common/images/ground.svg");
-    background-size: cover;
+    background-color: rgb(255, 234, 218);
+    background-image: url("../../common/images/ground_New.svg");
+    background-size: contain;
+    background-repeat:no-repeat;
 
     .top{
         width: 100%;

@@ -5,9 +5,10 @@ html {
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #ffeee3;
-  background-image: url("../../common/images/ground.svg");
-  background-size: cover;
+  background-color: #ffeada;
+  background-image: url("../../common/images/ground_New.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 body .top {
