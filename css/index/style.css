@@ -5,7 +5,7 @@ html {
 body {
   width: 100vw;
   height: 100vh;
-  background-color: white;
+  background-color: #ffeee3;
   background-image: url("../../common/images/ground.svg");
   background-size: cover;
 }
@@ -127,6 +127,7 @@ body .top--animal__koumori {
   width: 20%;
   top: -5%;
   left: 15%;
+  animation: Fly 20s ease infinite;
 }
 
 body .top--animal__kame {
@@ -144,6 +145,36 @@ body .top--animal__kame {
   }
   100% {
     transform: translateX(-30px);
+  }
+}
+
+@keyframes Fly {
+  0% {
+    transform: translateY(0%);
+  }
+  10% {
+    transform: translateY(-20%) translateX(5%);
+  }
+  20% {
+    transform: translateY(-30%) translateX(7%);
+  }
+  30% {
+    transform: translateY(-60%) translateX(10%);
+  }
+  50% {
+    transform: translateY(-20%) translateX(0%);
+  }
+  70% {
+    transform: translateY(-10%);
+  }
+  90% {
+    transform: translateY(-10%);
+  }
+  95% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 
