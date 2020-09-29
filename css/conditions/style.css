@@ -1,1 +1,14 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.main__type ul {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.main__type ul li {
+  width: 250px;
+  padding: 20px 10px;
+  margin: 10px;
+  font-size: 3rem;
+  border: 2px solid #000;
+  text-align: center;
+}

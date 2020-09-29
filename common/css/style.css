@@ -1,5 +1,7 @@
+@charset "UTF-8";
 @import url(sanitize/sanitize.css);
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url(animateCss/animate.min.css);
 @font-face {
   font-family: 'MyFont';
   src: url("font/corp_round_v1.ttf");
@@ -33,6 +35,61 @@ body ul {
   list-style-type: none;
 }
 
+body .Toggle {
+  display: none;
+  position: fixed;
+  /* bodyに対しての絶対位置指定 */
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 3;
+  right: 30px;
+  top: 30px;
+}
+
+@media screen and (max-width: 980px) {
+  body .Toggle {
+    display: inline-block;
+  }
+}
+
+body .Toggle span {
+  display: block;
+  position: absolute;
+  width: 40px;
+  border-bottom: solid 4px #333;
+  -webkit-transition: .35s ease-in-out;
+  -moz-transition: .35s ease-in-out;
+  transition: .35s ease-in-out;
+}
+
+body .Toggle span:nth-child(1) {
+  top: 5px;
+}
+
+body .Toggle span:nth-child(2) {
+  top: 18px;
+}
+
+body .Toggle span:nth-child(3) {
+  top: 32px;
+}
+
+body .Toggle.active span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+body .Toggle.active span:nth-child(2),
+body .Toggle.active span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 body .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,6 +98,12 @@ body .header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-height: 150px;
+}
+
+@media (max-width: 980px) {
+  body .header {
+    display: none;
+  }
 }
 
 body .header--titleLogo {
@@ -70,7 +133,8 @@ body .header--pageLink li, body .header ul li {
 }
 
 body .main {
+  padding: 0 50px;
   margin: 0 auto;
-  max-width: 1080px;
+  max-width: 980px;
 }
 /*# sourceMappingURL=style.css.map */
