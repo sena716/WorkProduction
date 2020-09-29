@@ -15,6 +15,7 @@ body{
     background-position: center bottom;
     background-size: contain;
     background-repeat:no-repeat;
+    background-position: center bottom;
 
     .top{
         width: 100%;
@@ -42,17 +43,25 @@ body{
             flex-direction: column;
             justify-content: space-around;
 
+            &__titleLogo__war{
+                position: absolute;
+                left: 15%;
+                top: 5%;
+                img{
+                    width: 400px;
+                    height: auto;
+                }
+            }
             // タイトルロゴ
             &__titleLogo{
                 margin: 0;
                 animation-name:Animate;
 
                 img{
-                    width: 900px;
+                    width: 900px;//元は900px
                     height: auto;
                 }
-            }
-
+                }
             // ページリンク
             &__pageLink{
                 width: 960px;

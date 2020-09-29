@@ -12,13 +12,13 @@ function mouseOff(){
 //マウスオーバー時の処理
 function mouseOn_minikuma(){
     var obj = document.getElementById("minibear_hand");
-    obj.src = "common/images/kuma_before.svg";
+    obj.src = "common/images/kuma_after.svg";
 }
 
 //マウスアウト時の処理
 function mouseOff_minikuma(){
     var obj = document.getElementById("minibear_hand");
-    obj.src = "common/images/kuma_after.svg";
+    obj.src = "common/images/kuma_before.svg";
 }
 
 //鳥の目

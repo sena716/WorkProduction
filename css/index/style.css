@@ -10,6 +10,7 @@ body {
   background-position: center bottom;
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 body .top {
@@ -37,6 +38,17 @@ body .top--main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+body .top--main__titleLogo__war {
+  position: absolute;
+  left: 15%;
+  top: 5%;
+}
+
+body .top--main__titleLogo__war img {
+  width: 400px;
+  height: auto;
 }
 
 body .top--main__titleLogo {
