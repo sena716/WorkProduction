@@ -10,7 +10,7 @@ html{
 body{
     width: 100vw;
     height: 100vh;
-    background-color: rgb(255, 234, 218);
+    background-color: rgb(247, 251, 255);
     background-image: url("../../common/images/ground_New.svg");
     background-position: center bottom;
     background-size: contain;
@@ -43,15 +43,15 @@ body{
             flex-direction: column;
             justify-content: space-around;
 
-            &__titleLogo__war{
-                position: absolute;
-                left: 15%;
-                top: 5%;
-                img{
-                    width: 400px;
-                    height: auto;
-                }
-            }
+            // &__titleLogo__war{
+            //     position: absolute;
+            //     left: 15%;
+            //     top: 5%;
+            //     img{
+            //         width: 400px;
+            //         height: auto;
+            //     }
+            // }
             // タイトルロゴ
             &__titleLogo{
                 margin: 0;
@@ -72,7 +72,7 @@ body{
                     margin: 0 60px;
                     display: flex;
                     justify-content: space-around;
-                    
+
                     li{
                         text-align: center;
 
@@ -105,13 +105,13 @@ body{
                 }
             }
             &__tori{
-                width: 15%;
-                top: -10%;
+                width: 18%;
+                top: 20%;
                 left: 15%;
 
-                img{
-                    transform: rotate( 180deg );
-                }
+                // img{
+                //     transform: rotate(-70deg );
+                // }
             }
             &__kuma{
                 width: 20%;
@@ -126,14 +126,14 @@ body{
                 width: 10%;
                 top: 0%;
                 right: 22%;
-    
+
                 img{
                      transform: rotateX( 180deg );
                 }
             }
             &__rakko{
                 width: 20%;
-                top: 35%;
+                top: 40%;
                 right: 10%;
                 animation: Yurayura 10s ease infinite;
             }
@@ -153,49 +153,49 @@ body{
 }
 
 @keyframes Yurayura{
-    0% { 
-        transform:translateX(-30px) 
+    0% {
+        transform:translateX(-30px)
     }
-    50% { 
+    50% {
         transform:translateX(-100px)
-        translateY(10px) 
+        translateY(10px)
     }
-    100% { 
-        transform:translateX(-30px) 
+    100% {
+        transform:translateX(-30px)
     }
 }
 
 @keyframes Fly{
-    0% { 
-        transform:translateY(0%) 
+    0% {
+        transform:translateY(0%)
     }
-    10% { 
-        transform:translateY(-20%) 
+    10% {
+        transform:translateY(-20%)
         translateX(5%)
     }
-    20% { 
-        transform:translateY(-30%) 
+    20% {
+        transform:translateY(-30%)
         translateX(7%)
     }
-    30% { 
+    30% {
         transform:translateY(-60%)
         translateX(10%)
     }
-    50% { 
+    50% {
         transform:translateY(-20%)
         translateX(0%)
     }
-    70% { 
+    70% {
         transform:translateY(-10%)
     }
-    90% { 
+    90% {
         transform:translateY(-10%)
     }
-    95% { 
+    95% {
         transform:translateY(-5%)
     }
-    100% { 
-        transform:translateX(0%) 
+    100% {
+        transform:translateX(0%)
     }
 }
 
@@ -206,7 +206,7 @@ body{
     to{
       // transition: transform 0.5s linear cubic-bezier(0.4, 0, 1, 1);
       transform: translateX( 100vw );
-    } 
+    }
 }
 @keyframes Shake{
     from {
