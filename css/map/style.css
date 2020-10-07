@@ -1,7 +1,8 @@
 @charset "UTF-8";
 .main__map {
   position: relative;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0 auto;
   display: table;
   /* 日本地図画像（スマホ対応用） */
@@ -20,7 +21,8 @@
 .main__map .area_btn {
   position: absolute;
   z-index: 1;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   cursor: pointer;
   border: 3px solid #333333;
   border-radius: 5px;
@@ -113,17 +115,20 @@
   transform: translateY(-50%) translateX(-50%);
   -webkit-transform: translateY(-50%) translateX(-50%);
   z-index: 3;
-  box-sizing: border-box;
-  display: -webkit-flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 90%;
   background-color: #FFF;
 }
 
 .main__map .pref_area .pref_list div {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 50%;
   border: 1px solid #CCC;
   font-weight: bold;

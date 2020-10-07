@@ -105,13 +105,14 @@ body{
                 }
             }
             &__tori{
-                width: 18%;
-                top: 20%;
-                left: 15%;
+                width: 20%;
+                top: -15%;
+                left: 10%;
 
-                // img{
-                //     transform: rotate(-70deg );
-                // }
+                img{
+                    transform: scale(-1, 1);
+                    transform: scale(1, -1);
+                }
             }
             &__kuma{
                 width: 20%;
