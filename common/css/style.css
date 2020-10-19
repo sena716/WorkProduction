@@ -11,6 +11,12 @@ html {
   font-size: 62.5%;
 }
 
+@media (max-width: 980px) {
+  html {
+    font-size: 125%;
+  }
+}
+
 body {
   font-family: 'Noto Sans Japanese', serif;
   font-family: MyFont;
@@ -21,8 +27,7 @@ body {
 }
 
 body *, body *::before, body *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body a {
@@ -33,6 +38,15 @@ body a {
 body ul {
   padding: 0;
   list-style-type: none;
+}
+
+body input[type=submit] {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
 }
 
 body .Toggle {
@@ -88,12 +102,8 @@ body .Toggle.active span:nth-child(3) {
 }
 
 body .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   max-height: 150px;
 }
 
@@ -116,12 +126,8 @@ body .header--titleLogo img {
 body .header--pageLink, body .header ul {
   padding-right: 50px;
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 body .header--pageLink li, body .header ul li {
@@ -130,8 +136,14 @@ body .header--pageLink li, body .header ul li {
 }
 
 body .main {
+  width: 980px;
   padding: 0 50px;
   margin: 0 auto;
-  max-width: 980px;
 }
-/*# sourceMappingURL=style.css.map */
+
+@media (max-width: 768px) {
+  body .main {
+    width: 768px;
+    padding: 0 30px;
+  }
+}

@@ -2,11 +2,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .main__type ul li {
@@ -17,4 +14,26 @@
   border: 2px solid #000;
   text-align: center;
 }
-/*# sourceMappingURL=style.css.map */
+
+@media (max-width: 450px) {
+  .main__type ul li {
+    width: 100%;
+    margin: 20px;
+  }
+}
+
+.main__type ul li a img {
+  width: 80px;
+  height: 80px;
+}
+
+@media (max-width: 450px) {
+  .main__type ul li a img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+.main__type ul li a p {
+  margin-bottom: 0;
+}

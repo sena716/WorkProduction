@@ -1,3 +1,8 @@
+// 変数
+$sm: 450px;
+$tb: 768px;
+$pc: 980px;
+
 .main{
 
     // 日本地図
@@ -6,13 +11,21 @@
         box-sizing: border-box;
         margin: 0 auto;
         display: table;
+        @media ( max-width: $tb ){
+            width: 100%;
+        }
       
         /* 日本地図画像（スマホ対応用） */
         img{
             max-width: 100%;
             height: auto;
             border: 0;
+
+            @media ( max-width: $tb ){
+                width: 100%;
+            }
         }
+
         /* 日本地図ボタン */
         .area_btn{
             position: absolute;
@@ -139,18 +152,44 @@
                 display: flex;
                 flex-direction: column;
 
+                // checkbox
+                input[type=checkbox]{
+                    display: none;
+
+                    & + label{
+                        padding-left: 25px;
+                        position: relative;
+                        background-image:url("../../common/images/map/checkboxOff.svg");
+                        background-repeat: no-repeat;
+                        background-size: 25px;
+                        background-position: 0 center;
+
+                        @media (max-width:$pc){
+                            padding-left: 50px;
+                            background-size: 50px;
+                        }
+                    }
+
+                    &:checked + label{
+                        background-image: url(../../common/images/map/checkboxOn.svg);
+                        background-repeat: no-repeat;
+                        background-size: 25px;
+
+                        @media (max-width:$pc){
+                            padding-left: 50px;
+                            background-size: 50px;
+                        }
+                    }
+                }
+
                 label{
                     &:hover{
                         cursor: pointer 
                     }
-                    input[type=checkbox]{
-                        width: 15px;
-                        height: 15px;
-                    }
                 }
 
                 li{
-                    padding: 10px 0;
+                    padding: 15px 0;
 
                     // 東西
                     .Ew{
@@ -160,12 +199,15 @@
                     // 地域名
                     .region{
                         font-weight: bold;
-                        font-size: 2.3rem;
+                        font-size: 2rem;
                         padding-bottom: 10px;
                     }
 
                     ul{
                         display: flex;
+                        @media (max-width:$tb){
+                            flex-direction: column;
+                        }
 
                         li{
                             font-size: 1.8rem;
@@ -176,13 +218,14 @@
             }
         }
 
-        &--east{
-            
-            &-category{
-
-
-                ul{
-                }
+        &--sent{
+            text-align: center;
+            input[type=submit]{
+                font-size: 1.5rem;
+                font-weight: bold;
+                border: 2px solid #000;
+                padding: 5px 10px;
+                border-radius: 5px;
             }
         }
     }

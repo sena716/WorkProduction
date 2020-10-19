@@ -9,8 +9,6 @@
     src: url('font/corp_round_v1.ttf');
 }
 
-
-
 // 変数
 $sm: 450px;
 $tb: 768px;
@@ -18,9 +16,9 @@ $pc: 980px;
 
 html{
     font-size: 62.5%;   // 基本フォントサイズ10px
-    // @media (max-width: $tb ){
-    //     font-size: 93.75%;  // 基本タブレット以下時フォントサイズ15px
-    // }
+    @media (max-width: $pc){
+        font-size: 125%;
+    }
 }
 
 body{
@@ -43,6 +41,15 @@ body{
     ul{
         padding: 0;
         list-style-type: none;
+    }
+
+    input[type=submit]{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        appearance: none;
     }
 
     // ハンバーガーメニュー
@@ -131,8 +138,13 @@ body{
 
     // メイン
     .main{
+        width: $pc;
         padding: 0 50px;
         margin: 0 auto;
-        max-width: $pc;
+
+        @media (max-width: $tb ){
+            width: $tb;
+            padding: 0 30px;
+        }
     }
 }
