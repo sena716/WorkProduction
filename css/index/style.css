@@ -48,8 +48,6 @@ body .top--main {
 
 body .top--main__titleLogo {
   margin: 0;
-  -webkit-animation-name: Animate;
-          animation-name: Animate;
 }
 
 body .top--main__titleLogo img {
@@ -309,24 +307,6 @@ body .top--animal__kame {
   }
 }
 
-@-webkit-keyframes Animate {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: 50%;
-  }
-}
-
-@keyframes Animate {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: 50%;
-  }
-}
-
 .css_work_farst {
   position: absolute;
   bottom: -5%;
@@ -356,5 +336,76 @@ body .top--animal__kame {
 
 .css_work_last img {
   width: 200px;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: cover;
+  }
+  body .top--teamLogo {
+    padding: 30px 0 0 20px;
+  }
+  body .top--teamLogo img {
+    width: 120px;
+  }
+  body .top--main__titleLogo {
+    margin-top: 60px;
+  }
+  body .top--main__titleLogo img {
+    width: 600px;
+    height: auto;
+  }
+  body .top--main__pageLink {
+    width: 100%;
+  }
+  body .top--main__pageLink ul {
+    margin: 0 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body .top--main__pageLink ul li {
+    text-align: center;
+    z-index: 2;
+  }
+  body .top--main__pageLink ul li a:hover {
+    color: pink;
+  }
+  body .top--main__pageLink ul li a i {
+    font-size: 2.2rem;
+  }
+  body .top--main__pageLink ul li a p {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+  body .top--animal__tori {
+    width: 25%;
+    top: -10%;
+    left: 10%;
+  }
+  body .top--animal__kuma {
+    width: 25%;
+    right: 3%;
+  }
+  body .top--animal__minikuma {
+    width: 15%;
+    right: 25%;
+  }
+  body .top--animal__kame {
+    width: 15%;
+    bottom: -30%;
+    left: 5%;
+  }
+  body .top--animal__rakko {
+    width: 28%;
+    top: 40%;
+    right: -3%;
+  }
+  body .top--animal__koumori {
+    width: 28%;
+    left: -3%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
