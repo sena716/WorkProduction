@@ -74,6 +74,7 @@ body .top--main__pageLink ul {
 
 body .top--main__pageLink ul li {
   text-align: center;
+  z-index: 2;
 }
 
 body .top--main__pageLink ul li a:hover {
