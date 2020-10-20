@@ -158,8 +158,13 @@
 }
 
 .main__checkbox .checkboxCommon .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main__checkbox .checkboxCommon .category input[type=checkbox] {
@@ -214,12 +219,17 @@
 }
 
 .main__checkbox .checkboxCommon .category li ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 @media (max-width: 768px) {
   .main__checkbox .checkboxCommon .category li ul {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -239,3 +249,4 @@
   padding: 5px 10px;
   border-radius: 5px;
 }
+/*# sourceMappingURL=style.css.map */
