@@ -14,10 +14,10 @@
 
         <ul class="header--pageLink">
             <li><a href="map.html">地図から探す</a></li>
-            <li><a href="../photo/photo.html">写真から探す</a></li>
-            <li><a href="../conditions/conditions.html">条件から探す</a></li>
-            <li><a href="../name/name.html">名前から探す</a></li>
-            <li><a href="../ranking/">ランキング</a></li>
+            <li><a href="static/photo/photo.html">写真から探す</a></li>
+            <li><a href="static/conditions/conditions.html">条件から探す</a></li>
+            <li><a href="static/name/name.html">名前から探す</a></li>
+            <li><a href="static/ranking/">ランキング</a></li>
         </ul>
 
     </section>
