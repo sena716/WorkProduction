@@ -10,12 +10,13 @@ html {
 body {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(240, 255, 249);
+  background-color: rgb(230, 255, 245);
   background-image: url("../../common/images/ground.svg");
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
+  overflow: hidden;
 
   .top {
     width: 100%;
@@ -60,6 +61,7 @@ body {
         img {
           width: 800px; //元は900px
           height: auto;
+          text-align: center;
         }
       }
       // ページリンク
@@ -390,7 +392,7 @@ body {
           .css_work_last img {
             overflow: hidden;
             width: 50%;
-            bottom: -25%;
+            bottom: 5%;
             left: 5%;
           }
         }
