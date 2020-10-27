@@ -11,7 +11,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: rgb(247, 251, 255);
-  background-image: url("../../common/images/ground_New.svg");
+  background-image: url("../../common/images/ground.svg");
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -244,6 +244,7 @@ body {
 @media (max-width: $tb) {
   body {
     background-size: cover;
+    background-image: url("../../common/images/ground_tabret.svg");
     .top {
       &--teamLogo {
         padding: 30px 0 0 20px;
@@ -257,7 +258,7 @@ body {
           // animation-name:Animate;
 
           img {
-            width: 600px; //元は900px
+            width: 650px; //元は900px
             height: auto;
           }
         }
@@ -271,12 +272,14 @@ body {
             li {
               text-align: center;
               z-index: 2;
+              //文字が見にくかったので影付け
+              text-shadow: 2px 3px 2px rgb(225, 255, 225);
               a {
                 &:hover {
                   color: pink;
                 }
                 i {
-                  font-size: 2.2rem;
+                  font-size: 2.5rem;
                 }
                 p {
                   font-size: 1rem;
@@ -289,30 +292,33 @@ body {
       }
       &--animal {
         &__tori {
-          width: 25%;
+          width: 30%;
           top: -10%;
           left: 10%;
         }
         &__kuma {
-          width: 25%;
+          width: 30%;
           right: 3%;
         }
         &__minikuma {
-          width: 15%;
-          right: 25%;
+          width: 20%;
+          right: 30%;
         }
         &__kame {
-          width: 15%;
-          bottom: -30%;
-          left: 5%;
+          .css_work_last img {
+            width: 50%;
+            bottom: 0%;
+            left: 5%;
+          }
         }
         &__rakko {
-          width: 28%;
-          top: 40%;
+          width: 30%;
+          top: 45%;
           right: -3%;
         }
         &__koumori {
-          width: 28%;
+          width: 30%;
+          top: 50%;
           left: -3%;
         }
       }
