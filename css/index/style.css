@@ -335,27 +335,30 @@ body .top--animal__kame {
 }
 
 @media (max-width: 768px) {
-  body {
+  html {
+    overflow: hidden;
+  }
+  html body {
     background-size: cover;
     background-image: url("../../common/images/ground_tabret.svg");
   }
-  body .top--teamLogo {
+  html body .top--teamLogo {
     padding: 30px 0 0 20px;
   }
-  body .top--teamLogo img {
+  html body .top--teamLogo img {
     width: 120px;
   }
-  body .top--main__titleLogo {
+  html body .top--main__titleLogo {
     margin-top: 60px;
   }
-  body .top--main__titleLogo img {
+  html body .top--main__titleLogo img {
     width: 650px;
     height: auto;
   }
-  body .top--main__pageLink {
+  html body .top--main__pageLink {
     width: 100%;
   }
-  body .top--main__pageLink ul {
+  html body .top--main__pageLink ul {
     margin: 0 60px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -363,48 +366,131 @@ body .top--animal__kame {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  body .top--main__pageLink ul li {
+  html body .top--main__pageLink ul li {
     text-align: center;
     z-index: 2;
     text-shadow: 2px 3px 2px #e1ffe1;
   }
-  body .top--main__pageLink ul li a:hover {
+  html body .top--main__pageLink ul li a:hover {
     color: pink;
   }
-  body .top--main__pageLink ul li a i {
+  html body .top--main__pageLink ul li a i {
     font-size: 2.5rem;
   }
-  body .top--main__pageLink ul li a p {
+  html body .top--main__pageLink ul li a p {
     font-size: 1rem;
     white-space: nowrap;
   }
-  body .top--animal__tori {
+  html body .top--animal__tori {
     width: 30%;
     top: -10%;
     left: 10%;
   }
-  body .top--animal__kuma {
+  html body .top--animal__kuma {
     width: 30%;
     right: 3%;
   }
-  body .top--animal__minikuma {
+  html body .top--animal__minikuma {
     width: 20%;
     right: 30%;
   }
-  body .top--animal__kame .css_work_last img {
-    width: 50%;
-    bottom: 0%;
+  html body .top--animal__kame .css_work_last img {
+    overflow: hidden;
+    width: 80%;
+    bottom: -20%;
     left: 5%;
   }
-  body .top--animal__rakko {
+  html body .top--animal__rakko {
     width: 30%;
     top: 45%;
     right: -3%;
   }
-  body .top--animal__koumori {
+  html body .top--animal__koumori {
     width: 30%;
     top: 50%;
     left: -3%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    overflow: hidden;
+  }
+  html body {
+    background-size: cover;
+    background-image: url("../../common/images/ground_tabret.svg");
+  }
+  html body .top--teamLogo {
+    padding: 20px 0 0 10px;
+  }
+  html body .top--teamLogo img {
+    width: 100px;
+  }
+  html body .top--main__titleLogo {
+    margin-top: 60px;
+  }
+  html body .top--main__titleLogo img {
+    width: 400px;
+    height: auto;
+  }
+  html body .top--main__pageLink {
+    width: 100%;
+  }
+  html body .top--main__pageLink ul {
+    margin: 0 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  html body .top--main__pageLink ul li {
+    text-align: center;
+    z-index: 2;
+    text-shadow: 2px 3px 2px #e1ffe1;
+    padding: 10px;
+  }
+  html body .top--main__pageLink ul li a:hover {
+    color: pink;
+  }
+  html body .top--main__pageLink ul li a i {
+    font-size: 1.7rem;
+  }
+  html body .top--main__pageLink ul li a p {
+    font-size: 0.6rem;
+    white-space: nowrap;
+  }
+  html body .top--animal__tori {
+    width: 35%;
+    top: 10%;
+    left: -12%;
+  }
+  html body .top--animal__tori img {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  html body .top--animal__kuma {
+    width: 35%;
+  }
+  html body .top--animal__minikuma {
+    width: 22%;
+    right: 35%;
+  }
+  html body .top--animal__kame .css_work_last img {
+    overflow: hidden;
+    width: 50%;
+    bottom: -25%;
+    left: 5%;
+  }
+  html body .top--animal__rakko {
+    width: 35%;
+    top: 45%;
+    right: -5%;
+  }
+  html body .top--animal__koumori {
+    width: 40%;
+    top: 50%;
+    left: -15%;
   }
 }
 /*# sourceMappingURL=style.css.map */
