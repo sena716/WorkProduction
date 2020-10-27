@@ -5,7 +5,7 @@ html {
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #f7fbff;
+  background-color: #f0fff9;
   background-image: url("../../common/images/ground.svg");
   background-position: center bottom;
   background-size: cover;
@@ -35,15 +35,9 @@ body .top--teamLogo img {
 
 body .top--main {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 body .top--main__titleLogo {
@@ -63,11 +57,8 @@ body .top--main__pageLink {
 
 body .top--main__pageLink ul {
   margin: 0 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 body .top--main__pageLink ul li {
@@ -105,10 +96,8 @@ body .top--animal__tori {
 }
 
 body .top--animal__tori img {
-  -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1);
-  -webkit-transform: scale(1, -1);
-          transform: scale(1, -1);
+  transform: scale(-1, 1);
+  transform: scale(1, -1);
 }
 
 body .top--animal__kuma {
@@ -118,8 +107,7 @@ body .top--animal__kuma {
 }
 
 body .top--animal__kuma img {
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
+  transform: rotateX(180deg);
 }
 
 body .top--animal__minikuma {
@@ -129,24 +117,21 @@ body .top--animal__minikuma {
 }
 
 body .top--animal__minikuma img {
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
+  transform: rotateX(180deg);
 }
 
 body .top--animal__rakko {
   width: 17%;
   top: 40%;
   right: 10%;
-  -webkit-animation: Yurayura 10s ease infinite;
-          animation: Yurayura 10s ease infinite;
+  animation: Yurayura 10s ease infinite;
 }
 
 body .top--animal__koumori {
   width: 20%;
   top: 30%;
   left: -5%;
-  -webkit-animation: Fly 20s ease infinite;
-          animation: Fly 20s ease infinite;
+  animation: Fly 20s ease infinite;
 }
 
 body .top--animal__kame {
@@ -155,257 +140,150 @@ body .top--animal__kame {
   left: 5%;
 }
 
-@-webkit-keyframes Yurayura {
-  0% {
-    -webkit-transform: translateX(-30px);
-            transform: translateX(-30px);
-  }
-  50% {
-    -webkit-transform: translateX(-100px) translateY(10px);
-            transform: translateX(-100px) translateY(10px);
-  }
-  100% {
-    -webkit-transform: translateX(-30px);
-            transform: translateX(-30px);
-  }
-}
-
 @keyframes Yurayura {
   0% {
-    -webkit-transform: translateX(-30px);
-            transform: translateX(-30px);
+    transform: translateX(-30px);
   }
   50% {
-    -webkit-transform: translateX(-100px) translateY(10px);
-            transform: translateX(-100px) translateY(10px);
+    transform: translateX(-100px) translateY(10px);
   }
   100% {
-    -webkit-transform: translateX(-30px);
-            transform: translateX(-30px);
-  }
-}
-
-@-webkit-keyframes Fly {
-  0% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-  10% {
-    -webkit-transform: translateY(-20%) translateX(5%);
-            transform: translateY(-20%) translateX(5%);
-  }
-  20% {
-    -webkit-transform: translateY(-30%) translateX(7%);
-            transform: translateY(-30%) translateX(7%);
-  }
-  30% {
-    -webkit-transform: translateY(-60%) translateX(10%);
-            transform: translateY(-60%) translateX(10%);
-  }
-  50% {
-    -webkit-transform: translateY(-20%) translateX(0%);
-            transform: translateY(-20%) translateX(0%);
-  }
-  70% {
-    -webkit-transform: translateY(-10%);
-            transform: translateY(-10%);
-  }
-  90% {
-    -webkit-transform: translateY(-10%);
-            transform: translateY(-10%);
-  }
-  95% {
-    -webkit-transform: translateY(-5%);
-            transform: translateY(-5%);
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(-30px);
   }
 }
 
 @keyframes Fly {
   0% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    transform: translateY(0%);
   }
   10% {
-    -webkit-transform: translateY(-20%) translateX(5%);
-            transform: translateY(-20%) translateX(5%);
+    transform: translateY(-20%) translateX(5%);
   }
   20% {
-    -webkit-transform: translateY(-30%) translateX(7%);
-            transform: translateY(-30%) translateX(7%);
+    transform: translateY(-30%) translateX(7%);
   }
   30% {
-    -webkit-transform: translateY(-60%) translateX(10%);
-            transform: translateY(-60%) translateX(10%);
+    transform: translateY(-60%) translateX(10%);
   }
   50% {
-    -webkit-transform: translateY(-20%) translateX(0%);
-            transform: translateY(-20%) translateX(0%);
+    transform: translateY(-20%) translateX(0%);
   }
   70% {
-    -webkit-transform: translateY(-10%);
-            transform: translateY(-10%);
+    transform: translateY(-10%);
   }
   90% {
-    -webkit-transform: translateY(-10%);
-            transform: translateY(-10%);
+    transform: translateY(-10%);
   }
   95% {
-    -webkit-transform: translateY(-5%);
-            transform: translateY(-5%);
+    transform: translateY(-5%);
   }
   100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-}
-
-@-webkit-keyframes In {
-  from {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  to {
-    -webkit-transform: translateX(100vw);
-            transform: translateX(100vw);
+    transform: translateX(0%);
   }
 }
 
 @keyframes In {
   from {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
   }
   to {
-    -webkit-transform: translateX(100vw);
-            transform: translateX(100vw);
-  }
-}
-
-@-webkit-keyframes Shake {
-  from {
-    -webkit-transform: translate(0, 0px);
-            transform: translate(0, 0px);
-  }
-  to {
-    -webkit-transform: translate(0, -20px);
-            transform: translate(0, -20px);
+    transform: translateX(100vw);
   }
 }
 
 @keyframes Shake {
   from {
-    -webkit-transform: translate(0, 0px);
-            transform: translate(0, 0px);
+    transform: translate(0, 0px);
   }
   to {
-    -webkit-transform: translate(0, -20px);
-            transform: translate(0, -20px);
+    transform: translate(0, -20px);
   }
 }
 
 .css_work_farst {
   position: absolute;
   bottom: -5%;
-  -webkit-animation-name: In;
-          animation-name: In;
-  -webkit-animation-duration: 30s;
-          animation-duration: 30s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  animation-name: In;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  transition-timing-function: linear;
 }
 
 .css_work_last {
-  -webkit-animation-name: Shake;
-          animation-name: Shake;
-  -webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1.02);
-          animation-timing-function: cubic-bezier(0, 0, 1, 1.02);
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
+  animation-name: Shake;
+  animation-timing-function: cubic-bezier(0, 0, 1, 1.02);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 0.7s;
   overflow: hidden;
 }
 
 @media (max-width: 768px) {
-  html {
-    overflow: hidden;
-  }
-  html body {
+  body {
     background-size: cover;
     background-image: url("../../common/images/ground_tabret.svg");
   }
-  html body .top--teamLogo {
+  body .top--teamLogo {
     padding: 30px 0 0 20px;
   }
-  html body .top--teamLogo img {
-    width: 120px;
+  body .top--teamLogo img {
+    width: 150px;
   }
-  html body .top--main__titleLogo {
+  body .top--main__titleLogo {
     margin-top: 60px;
   }
-  html body .top--main__titleLogo img {
-    width: 650px;
+  body .top--main__titleLogo img {
+    width: 670px;
     height: auto;
   }
-  html body .top--main__pageLink {
+  body .top--main__pageLink {
     width: 100%;
   }
-  html body .top--main__pageLink ul {
+  body .top--main__pageLink ul {
     margin: 0 60px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
-  html body .top--main__pageLink ul li {
+  body .top--main__pageLink ul li {
     text-align: center;
     z-index: 2;
     text-shadow: 2px 3px 2px #e1ffe1;
   }
-  html body .top--main__pageLink ul li a:hover {
+  body .top--main__pageLink ul li a:hover {
     color: pink;
   }
-  html body .top--main__pageLink ul li a i {
+  body .top--main__pageLink ul li a i {
     font-size: 2.5rem;
   }
-  html body .top--main__pageLink ul li a p {
+  body .top--main__pageLink ul li a p {
     font-size: 1rem;
     white-space: nowrap;
   }
-  html body .top--animal__tori {
+  body .top--animal__tori {
     width: 30%;
     top: -10%;
     left: 10%;
   }
-  html body .top--animal__kuma {
+  body .top--animal__kuma {
     width: 30%;
     right: 3%;
   }
-  html body .top--animal__minikuma {
+  body .top--animal__minikuma {
     width: 20%;
     right: 30%;
   }
-  html body .top--animal__kame .css_work_last img {
+  body .top--animal__kame .css_work_last img {
     overflow: hidden;
     width: 80%;
     bottom: -20%;
     left: 5%;
   }
-  html body .top--animal__rakko {
+  body .top--animal__rakko {
     width: 30%;
     top: 45%;
     right: -3%;
   }
-  html body .top--animal__koumori {
+  body .top--animal__koumori {
     width: 30%;
     top: 50%;
     left: -3%;
@@ -413,84 +291,89 @@ body .top--animal__kame {
 }
 
 @media (max-width: 450px) {
-  html {
-    overflow: hidden;
-  }
-  html body {
+  body {
     background-size: cover;
-    background-image: url("../../common/images/ground_tabret.svg");
+    background-image: url("../../common/images/ground_smartpone.svg");
   }
-  html body .top--teamLogo {
+  body .top--teamLogo {
     padding: 20px 0 0 10px;
   }
-  html body .top--teamLogo img {
+  body .top--teamLogo img {
     width: 100px;
   }
-  html body .top--main__titleLogo {
+  body .top--main__titleLogo {
     margin-top: 60px;
   }
-  html body .top--main__titleLogo img {
+  body .top--main__titleLogo img {
     width: 400px;
     height: auto;
   }
-  html body .top--main__pageLink {
+  body .top--main__pageLink {
     width: 100%;
   }
-  html body .top--main__pageLink ul {
+  body .top--main__pageLink ul {
     margin: 0 60px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
-  html body .top--main__pageLink ul li {
+  body .top--main__pageLink ul li {
     text-align: center;
     z-index: 2;
     text-shadow: 2px 3px 2px #e1ffe1;
     padding: 10px;
   }
-  html body .top--main__pageLink ul li a:hover {
+  body .top--main__pageLink ul li a:hover {
     color: pink;
   }
-  html body .top--main__pageLink ul li a i {
+  body .top--main__pageLink ul li a i {
     font-size: 1.7rem;
   }
-  html body .top--main__pageLink ul li a p {
+  body .top--main__pageLink ul li a p {
     font-size: 0.6rem;
     white-space: nowrap;
   }
-  html body .top--animal__tori {
+  body .top--animal__tori {
     width: 35%;
     top: 10%;
     left: -12%;
   }
-  html body .top--animal__tori img {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
+  body .top--animal__tori img {
+    transform: rotate(20deg);
   }
-  html body .top--animal__kuma {
+  body .top--animal__kuma {
     width: 35%;
   }
-  html body .top--animal__minikuma {
+  body .top--animal__minikuma {
     width: 22%;
     right: 35%;
   }
-  html body .top--animal__kame .css_work_last img {
+  body .top--animal__kame .css_work_last img {
     overflow: hidden;
     width: 50%;
     bottom: -25%;
     left: 5%;
   }
-  html body .top--animal__rakko {
+  body .top--animal__rakko {
     width: 35%;
     top: 45%;
     right: -5%;
+    animation: Yurayura_sm 7s ease infinite;
   }
-  html body .top--animal__koumori {
+  body .top--animal__koumori {
     width: 40%;
     top: 50%;
     left: -15%;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+@keyframes Yurayura_sm {
+  0% {
+    transform: translateX(-20px);
+  }
+  50% {
+    transform: translateX(-60px) translateY(10px);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
