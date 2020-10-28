@@ -350,3 +350,89 @@ body .top--animal__kame {
     transform: translateX(-20px);
   }
 }
+@media (max-width: 380px) {
+  body {
+    background-size: cover;
+    background-image: url("../../common/images/ground_smartpone.svg");
+  }
+  body .top--teamLogo {
+    padding: 20px 0 0 10px;
+  }
+  body .top--teamLogo img {
+    width: 100px;
+  }
+  body .top--main__titleLogo {
+    margin-top: 60px;
+  }
+  body .top--main__titleLogo img {
+    width: 370px;
+    height: auto;
+  }
+  body .top--main__pageLink {
+    width: 100%;
+  }
+  body .top--main__pageLink ul {
+    margin: 0 60px;
+    display: flex;
+    justify-content: space-around;
+  }
+  body .top--main__pageLink ul li {
+    text-align: center;
+    z-index: 2;
+    text-shadow: 2px 3px 2px #e1ffe1;
+    padding: 5px;
+  }
+  body .top--main__pageLink ul li a:hover {
+    color: pink;
+  }
+  body .top--main__pageLink ul li a i {
+    font-size: 1.7rem;
+  }
+  body .top--main__pageLink ul li a p {
+    font-size: 0.6rem;
+    white-space: nowrap;
+  }
+  body .top--animal__tori {
+    width: 35%;
+    top: 10%;
+    left: -12%;
+  }
+  body .top--animal__tori img {
+    transform: rotate(20deg);
+  }
+  body .top--animal__kuma {
+    width: 40%;
+  }
+  body .top--animal__minikuma {
+    width: 25%;
+    right: 40%;
+  }
+  body .top--animal__kame .css_work_last img {
+    overflow: hidden;
+    width: 45%;
+    bottom: 30%;
+    left: 5%;
+  }
+  body .top--animal__rakko {
+    width: 38%;
+    top: 45%;
+    right: -5%;
+    animation: Yurayura_sm_s 7s ease infinite;
+  }
+  body .top--animal__koumori {
+    width: 45%;
+    top: 50%;
+    left: -15%;
+  }
+}
+@keyframes Yurayura_sm_s {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(-40px) translateY(5px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}

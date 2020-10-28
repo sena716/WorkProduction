@@ -1,4 +1,5 @@
 // 変数
+$sm_s: 380px;
 $sm: 450px;
 $tb: 768px;
 $pc: 1080px;
@@ -421,5 +422,107 @@ body {
   }
   100% {
     transform: translateX(-20px);
+  }
+}
+
+@media (max-width: $sm_s) {
+  body {
+    background-size: cover;
+    background-image: url("../../common/images/ground_smartpone.svg");
+    .top {
+      &--teamLogo {
+        padding: 20px 0 0 10px;
+        img {
+          width: 100px;
+        }
+      }
+      &--main {
+        &__titleLogo {
+          margin-top: 60px;
+          // animation-name:Animate;
+
+          img {
+            width: 370px; //元は900px
+            height: auto;
+          }
+        }
+        &__pageLink {
+          width: 100%;
+          ul {
+            margin: 0 60px;
+            display: flex;
+            justify-content: space-around;
+
+            li {
+              text-align: center;
+              z-index: 2;
+              //文字が見にくかったので影付け
+              text-shadow: 2px 3px 2px rgb(225, 255, 225);
+              padding: 5px;
+              a {
+                &:hover {
+                  color: pink;
+                }
+                i {
+                  font-size: 1.7rem;
+                }
+                p {
+                  font-size: 0.6rem;
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+        }
+      }
+      &--animal {
+        &__tori {
+          width: 35%;
+          top: 10%;
+          left: -12%;
+          img {
+            transform: rotate(20deg);
+          }
+        }
+        &__kuma {
+          width: 40%;
+        }
+        &__minikuma {
+          width: 25%;
+          right: 40%;
+        }
+        &__kame {
+          .css_work_last img {
+            overflow: hidden;
+            width: 45%;
+            bottom: 30%;
+            left: 5%;
+          }
+        }
+        &__rakko {
+          width: 38%;
+          top: 45%;
+          right: -5%;
+          animation: Yurayura_sm_s 7s ease infinite;
+        }
+        &__koumori {
+          width: 45%;
+          top: 50%;
+          left: -15%;
+        }
+      }
+    }
+  }
+}
+
+@keyframes Yurayura_sm_s {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(-40px) translateY(5px);
+  }
+  100% {
+    transform: translateX(-10px);
   }
 }
