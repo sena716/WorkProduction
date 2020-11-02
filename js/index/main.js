@@ -89,6 +89,13 @@ function slideshow_timer_koumori(){
     setTimeout("slideshow_timer_koumori()",200); 
 }
 
+// module.exports = {
+//     plugins: [
+//   +   require('postcss-100vh-fix'),
+//       require('autoprefixer')
+//     ]
+//   }
+
 // }
 // //マウスオーバー時の処理
 // function mouseOn_mini(){

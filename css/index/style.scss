@@ -4,6 +4,15 @@ $sm: 450px;
 $tb: 768px;
 $pc: 1080px;
 
+
+/* Avoid Chrome to see Safari hack */
+@supports (-webkit-touch-callout: none) {
+    body {
+      /* The hack for Safari */
+      height: -webkit-fill-available;
+    }
+  }
+
 html {
   overflow: hidden;
 }
@@ -460,9 +469,6 @@ body {
               text-shadow: 2px 3px 2px rgb(225, 255, 225);
               padding: 5px;
               a {
-                &:hover {
-                  color: pink;
-                }
                 i {
                   font-size: 1.7rem;
                 }
@@ -478,11 +484,7 @@ body {
       &--animal {
         &__tori {
           width: 35%;
-          top: 10%;
-          left: -12%;
-          img {
-            transform: rotate(20deg);
-          }
+          top: 12%;
         }
         &__kuma {
           width: 40%;
@@ -526,3 +528,4 @@ body {
     transform: translateX(-10px);
   }
 }
+
