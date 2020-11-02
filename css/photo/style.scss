@@ -11,15 +11,18 @@ $pc: 980px;
         flex-wrap: wrap;
         justify-content: flex-start;
 
-        @media (max-width:$tb){
-            justify-content: space-around;
-        }
+        // @media (max-width:$tb){
+        //     justify-content: space-around;
+        // }
 
         li{
             border: 2px solid #000;
             margin: 20px;
+
             @media (max-width:$sm){
-                width: 100%;
+                width: 45%;
+                margin: 5px;
+                
             }
 
             &:nth-child(3n+2):last-child{
@@ -42,6 +45,10 @@ $pc: 980px;
             }
             p{
                 text-align: center;
+
+                @media (max-width:$sm){
+                    margin: 5px 0;
+                }
             }
         }
     }
