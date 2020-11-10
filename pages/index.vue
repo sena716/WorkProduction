@@ -2,92 +2,91 @@
 
 <template>
 <div id="app">
-<!-- <input v-model="keyword" placeholder="Search...">
-<input type="button" value="検索"  v-on:click="updateList()">
-  <ul>
-    <li v-for="content in contents" :key="content.id">
-      <nuxt-link :to="`/${content.id}`">
-        {{ content.title }}
-      </nuxt-link>
-    </li>
-  </ul>
-  <ul>
-    <li v-for="item in items" :key="item.id">{{item.title}}</li>
-  </ul> -->
+ <section class="top">
+
+        <p class="top--teamLogo">
+            <img src="common/images/teamLogo.svg" alt="チームロゴ">
+        </p>
+
+        <div class="top--main">
+            <!-- h1にクラスを指定するとロゴの動作がおかしくなるためimgにクラスを作成 -->
+            <!-- <p class="top--main__titleLogo__war">
+                <img class="animated fadeInDown" src="common/images/warning.svg" alt="warning">
+            </p> -->
+            <h1 class="top--main__titleLogo">
+                <img class="animated bounceInDown slow" src="common/images/titleLogo_N.svg" alt="絶滅危惧種図鑑">
+            </h1>
+            <div class="top--main__pageLink">
+                <ul>
+                    <li>
+                        <a href="map/map.html">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <p>地図から探す</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="photo/photo.html">
+                            <i class="fas fa-camera"></i>
+                            <p>写真から探す</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="conditions/conditions.html">
+                            <i class="fas fa-search-plus"></i>
+                            <p>条件から探す</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="name/name.html">
+                            <i class="fas fa-signature"></i>
+                            <p>名前から探す</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ranking/ranking.html">
+                            <i class="fas fa-crown"></i>
+                            <p>ランキング</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="top--animal">
+            <p class="top--animal__tori">
+                <img id = "tori_eye_move" src="common/images/tori.svg" alt="鳥">
+            </p>
+            <p class="top--animal__kuma">
+                <img id="bear_hand"  src="common/images/kuma_before.svg" alt="熊" onmouseover="mouseOn();" onmouseout="mouseOff();">
+            </p>
+            <p class="top--animal__minikuma">
+                <img id="minibear_hand"  src="common/images/kuma_before.svg" alt="子熊" onmouseover="mouseOn_minikuma();" onmouseout="mouseOff_minikuma();">
+            </p>
+            <p class="top--animal__rakko">
+                <img id = "rakko_move" src="common/images/rakko.svg" alt="ラッコ">
+            </p>
+            <p class="top--animal__koumori">
+                <img id = "komori_move" src="common/images/koumori.svg" alt="コウモリ">
+            </p>
+            <div class="top--animal__kame">
+                <div class="css_work_farst">
+                    <div class="css_work_last">
+                        <img id = "kame_work" src="common/images/kame_before.svg" alt="亀">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
 export default {
-  // async asyncData() {
-  //   const { data } = await axios.get(
-  //     // your-service-id部分は自分のサービスidに置き換えてください
-  //     'https://samplearimura.microcms.io/api/v1/data',
-  //     {
-  //       // your-api-key部分は自分のapi-keyに置き換えてください
-  //       headers: { 'X-API-KEY': '8c148f4c-3a95-4d30-b3ba-72d534fc42e7' }
-  //     }
-  //   )
-  //   // const { blog } = await axios.get(
-  //   //   // your-service-id部分は自分のサービスidに置き換えてください
-  //   //   'https://samplearimura.microcms.io/api/v1/blog',
-  //   //   {
-  //   //     // your-api-key部分は自分のapi-keyに置き換えてください
-  //   //     headers: { 'X-API-KEY': '8c148f4c-3a95-4d30-b3ba-72d534fc42e7' }
-  //   //   }
-  //   // )
  
-  //   let onakasuita = {};
-    
-  //   for( let i = 0; data.contents.length > i; i++ ){
-  //     if( data.contents[i].IdentityDocument == 1 ){
-  //       delete data.contents[i].IdentityDocument;
-  //     }
-  //   }
-    
-  //   return data
-  //   // return blog
-  
-  // },
-  // data: function() {
-  //   return {
-  //     items: [
-  //         { title: '領収書を準備する', isChecked: true },
-  //         { title: 'Vue.jsハンズオンの資料を作る', isChecked: true },
-  //         { title: '参加者の人数を確認する', isChecked: false },
-  //         { title: 'ピザを注文する', isChecked: false },
-  //         { title: '参加費のお釣りを準備する', isChecked: false },
-  //         { title: '会場設営をする', isChecked: false },
-  //     ],
-  //     keyword:'',      
-  //     newItemTitle: '',
-  //     prefecture: '',
-  //   }
-  // },
-  // methods: {
-  //   async updateList() {
-  //     const { data } = await axios.get(
-  //       // your-service-id部分は自分のサービスidに置き換えてください
-  //       'https://samplearimura.microcms.io/api/v1/data?q='+this.keyword,  //?q=+ this.newItemTitle
-  //       {
-  //         // your-api-key部分は自分のapi-keyに置き換えてください
-  //         headers: { 'X-API-KEY': '8c148f4c-3a95-4d30-b3ba-72d534fc42e7' }
-  //       }
-  //     )
-  //       //  const { blog } = await axios.get(
-  //       // // your-service-id部分は自分のサービスidに置き換えてください
-  //       // 'https://samplearimura.microcms.io/api/v1/blog?q='+this.keyword,  //?q=+ this.newItemTitle
-  //       // {
-  //       //   // your-api-key部分は自分のapi-keyに置き換えてください
-  //       //   headers: { 'X-API-KEY': '8c148f4c-3a95-4d30-b3ba-72d534fc42e7' }
-  //       // }
-  //       //  )
-      
-  
-  //     let onakasuita = {};
-  //     this.contents=data.contents
-  //   }
-  // }
 }
 </script>
+<script src="js/plugin/jquery-3.5.1.min.js"></script>
+    <script src="common/js/main.js"></script>
+    <script src="js/index/main.js"></script>
