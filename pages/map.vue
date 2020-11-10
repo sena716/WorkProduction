@@ -9,15 +9,15 @@
 
     <section class="header">
         <p class="header--titleLogo">
-            <a href="../index.php"><img src="static/common/images/titlepcLogo.svg" alt="絶滅危惧種図鑑"></a>
+            <a href="../index.vue"><img src="static/common/images/titlepcLogo.svg" alt="絶滅危惧種図鑑"></a>
         </p>
 
         <ul class="header--pageLink">
-            <li><a href="map.html">地図から探す</a></li>
-            <li><a href="static/photo/photo.html">写真から探す</a></li>
-            <li><a href="static/conditions/conditions.html">条件から探す</a></li>
-            <li><a href="static/name/name.html">名前から探す</a></li>
-            <li><a href="static/ranking/">ランキング</a></li>
+            <li><a href="map.vue">地図から探す</a></li>
+            <li><a href="photo.vue">写真から探す</a></li>
+            <li><a href="conditions.vue">条件から探す</a></li>
+            <li><a href="name.vue">名前から探す</a></li>
+            <li><a href="ranking.vue">ランキング</a></li>
         </ul>
 
     </section>

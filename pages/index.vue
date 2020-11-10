@@ -87,6 +87,3 @@ export default {
  
 }
 </script>
-<script src="js/plugin/jquery-3.5.1.min.js"></script>
-    <script src="common/js/main.js"></script>
-    <script src="js/index/main.js"></script>

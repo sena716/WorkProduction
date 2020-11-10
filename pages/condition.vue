@@ -9,15 +9,15 @@
     <section class="header">
 
         <p class="header--titleLogo">
-            <a href="../index.php"><img src="../common/images/titlepcLogo.svg" alt="絶滅危惧種図鑑"></a>
+            <a href="index.vue"><img src="common/images/titlepcLogo.svg" alt="絶滅危惧種図鑑"></a>
         </p>
 
         <ul class="header--pageLink">
-            <li><a href="../map/map.html">地図から探す</a></li>
-            <li><a href="../photo/photo.html">写真から探す</a></li>
-            <li><a href="conditions.html">条件から探す</a></li>
-            <li><a href="../name/name.html">名前から探す</a></li>
-            <li><a href="../ranking/">ランキング</a></li>
+            <li><a href="map.vue">地図から探す</a></li>
+            <li><a href="photo.vue">写真から探す</a></li>
+            <li><a href="conditions.vue">条件から探す</a></li>
+            <li><a href="name.vue">名前から探す</a></li>
+            <li><a href="ranking.vue">ランキング</a></li>
         </ul>
 
     </section>    
@@ -29,49 +29,49 @@
             <ul>
                 <li>
                     <a href="">
-                        <img src="../common/images/conditions/kuma.svg" alt="">
+                        <img src="common/images/conditions/kuma.svg" alt="">
                         <p>哺乳類</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="../common/images/conditions/hiyoko.svg" alt="">
+                        <img src="common/images/conditions/hiyoko.svg" alt="">
                         <p>鳥類</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="../common/images/conditions/hebi.svg" alt="">
+                        <img src="common/images/conditions/hebi.svg" alt="">
                         <p>爬虫類</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="../common/images/conditions/kaeru.svg" alt="">
+                        <img src="common/images/conditions/kaeru.svg" alt="">
                         <p>両生類</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="../common/images/conditions/sakana.svg" alt="">
+                        <img src="common/images/conditions/sakana.svg" alt="">
                         <p>魚類</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="../common/images/conditions/tyoutyou.svg" alt="">
+                        <img src="common/images/conditions/tyoutyou.svg" alt="">
                         <p>昆虫</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="../common/images/conditions/kai.svg" alt="">
+                        <img src="common/images/conditions/kai.svg" alt="">
                         <p>貝類</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="../common/images/conditions/sonota.svg" alt="">
+                        <img src="common/images/conditions/sonota.svg" alt="">
                         <p>その他</p>
                     </a>
                 </li>
@@ -86,6 +86,3 @@
     </section>
     </div>
 </template>
-    <script src="../js/plugin/jquery-3.5.1.min.js"></script>
-    <script src="../common/js/main.js"></script>
-    <script src="../js/conditions/main.js"></script>

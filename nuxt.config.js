@@ -22,13 +22,18 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', type: 'text/css', href: 'http://fonts.googleapis.com/earlyaccess/notosansjapanese.css' },
     ]
   },
   /*
   ** Global CSS
   */
   css: [
+    '@/assets/css/common/sanitize/sanitize.css',
+    '@/assets/css/common/animateCss/animate.min.css',
+    '@/assets/css/common/style.css',
+    '@/assets/css/map/style.css',
   ],
   /*
   ** Plugins to load before mounting the App

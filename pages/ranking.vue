@@ -9,7 +9,7 @@
         <section class="header">
 
             <p class="header--titleLogo">
-                <a href="../index.php"><img src="../common/images/titlepcLogo.svg" alt="絶滅危惧種図鑑"></a>
+                <a href="../index.php"><img src="static/common/images/titlepcLogo.svg" alt="絶滅危惧種図鑑"></a>
             </p>
 
             <ul>
