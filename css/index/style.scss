@@ -1,6 +1,6 @@
 // 変数
-$sm_s: 380px;
-$sm: 450px;
+$sm_s: 380px;//iphone8などできれいに映る
+$sm: 450px;//iphone10などできれいに映る
 $tb: 768px;
 $tb_l: 850px;//768pxだとipadできれいにうつらないため
 $pc: 1080px;
@@ -149,9 +149,11 @@ body {
         animation: Fly 20s ease infinite;
       }
       &__kame {
-        width: 15%;
-        bottom: -10%;
-        left: 5%;
+        img {
+          width: 70%;
+          bottom: -10%;
+          left: 5%;
+        }
       }
     }
   }
@@ -276,10 +278,10 @@ body {
                   color: pink;
                 }
                 i {
-                  font-size: 2.5rem;
+                  font-size: 4rem;
                 }
                 p {
-                  font-size: 1rem;
+                  font-size: 2rem;
                   white-space: nowrap;
                 }
               }
@@ -325,7 +327,10 @@ body {
 }
 
 @media (max-width: $tb_l) {
+  html{
+    height: 100%;
   body {
+    height: 100%;
     background-size: cover;
     background-image: url("../../common/images/ground_tabret.svg");
     .top {
@@ -362,10 +367,10 @@ body {
                   color: pink;
                 }
                 i {
-                  font-size: 2.5rem;
+                  font-size: 4rem;
                 }
                 p {
-                  font-size: 1rem;
+                  font-size: 2rem;
                   white-space: nowrap;
                 }
               }
@@ -409,6 +414,7 @@ body {
     }
   }
 }
+}
 
 @media (max-width: $sm) {
   body {
@@ -449,10 +455,10 @@ body {
                   color: pink;
                 }
                 i {
-                  font-size: 1.7rem;
+                  font-size: 2.5rem;
                 }
                 p {
-                  font-size: 0.6rem;
+                  font-size: 1.2rem;
                   white-space: nowrap;
                 }
               }
@@ -513,7 +519,10 @@ body {
 }
 
 @media (max-width: $sm_s) {
+  html{
+    height: 100%;
   body {
+    height: 100%;
     background-size: cover;
     background-image: url("../../common/images/ground_smartpone.svg");
     .top {
@@ -548,10 +557,10 @@ body {
               padding: 5px;
               a {
                 i {
-                  font-size: 1.7rem;
+                  font-size: 2.5rem;
                 }
                 p {
-                  font-size: 0.6rem;
+                  font-size: 1.2rem;
                   white-space: nowrap;
                 }
               }
@@ -562,7 +571,11 @@ body {
       &--animal {
         &__tori {
           width: 35%;
-          top: 12%;
+          top: 15%;
+          left: -12%;
+          img {
+            transform: rotate(15deg);
+          }
         }
         &__kuma {
           width: 40%;
@@ -593,6 +606,7 @@ body {
       }
     }
   }
+}
 }
 
 @keyframes Yurayura_sm_s {
