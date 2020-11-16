@@ -1,8 +1,7 @@
 @charset "UTF-8";
 .main__map {
   position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0 auto;
   display: table;
   /* 日本地図画像（スマホ対応用） */
@@ -33,8 +32,7 @@
 .main__map .area_btn {
   position: absolute;
   z-index: 1;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   cursor: pointer;
   border: 3px solid #333333;
   border-radius: 5px;
@@ -127,20 +125,17 @@
   transform: translateY(-50%) translateX(-50%);
   -webkit-transform: translateY(-50%) translateX(-50%);
   z-index: 3;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
+  display: -webkit-flex;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 90%;
   background-color: #FFF;
 }
 
 .main__map .pref_area .pref_list div {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 50%;
   border: 1px solid #CCC;
   font-weight: bold;
@@ -169,7 +164,7 @@
 .main__checkbox .checkboxCommon .category input[type=checkbox] + label {
   padding-left: 25px;
   position: relative;
-  background-image: url("../../common/images/map/checkboxOff.svg");
+  background-image: url("../../../static/images/check.svg");
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: 0 center;
@@ -183,7 +178,7 @@
 }
 
 .main__checkbox .checkboxCommon .category input[type=checkbox]:checked + label {
-  background-image: url(../../common/images/map/checkboxOn.svg);
+  background-image: url("../../../static/images/check.svg");
   background-repeat: no-repeat;
   background-size: 25px;
 }

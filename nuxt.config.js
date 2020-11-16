@@ -62,6 +62,17 @@ export default {
   */
   build: {
   },
+    /*
+   ** Nuxt.js modules
+   */
+  modules: [
+    'nuxt-webfontloader'
+  ],
+  webfontloader: {
+    google: {
+      families: ['Noto+Sans+JP']
+    }
+  },
   generate: {
     async routes() {
       const pages = await axios

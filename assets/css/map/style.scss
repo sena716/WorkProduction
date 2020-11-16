@@ -159,7 +159,8 @@ $pc: 980px;
                     & + label{
                         padding-left: 25px;
                         position: relative;
-                        background-image:url("../../common/images/map/checkboxOff.svg");
+                        // checkboxOff.svg ↓　変更
+                        background-image:url("../../../static/images/check.svg");
                         background-repeat: no-repeat;
                         background-size: 25px;
                         background-position: 0 center;
@@ -171,7 +172,8 @@ $pc: 980px;
                     }
 
                     &:checked + label{
-                        background-image: url(../../common/images/map/checkboxOn.svg);
+                        // checkboxOn.svg ↓　変更
+                        background-image: url("../../../static/images/check.svg");
                         background-repeat: no-repeat;
                         background-size: 25px;
 
