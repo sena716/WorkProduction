@@ -1,8 +1,8 @@
 // 変数
-$sm_s: 380px;//iphone8などできれいに映る
-$sm: 450px;//iphone10などできれいに映る
+$sm_s: 380px; //iphone8などできれいに映る
+$sm: 450px; //iphone10などできれいに映る
 $tb: 768px;
-$tb_l: 850px;//768pxだとipadできれいにうつらないため
+$tb_l: 850px; //768pxだとipadできれいにうつらないため
 $pc: 1080px;
 
 html {
@@ -13,7 +13,8 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: rgb(230, 255, 245);
-  background-image: url("../../common/images/ground.svg");
+  // background-image: url("../../static/images/ground.svg");
+  background-image: url("../../../static/images/ground_New.svg");
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -243,6 +244,7 @@ body {
 @media (max-width: $tb) {
   body {
     background-size: cover;
+    // background-image: url("../../common/images/ground_tabret.svg");
     background-image: url("../../common/images/ground_tabret.svg");
     .top {
       &--teamLogo {
@@ -524,7 +526,7 @@ body {
   body {
     height: 100%;
     background-size: cover;
-    background-image: url("../../common/images/ground_smartpone.svg");
+    background-image: url("../../static/images/ground_smartpone.svg");
     .top {
       &--teamLogo {
         padding: 20px 0 0 10px;

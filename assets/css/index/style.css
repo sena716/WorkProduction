@@ -6,7 +6,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #e6fff5;
-  background-image: url("../../common/images/ground.svg");
+  background-image: url("../../../static/images/ground_New.svg");
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -463,7 +463,7 @@ body .top--animal__kame img {
   html body {
     height: 100%;
     background-size: cover;
-    background-image: url("../../common/images/ground_smartpone.svg");
+    background-image: url("../../static/images/ground_smartpone.svg");
   }
   html body .top--teamLogo {
     padding: 20px 0 0 10px;
