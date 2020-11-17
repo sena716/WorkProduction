@@ -1,0 +1,32 @@
+.main .active {
+  display: inline-block;
+}
+
+.main__select {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main__line {
+  display: none;
+}
+
+.main__line--select {
+  display: flex;
+}
+
+.main__line--select li {
+  padding: 0 10px;
+  font-size: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.main__line--name {
+  padding-top: 50px;
+  font-size: 2.5rem;
+}
+
+.main__search {
+  display: none;
+}
