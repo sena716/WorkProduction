@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/* @import url(sanitize/sanitize.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url(animateCss/animate.min.css); */
+@font-face {
+  font-family: "MyFont";
+  src: url("font/corp_round_v1.ttf");
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans Japanese", serif;
+  font-family: MyFont;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  background-color: #EEEEEE;
+  max-width: 100vw;
+}
+body *, body *::before, body *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body a {
+  text-decoration: none;
+  color: #000;
+}
+body ul {
+  padding: 0;
+  list-style-type: none;
+}
+body input[type=submit] {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+body .Toggle {
+  display: none;
+  position: fixed;
+  /* bodyに対しての絶対位置指定 */
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 3;
+  right: 30px;
+  top: 30px;
+}
+@media screen and (max-width: 980px) {
+  body .Toggle {
+    display: inline-block;
+  }
+}
+body .Toggle span {
+  display: block;
+  position: absolute;
+  width: 40px;
+  border-bottom: solid 4px #333;
+  transition: 0.35s ease-in-out;
+}
+body .Toggle span:nth-child(1) {
+  top: 5px;
+}
+body .Toggle span:nth-child(2) {
+  top: 18px;
+}
+body .Toggle span:nth-child(3) {
+  top: 32px;
+}
+body .Toggle.active span:nth-child(1) {
+  top: 18px;
+  transform: rotate(-45deg);
+}
+body .Toggle.active span:nth-child(2),
+body .Toggle.active span:nth-child(3) {
+  top: 18px;
+  transform: rotate(45deg);
+}
+body .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-height: 150px;
+}
+@media (max-width: 980px) {
+  body .header {
+    display: none;
+  }
+}
+body .header--titleLogo {
+  width: 0px;
+  margin: -30px 0 0 15px;
+}
+body .header--titleLogo img {
+  width: auto;
+  height: 200px;
+}
+body .header--pageLink, body .header ul {
+  padding-right: 50px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .header--pageLink li, body .header ul li {
+  font-size: 20px;
+  padding: 0 15px;
+}
+body .main {
+  width: 980px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  body .main {
+    width: 768px;
+    padding: 0 30px;
+  }
+}
+@media (max-width: 450px) {
+  body .main {
+    max-width: 100%;
+    padding: 0;
+  }
+  body .main h1 {
+    padding: 0;
+    margin: 20px 20px;
+  }
+}
