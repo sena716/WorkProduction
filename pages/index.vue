@@ -7,6 +7,7 @@
         <p class="top--teamLogo">
             <img src="common/images/teamLogo.svg" alt="チームロゴ">
         </p>
+        
 
         <div class="top--main">
             <!-- h1にクラスを指定するとロゴの動作がおかしくなるためimgにクラスを作成 -->
