@@ -6,7 +6,6 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #e6fff5;
-  background-image: url("../../../static/images/ground_New.svg");
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
