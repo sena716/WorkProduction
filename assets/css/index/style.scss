@@ -245,7 +245,7 @@ body {
   body {
     background-size: cover;
     // background-image: url("../../common/images/ground_tabret.svg");
-    background-image: url("../../common/images/ground_tabret.svg");
+
     .top {
       &--teamLogo {
         padding: 30px 0 0 20px;
@@ -329,99 +329,98 @@ body {
 }
 
 @media (max-width: $tb_l) {
-  html{
+  html {
     height: 100%;
-  body {
-    height: 100%;
-    background-size: cover;
-    background-image: url("../../common/images/ground_tabret.svg");
-    .top {
-      &--teamLogo {
-        padding: 30px 0 0 20px;
-        img {
-          width: 150px;
-        }
-      }
-      &--main {
-        &__titleLogo {
-          margin-top: 30px;
-          // animation-name:Animate;
-
+    body {
+      height: 100%;
+      background-size: cover;
+      // background-image: url("../../common/images/ground_tabret.svg");
+      .top {
+        &--teamLogo {
+          padding: 30px 0 0 20px;
           img {
-            width: 700px; //元は900px
-            height: auto;
+            width: 150px;
           }
         }
-        &__pageLink {
-          width: 100%;
-          ul {
-            margin: 0 60px;
-            display: flex;
-            justify-content: space-around;
+        &--main {
+          &__titleLogo {
+            margin-top: 30px;
+            // animation-name:Animate;
 
-            li {
-              text-align: center;
-              z-index: 2;
-              //文字が見にくかったので影付け
-              text-shadow: 2px 3px 2px rgb(225, 255, 225);
-              a {
-                &:hover {
-                  color: pink;
-                }
-                i {
-                  font-size: 4rem;
-                }
-                p {
-                  font-size: 2rem;
-                  white-space: nowrap;
+            img {
+              width: 700px; //元は900px
+              height: auto;
+            }
+          }
+          &__pageLink {
+            width: 100%;
+            ul {
+              margin: 0 60px;
+              display: flex;
+              justify-content: space-around;
+
+              li {
+                text-align: center;
+                z-index: 2;
+                //文字が見にくかったので影付け
+                text-shadow: 2px 3px 2px rgb(225, 255, 225);
+                a {
+                  &:hover {
+                    color: pink;
+                  }
+                  i {
+                    font-size: 4rem;
+                  }
+                  p {
+                    font-size: 2rem;
+                    white-space: nowrap;
+                  }
                 }
               }
             }
           }
         }
-      }
-      &--animal {
-        &__tori {
-          width: 30%;
-          top: -10%;
-          left: 10%;
-        }
-        &__kuma {
-          width: 30%;
-          right: 3%;
-        }
-        &__minikuma {
-          width: 20%;
-          right: 30%;
-        }
-        &__kame {
-          .css_work_last img {
-            overflow: hidden;
-            width: 80%;
-            bottom: -20%;
-            left: 5%;
+        &--animal {
+          &__tori {
+            width: 30%;
+            top: -10%;
+            left: 10%;
           }
-        }
-        &__rakko {
-          width: 30%;
-          top: 45%;
-          right: -3%;
-        }
-        &__koumori {
-          width: 35%;
-          top: 50%;
-          left: -3%;
+          &__kuma {
+            width: 30%;
+            right: 3%;
+          }
+          &__minikuma {
+            width: 20%;
+            right: 30%;
+          }
+          &__kame {
+            .css_work_last img {
+              overflow: hidden;
+              width: 80%;
+              bottom: -20%;
+              left: 5%;
+            }
+          }
+          &__rakko {
+            width: 30%;
+            top: 45%;
+            right: -3%;
+          }
+          &__koumori {
+            width: 35%;
+            top: 50%;
+            left: -3%;
+          }
         }
       }
     }
   }
 }
-}
 
 @media (max-width: $sm) {
   body {
     background-size: cover;
-    background-image: url("../../common/images/ground_smartpone.svg");
     .top {
       &--teamLogo {
         padding: 20px 0 0 10px;
@@ -521,94 +520,94 @@ body {
 }
 
 @media (max-width: $sm_s) {
-  html{
+  html {
     height: 100%;
-  body {
-    height: 100%;
-    background-size: cover;
-    background-image: url("../../static/images/ground_smartpone.svg");
-    .top {
-      &--teamLogo {
-        padding: 20px 0 0 10px;
-        img {
-          width: 100px;
-        }
-      }
-      &--main {
-        &__titleLogo {
-          margin-top: 60px;
-          // animation-name:Animate;
+    body {
+      height: 100%;
+      background-size: cover;
 
+      .top {
+        &--teamLogo {
+          padding: 20px 0 0 10px;
           img {
-            width: 370px; //元は900px
-            height: auto;
+            width: 100px;
           }
         }
-        &__pageLink {
-          width: 100%;
-          ul {
-            margin: 0 60px;
-            display: flex;
-            justify-content: space-around;
+        &--main {
+          &__titleLogo {
+            margin-top: 60px;
+            // animation-name:Animate;
 
-            li {
-              text-align: center;
-              z-index: 2;
-              //文字が見にくかったので影付け
-              text-shadow: 2px 3px 2px rgb(225, 255, 225);
-              padding: 5px;
-              a {
-                i {
-                  font-size: 2.5rem;
-                }
-                p {
-                  font-size: 1.2rem;
-                  white-space: nowrap;
+            img {
+              width: 370px; //元は900px
+              height: auto;
+            }
+          }
+          &__pageLink {
+            width: 100%;
+            ul {
+              margin: 0 60px;
+              display: flex;
+              justify-content: space-around;
+
+              li {
+                text-align: center;
+                z-index: 2;
+                //文字が見にくかったので影付け
+                text-shadow: 2px 3px 2px rgb(225, 255, 225);
+                padding: 5px;
+                a {
+                  i {
+                    font-size: 2.5rem;
+                  }
+                  p {
+                    font-size: 1.2rem;
+                    white-space: nowrap;
+                  }
                 }
               }
             }
           }
         }
-      }
-      &--animal {
-        &__tori {
-          width: 35%;
-          top: 15%;
-          left: -12%;
-          img {
-            transform: rotate(15deg);
+        &--animal {
+          &__tori {
+            width: 35%;
+            top: 15%;
+            left: -12%;
+            img {
+              transform: rotate(15deg);
+            }
           }
-        }
-        &__kuma {
-          width: 40%;
-        }
-        &__minikuma {
-          width: 25%;
-          right: 40%;
-        }
-        &__kame {
-          .css_work_last img {
-            overflow: hidden;
+          &__kuma {
+            width: 40%;
+          }
+          &__minikuma {
+            width: 25%;
+            right: 40%;
+          }
+          &__kame {
+            .css_work_last img {
+              overflow: hidden;
+              width: 45%;
+              bottom: 30%;
+              left: 5%;
+            }
+          }
+          &__rakko {
+            width: 38%;
+            top: 45%;
+            right: -5%;
+            animation: Yurayura_sm_s 7s ease infinite;
+          }
+          &__koumori {
             width: 45%;
-            bottom: 30%;
-            left: 5%;
+            top: 50%;
+            left: -15%;
           }
-        }
-        &__rakko {
-          width: 38%;
-          top: 45%;
-          right: -5%;
-          animation: Yurayura_sm_s 7s ease infinite;
-        }
-        &__koumori {
-          width: 45%;
-          top: 50%;
-          left: -15%;
         }
       }
     }
   }
-}
 }
 
 @keyframes Yurayura_sm_s {

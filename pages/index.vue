@@ -88,6 +88,7 @@ export default {
  mounted(){
      //処理
 
+
  }
 }
 </script>
@@ -101,8 +102,8 @@ export default {
 
 <style lang="scss"scoped>
 @import"~assets/css/index/style.scss";
-// .top--teamLogo {
-//     border: 1px solid #000;
-// }
+.top--teamLogo {
+    border: 1px solid #000;
+}
 </style>
 
