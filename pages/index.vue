@@ -76,14 +76,6 @@
                 </div>
             </div>
         </div>
-
     </section>
   </div>
 </template>
-
-<script>
-import axios from 'axios'
-export default {
- 
-}
-</script>
