@@ -500,38 +500,39 @@
             <div class="main__checkbox--sent">
                 <input value="検索" type="submit" onClick="mapDate();">
             </div>
+            <div id="sample"></div>
         </form>
         
-        <!-- ありむらおっぱい -->
-        <ul>
-            <li v-for="content in contents" :key="content.id">
-            <nuxt-link :to="`/${content.id}`">
-                {{ content.title }}
-            </nuxt-link>
-            </li>
-        </ul>
-        <ul>
-            <li v-for="item in items" :key="item.id">{{item.title}}</li>
-        </ul>
+        <!-- vue -->
+        <div>{{contents}}</div>
+
     </section>
 
   </div>
 </template>
 
 <script>
-// つづきデータを表示するところから　consoleでかくにん！！！
-console.log(content.id);
-import axios from 'axios'
+import axios from "axios";
 export default {
-    async asyncMap() {
-        const { map } = await axios.get(
-        // your-service-id部分は自分のサービスidに置き換えてください
-        'https://workproduction.microcms.io/api/v1/map',
-        {
-            // your-api-key部分は自分のapi-keyに置き換えてください
-            headers: { 'X-API-KEY': 'c2aa018e-aeb0-43c6-b6c2-e2bc343ab15e' }
+  data() {
+    return {
+      contents: null
+    }
+  },
+  async created() {
+    try {
+      const res = await axios.get('https://workproduction.microcms.io/api/v1/map', {
+        headers: {
+          'X-API-KEY': 'c2aa018e-aeb0-43c6-b6c2-e2bc343ab15e'
         }
-        )
-    }    
-}
+      })
+      this.contents = res.data;
+    } catch (err) {
+      console.log(err);
+    }
+    console.log( this.contents.contents[0].animal );
+
+  }
+}  
+
 </script>

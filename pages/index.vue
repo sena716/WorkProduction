@@ -19,31 +19,31 @@
             <div class="top--main__pageLink">
                 <ul>
                     <li>
-                        <a href="map/map.html">
+                        <a href="map.vue">
                             <i class="fas fa-map-marked-alt"></i>
                             <p>地図から探す</p>
                         </a>
                     </li>
                     <li>
-                        <a href="photo/photo.html">
+                        <a href="photo.vue">
                             <i class="fas fa-camera"></i>
                             <p>写真から探す</p>
                         </a>
                     </li>
                     <li>
-                        <a href="conditions/conditions.html">
+                        <a href="conditions.vue">
                             <i class="fas fa-search-plus"></i>
                             <p>条件から探す</p>
                         </a>
                     </li>
                     <li>
-                        <a href="name/name.html">
+                        <a href="name.vue">
                             <i class="fas fa-signature"></i>
                             <p>名前から探す</p>
                         </a>
                     </li>
                     <li>
-                        <a href="ranking/ranking.html">
+                        <a href="ranking.vue">
                             <i class="fas fa-crown"></i>
                             <p>ランキング</p>
                         </a>
