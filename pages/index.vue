@@ -10,13 +10,11 @@
         </p>
 
         <div class="top--main">
-            <!-- h1にクラスを指定するとロゴの動作がおかしくなるためimgにクラスを作成 -->
-            <!-- <p class="top--main__titleLogo__war">
-                <img class="animated fadeInDown" src="common/images/warning.svg" alt="warning">
-            </p> -->
-            <h1 class="top--main__titleLogo">
-                <img class="animated bounceInDown slow" src="../static/images/titleLogo_N.svg" alt="絶滅危惧種図鑑">
-            </h1>
+            <!-- animatedを使うとクラスの指定ができないためキーフレームで表現 -->
+            <!-- <div class="animated bounceInDown slow"> -->
+                <div class="top--main__title">
+                <img src="../static/images/titleLogo_N.svg" alt="絶滅危惧種図鑑">
+            </div>
             <div class="top--main__pageLink">
                 <ul>
                     <li>
@@ -83,19 +81,19 @@
 </template>
 
 <script>
-import axios from 'axios'
-export default {
- mounted(){
-     //処理
+// import axios from 'axios'
+// export default {
+//  mounted(){
+//      //処理
 
 
- }
-}
+//  }
+// }
 </script>
 <style>
-.top--teamLogo {
+/* .top--teamLogo {
     width: 100px;
-}
+} */
 </style>
 <style lang="scss"scoped>
 @import"~assets/css/index/style.scss";

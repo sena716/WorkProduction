@@ -5,12 +5,12 @@ $tb: 768px;
 $tb_l: 850px; //768pxだとipadできれいにうつらないため
 $pc: 1080px;
 
-html {
+template {
   overflow: hidden;
-  position: relative;
+  text-align: center;
 }
 
-body {
+section {
   width: 100vw;
   height: 100vh;
   background-color: rgb(230, 255, 245);
@@ -18,6 +18,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
+  background-image: url("../static/images/ground_New.svg");
 
   .top {
     width: 100%;
@@ -44,28 +45,25 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-
-      // &__titleLogo__war{
-      //     position: absolute;
-      //     left: 15%;
-      //     top: 5%;
-      //     img{
-      //         width: 400px;
-      //         height: auto;
-      //     }
-      // }
-      // タイトルロゴ
-      &__titleLogo {
-        margin: 0;
-        // animation-name:Animate;
-
+      // .animated bounceInDown slow {
+        //   margin: 0;
+        
+        //   img {
+          //     width: 500px; //元は900px
+          //     height: auto;
+          //     text-align: center;
+          //   }
+          // }
+          //animatedを使うとクラスの指定ができないためクラスを指定しキーフレームで表現
+    &__title{
+      animation: Down 1.6s;
+      text-align: center;
         img {
-          width: 800px; //元は900px
+          width: 850px; //元は900px
           height: auto;
           text-align: center;
         }
-      }
-      // ページリンク
+    }
       &__pageLink {
         width: 960px;
         padding-bottom: 10%;
@@ -158,6 +156,29 @@ body {
   }
 }
 
+@keyframes Down {
+  0% {
+    opacity: 0;
+    transform: translateY(-500px);
+   }
+  60%{
+    transform: translateY(0px);
+   }
+   70%{
+    transform: translateY(-7px);
+   }
+   80%{
+    transform: translateY(0px);
+   }
+   90%{
+    transform: translateY(-2px);
+   }
+   100%{
+       opacity: 1;
+        transform: translateY(0);
+     }
+}
+
 @keyframes Yurayura {
   0% {
     transform: translateX(-30px);
@@ -199,6 +220,7 @@ body {
     transform: translateX(0%);
   }
 }
+
 
 @keyframes In {
   from {
@@ -327,9 +349,9 @@ body {
 }
 
 @media (max-width: $tb_l) {
-  html {
+  template {
     height: 100%;
-    body {
+    section {
       height: 100%;
       background-size: cover;
       // background-image: url("../../common/images/ground_tabret.svg");
@@ -518,9 +540,9 @@ body {
 }
 
 @media (max-width: $sm_s) {
-  html {
+  template {
     height: 100%;
-    body {
+    section {
       height: 100%;
       background-size: cover;
 
