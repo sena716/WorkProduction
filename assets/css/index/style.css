@@ -1,5 +1,4 @@
 template {
-  overflow: hidden;
   text-align: center;
 }
 
@@ -7,11 +6,11 @@ section {
   width: 100vw;
   height: 100vh;
   background-color: #e6fff5;
-  background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
   background-image: url("../static/images/ground_New.svg");
+  overflow: hidden;
 }
 
 section .top {
@@ -80,6 +79,7 @@ section .top--main__pageLink ul li a i {
 section .top--main__pageLink ul li a p {
   font-size: 2rem;
   white-space: nowrap;
+  margin: 0px 10px 0px 10px;
 }
 
 section .top--animal p {
@@ -246,7 +246,9 @@ section .top--animal__kame img {
 
 @media (max-width: 768px) {
   section {
+    overflow: hidden;
     background-size: cover;
+    background-image: url("../static/images/ground_tabret.svg");
   }
   section .top--teamLogo {
     padding: 30px 0 0 20px;
@@ -279,13 +281,9 @@ section .top--animal__kame img {
   section .top--main__pageLink ul li a:hover {
     color: pink;
   }
-  section .top--main__pageLink ul li a i {
-    font-size: 4rem;
-  }
   section .top--main__pageLink ul li a p {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     white-space: nowrap;
-    margin-right: 10px;
   }
   section .top--animal__tori {
     width: 30%;
@@ -325,6 +323,7 @@ section .top--animal__kame img {
   template section {
     height: 100%;
     background-size: cover;
+    background-image: url("../static/images/ground_tabret.svg");
   }
   template section .top--teamLogo {
     padding: 30px 0 0 20px;
@@ -354,9 +353,6 @@ section .top--animal__kame img {
   }
   template section .top--main__pageLink ul li a:hover {
     color: pink;
-  }
-  template section .top--main__pageLink ul li a i {
-    font-size: 4rem;
   }
   template section .top--main__pageLink ul li a p {
     font-size: 2rem;
@@ -395,7 +391,10 @@ section .top--animal__kame img {
 
 @media (max-width: 450px) {
   section {
+    background-image: url("../static/images/ground_smartpone.svg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
   }
   section .top--teamLogo {
     padding: 20px 0 0 10px;
@@ -407,7 +406,7 @@ section .top--animal__kame img {
     margin-top: 60px;
   }
   section .top--main__titleLogo img {
-    width: 400px;
+    width: 350px;
     height: auto;
   }
   section .top--main__title {
@@ -415,7 +414,7 @@ section .top--animal__kame img {
     text-align: center;
   }
   section .top--main__title img {
-    width: 450px;
+    width: 420px;
     height: auto;
     text-align: center;
   }
@@ -497,6 +496,7 @@ section .top--animal__kame img {
   template section {
     height: 100%;
     background-size: cover;
+    background-image: url("../static/images/ground_smartpone.svg");
   }
   template section .top--teamLogo {
     padding: 20px 0 0 10px;
@@ -508,7 +508,7 @@ section .top--animal__kame img {
     margin-top: 60px;
   }
   template section .top--main__titleLogo img {
-    width: 370px;
+    width: 300px;
     height: auto;
   }
   template section .top--main__pageLink {
