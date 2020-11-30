@@ -245,70 +245,73 @@ section .top--animal__kame img {
 }
 
 @media (max-width: 768px) {
-  body {
+  section {
     background-size: cover;
   }
-  body .top--teamLogo {
+  section .top--teamLogo {
     padding: 30px 0 0 20px;
   }
-  body .top--teamLogo img {
+  section .top--teamLogo img {
     width: 150px;
   }
-  body .top--main__titleLogo {
-    margin-top: 60px;
+  section .top--main__title {
+    animation: Down 1.6s;
+    text-align: center;
   }
-  body .top--main__titleLogo img {
-    width: 670px;
+  section .top--main__title img {
+    width: 700px;
     height: auto;
+    text-align: center;
   }
-  body .top--main__pageLink {
+  section .top--main__pageLink {
     width: 100%;
   }
-  body .top--main__pageLink ul {
+  section .top--main__pageLink ul {
     margin: 0 60px;
     display: flex;
     justify-content: space-around;
   }
-  body .top--main__pageLink ul li {
+  section .top--main__pageLink ul li {
     text-align: center;
     z-index: 2;
     text-shadow: 2px 3px 2px #e1ffe1;
   }
-  body .top--main__pageLink ul li a:hover {
+  section .top--main__pageLink ul li a:hover {
     color: pink;
   }
-  body .top--main__pageLink ul li a i {
+  section .top--main__pageLink ul li a i {
     font-size: 4rem;
   }
-  body .top--main__pageLink ul li a p {
-    font-size: 2rem;
+  section .top--main__pageLink ul li a p {
+    font-size: 1.7rem;
     white-space: nowrap;
+    margin-right: 10px;
   }
-  body .top--animal__tori {
+  section .top--animal__tori {
     width: 30%;
     top: -10%;
     left: 10%;
   }
-  body .top--animal__kuma {
+  section .top--animal__kuma {
     width: 30%;
     right: 3%;
   }
-  body .top--animal__minikuma {
+  section .top--animal__minikuma {
     width: 20%;
     right: 30%;
   }
-  body .top--animal__kame .css_work_last img {
+  section .top--animal__kame .css_work_last img {
     overflow: hidden;
     width: 80%;
     bottom: -20%;
     left: 5%;
   }
-  body .top--animal__rakko {
+  section .top--animal__rakko {
     width: 30%;
     top: 45%;
     right: -3%;
   }
-  body .top--animal__koumori {
+  section .top--animal__koumori {
     width: 30%;
     top: 50%;
     left: -3%;
@@ -391,74 +394,84 @@ section .top--animal__kame img {
 }
 
 @media (max-width: 450px) {
-  body {
+  section {
     background-size: cover;
   }
-  body .top--teamLogo {
+  section .top--teamLogo {
     padding: 20px 0 0 10px;
   }
-  body .top--teamLogo img {
+  section .top--teamLogo img {
     width: 100px;
   }
-  body .top--main__titleLogo {
+  section .top--main__titleLogo {
     margin-top: 60px;
   }
-  body .top--main__titleLogo img {
+  section .top--main__titleLogo img {
     width: 400px;
     height: auto;
   }
-  body .top--main__pageLink {
+  section .top--main__title {
+    animation: Down 1.6s;
+    text-align: center;
+  }
+  section .top--main__title img {
+    width: 450px;
+    height: auto;
+    text-align: center;
+  }
+  section .top--main__pageLink {
     width: 100%;
   }
-  body .top--main__pageLink ul {
+  section .top--main__pageLink ul {
     margin: 0 60px;
     display: flex;
     justify-content: space-around;
   }
-  body .top--main__pageLink ul li {
+  section .top--main__pageLink ul li {
     text-align: center;
     z-index: 2;
     text-shadow: 2px 3px 2px #e1ffe1;
-    padding: 5px;
+    padding: 0px;
   }
-  body .top--main__pageLink ul li a:hover {
+  section .top--main__pageLink ul li a:hover {
     color: pink;
   }
-  body .top--main__pageLink ul li a i {
+  section .top--main__pageLink ul li a i {
     font-size: 2.5rem;
   }
-  body .top--main__pageLink ul li a p {
-    font-size: 1.2rem;
+  section .top--main__pageLink ul li a p {
+    font-size: 1rem;
     white-space: nowrap;
+    margin-right: 3px;
   }
-  body .top--animal__tori {
+  section .top--animal__tori {
     width: 35%;
     top: 10%;
     left: -12%;
   }
-  body .top--animal__tori img {
+  section .top--animal__tori img {
     transform: rotate(20deg);
   }
-  body .top--animal__kuma {
+  section .top--animal__kuma {
     width: 35%;
   }
-  body .top--animal__minikuma {
+  section .top--animal__minikuma {
     width: 22%;
     right: 35%;
   }
-  body .top--animal__kame .css_work_last img {
+  section .top--animal__kame .css_work_last img {
     overflow: hidden;
     width: 50%;
     bottom: 5%;
     left: 5%;
   }
-  body .top--animal__rakko {
+  section .top--animal__rakko {
     width: 35%;
     top: 45%;
     right: -5%;
     animation: Yurayura_sm 7s ease infinite;
   }
-  body .top--animal__koumori {
+  section .top--animal__koumori {
     width: 40%;
     top: 50%;
     left: -15%;

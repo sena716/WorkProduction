@@ -262,7 +262,7 @@ section {
 }
 
 @media (max-width: $tb) {
-  body {
+  section {
     background-size: cover;
     // background-image: url("../../common/images/ground_tabret.svg");
 
@@ -274,15 +274,15 @@ section {
         }
       }
       &--main {
-        &__titleLogo {
-          margin-top: 60px;
-          // animation-name:Animate;
-
-          img {
-            width: 670px; //元は900px
-            height: auto;
+        &__title{
+          animation: Down 1.6s;
+          text-align: center;
+            img {
+              width: 700px; //元は900px
+              height: auto;
+              text-align: center;
+            }
           }
-        }
         &__pageLink {
           width: 100%;
           ul {
@@ -303,8 +303,9 @@ section {
                   font-size: 4rem;
                 }
                 p {
-                  font-size: 2rem;
+                  font-size: 1.7rem;
                   white-space: nowrap;
+                  margin-right: 10px;
                 }
               }
             }
@@ -439,7 +440,7 @@ section {
 }
 
 @media (max-width: $sm) {
-  body {
+  section {
     background-size: cover;
     .top {
       &--teamLogo {
@@ -458,6 +459,15 @@ section {
             height: auto;
           }
         }
+        &__title{
+          animation: Down 1.6s;
+          text-align: center;
+            img {
+              width: 450px; //元は900px
+              height: auto;
+              text-align: center;
+            }
+        }
         &__pageLink {
           width: 100%;
           ul {
@@ -470,7 +480,7 @@ section {
               z-index: 2;
               //文字が見にくかったので影付け
               text-shadow: 2px 3px 2px rgb(225, 255, 225);
-              padding: 5px;
+              padding: 0px;
               a {
                 &:hover {
                   color: pink;
@@ -479,8 +489,9 @@ section {
                   font-size: 2.5rem;
                 }
                 p {
-                  font-size: 1.2rem;
+                  font-size: 1rem;
                   white-space: nowrap;
+                  margin-right: 3px;
                 }
               }
             }
