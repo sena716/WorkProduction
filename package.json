@@ -15,5 +15,17 @@
     "nuxt-webfontloader": "^1.1.0",
     "sass-loader": "^9.0.3"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "description": "```bash\r # install dependencies\r $ npm install",
+  "main": "nuxt.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sena716/WorkProduction.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sena716/WorkProduction/issues"
+  },
+  "homepage": "https://github.com/sena716/WorkProduction#readme"
 }
