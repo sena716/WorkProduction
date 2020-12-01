@@ -526,13 +526,15 @@ export default {
           'X-API-KEY': 'c2aa018e-aeb0-43c6-b6c2-e2bc343ab15e'
         }
       })
-      
+
       const obj = {
           prefecture: res.data.contents[0].prefecture,
           id: res.data.contents[0].prefecture
       };
-      console.log(obj);
-      this.contents = res.data.contents;
+
+      console.log( obj );
+
+      this.contents = obj;
     } catch (err) {
       console.log(err);
     }
