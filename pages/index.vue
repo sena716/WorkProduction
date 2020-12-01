@@ -79,21 +79,14 @@
   </div>
 </template>
 
-<script>
-// import axios from 'axios'
-// export default {
-//  mounted(){
-//      //処理
 
-
-//  }
-// }
+<script src="index.js" type="text/javascript">
+import outside from 'index.js'
+mounted(){
+console.log(index.VALUE);
+}
 </script>
-<style>
-/* .top--teamLogo {
-    width: 100px;
-} */
-</style>
+
 <style lang="scss"scoped>
 @import"~assets/css/index/style.scss";
 </style>
