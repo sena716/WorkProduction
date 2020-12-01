@@ -1,27 +1,26 @@
-html {
-  overflow: hidden;
+template {
+  text-align: center;
 }
 
-body {
+section {
   width: 100vw;
   height: 100vh;
   background-color: #e6fff5;
-  background-image: url("../../common/images/ground.svg");
-  background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
+  background-image: url("../static/images/ground_New.svg");
   overflow: hidden;
 }
 
-body .top {
+section .top {
   width: 100%;
   height: 100%;
   position: relative;
   text-align: center;
 }
 
-body .top--teamLogo {
+section .top--teamLogo {
   height: 0;
   padding: 30px 0 0 40px;
   margin: 0;
@@ -29,117 +28,142 @@ body .top--teamLogo {
   position: absolute;
 }
 
-body .top--teamLogo img {
+section .top--teamLogo img {
   width: 150px;
   height: auto;
 }
 
-body .top--main {
+section .top--main {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-body .top--main__titleLogo {
-  margin: 0;
+section .top--main__title {
+  animation: Down 1.6s;
+  text-align: center;
 }
 
-body .top--main__titleLogo img {
-  width: 800px;
+section .top--main__title img {
+  width: 850px;
   height: auto;
   text-align: center;
 }
 
-body .top--main__pageLink {
+section .top--main__pageLink {
   width: 960px;
   padding-bottom: 10%;
   margin: 0 auto;
 }
 
-body .top--main__pageLink ul {
+section .top--main__pageLink ul {
   margin: 0 60px;
   display: flex;
   justify-content: space-around;
 }
 
-body .top--main__pageLink ul li {
+section .top--main__pageLink ul li {
   text-align: center;
   z-index: 2;
 }
 
-body .top--main__pageLink ul li a:hover {
+section .top--main__pageLink ul li a:hover {
   color: pink;
 }
 
-body .top--main__pageLink ul li a i {
+section .top--main__pageLink ul li a i {
   font-size: 4rem;
 }
 
-body .top--main__pageLink ul li a p {
+section .top--main__pageLink ul li a p {
   font-size: 2rem;
   white-space: nowrap;
+  margin: 0px 10px 0px 10px;
 }
 
-body .top--animal p {
+section .top--animal p {
   margin: 0;
   position: absolute;
 }
 
-body .top--animal p img {
+section .top--animal p img {
   width: 100%;
   height: auto;
 }
 
-body .top--animal__tori {
+section .top--animal__tori {
   width: 20%;
   top: -17%;
   left: 10%;
 }
 
-body .top--animal__tori img {
+section .top--animal__tori img {
   transform: scale(-1, 1);
   transform: scale(1, -1);
 }
 
-body .top--animal__kuma {
+section .top--animal__kuma {
   width: 18%;
   top: 0%;
   right: 3%;
 }
 
-body .top--animal__kuma img {
+section .top--animal__kuma img {
   transform: rotateX(180deg);
 }
 
-body .top--animal__minikuma {
+section .top--animal__minikuma {
   width: 10%;
   top: 0%;
   right: 20%;
 }
 
-body .top--animal__minikuma img {
+section .top--animal__minikuma img {
   transform: rotateX(180deg);
 }
 
-body .top--animal__rakko {
+section .top--animal__rakko {
   width: 17%;
   top: 40%;
   right: 10%;
   animation: Yurayura 10s ease infinite;
 }
 
-body .top--animal__koumori {
+section .top--animal__koumori {
   width: 20%;
   top: 30%;
   left: -5%;
   animation: Fly 20s ease infinite;
 }
 
-body .top--animal__kame img {
+section .top--animal__kame img {
   width: 70%;
   bottom: -10%;
   left: 5%;
+}
+
+@keyframes Down {
+  0% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+  60% {
+    transform: translateY(0px);
+  }
+  70% {
+    transform: translateY(-7px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+  90% {
+    transform: translateY(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes Yurayura {
@@ -221,71 +245,71 @@ body .top--animal__kame img {
 }
 
 @media (max-width: 768px) {
-  body {
+  section {
+    overflow: hidden;
     background-size: cover;
-    background-image: url("../../common/images/ground_tabret.svg");
+    background-image: url("../static/images/ground_tabret.svg");
   }
-  body .top--teamLogo {
+  section .top--teamLogo {
     padding: 30px 0 0 20px;
   }
-  body .top--teamLogo img {
+  section .top--teamLogo img {
     width: 150px;
   }
-  body .top--main__titleLogo {
-    margin-top: 60px;
+  section .top--main__title {
+    animation: Down 1.6s;
+    text-align: center;
   }
-  body .top--main__titleLogo img {
-    width: 670px;
+  section .top--main__title img {
+    width: 700px;
     height: auto;
+    text-align: center;
   }
-  body .top--main__pageLink {
+  section .top--main__pageLink {
     width: 100%;
   }
-  body .top--main__pageLink ul {
+  section .top--main__pageLink ul {
     margin: 0 60px;
     display: flex;
     justify-content: space-around;
   }
-  body .top--main__pageLink ul li {
+  section .top--main__pageLink ul li {
     text-align: center;
     z-index: 2;
     text-shadow: 2px 3px 2px #e1ffe1;
   }
-  body .top--main__pageLink ul li a:hover {
+  section .top--main__pageLink ul li a:hover {
     color: pink;
   }
-  body .top--main__pageLink ul li a i {
-    font-size: 4rem;
-  }
-  body .top--main__pageLink ul li a p {
-    font-size: 2rem;
+  section .top--main__pageLink ul li a p {
+    font-size: 1.5rem;
     white-space: nowrap;
   }
-  body .top--animal__tori {
+  section .top--animal__tori {
     width: 30%;
     top: -10%;
     left: 10%;
   }
-  body .top--animal__kuma {
+  section .top--animal__kuma {
     width: 30%;
     right: 3%;
   }
-  body .top--animal__minikuma {
+  section .top--animal__minikuma {
     width: 20%;
     right: 30%;
   }
-  body .top--animal__kame .css_work_last img {
+  section .top--animal__kame .css_work_last img {
     overflow: hidden;
     width: 80%;
     bottom: -20%;
     left: 5%;
   }
-  body .top--animal__rakko {
+  section .top--animal__rakko {
     width: 30%;
     top: 45%;
     right: -3%;
   }
-  body .top--animal__koumori {
+  section .top--animal__koumori {
     width: 30%;
     top: 50%;
     left: -3%;
@@ -293,75 +317,72 @@ body .top--animal__kame img {
 }
 
 @media (max-width: 850px) {
-  html {
+  template {
     height: 100%;
   }
-  html body {
+  template section {
     height: 100%;
     background-size: cover;
-    background-image: url("../../common/images/ground_tabret.svg");
+    background-image: url("../static/images/ground_tabret.svg");
   }
-  html body .top--teamLogo {
+  template section .top--teamLogo {
     padding: 30px 0 0 20px;
   }
-  html body .top--teamLogo img {
+  template section .top--teamLogo img {
     width: 150px;
   }
-  html body .top--main__titleLogo {
+  template section .top--main__titleLogo {
     margin-top: 30px;
   }
-  html body .top--main__titleLogo img {
+  template section .top--main__titleLogo img {
     width: 700px;
     height: auto;
   }
-  html body .top--main__pageLink {
+  template section .top--main__pageLink {
     width: 100%;
   }
-  html body .top--main__pageLink ul {
+  template section .top--main__pageLink ul {
     margin: 0 60px;
     display: flex;
     justify-content: space-around;
   }
-  html body .top--main__pageLink ul li {
+  template section .top--main__pageLink ul li {
     text-align: center;
     z-index: 2;
     text-shadow: 2px 3px 2px #e1ffe1;
   }
-  html body .top--main__pageLink ul li a:hover {
+  template section .top--main__pageLink ul li a:hover {
     color: pink;
   }
-  html body .top--main__pageLink ul li a i {
-    font-size: 4rem;
-  }
-  html body .top--main__pageLink ul li a p {
+  template section .top--main__pageLink ul li a p {
     font-size: 2rem;
     white-space: nowrap;
   }
-  html body .top--animal__tori {
+  template section .top--animal__tori {
     width: 30%;
     top: -10%;
     left: 10%;
   }
-  html body .top--animal__kuma {
+  template section .top--animal__kuma {
     width: 30%;
     right: 3%;
   }
-  html body .top--animal__minikuma {
+  template section .top--animal__minikuma {
     width: 20%;
     right: 30%;
   }
-  html body .top--animal__kame .css_work_last img {
+  template section .top--animal__kame .css_work_last img {
     overflow: hidden;
     width: 80%;
     bottom: -20%;
     left: 5%;
   }
-  html body .top--animal__rakko {
+  template section .top--animal__rakko {
     width: 30%;
     top: 45%;
     right: -3%;
   }
-  html body .top--animal__koumori {
+  template section .top--animal__koumori {
     width: 35%;
     top: 50%;
     left: -3%;
@@ -369,75 +390,87 @@ body .top--animal__kame img {
 }
 
 @media (max-width: 450px) {
-  body {
+  section {
+    background-image: url("../static/images/ground_smartpone.svg");
     background-size: cover;
-    background-image: url("../../common/images/ground_smartpone.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
   }
-  body .top--teamLogo {
+  section .top--teamLogo {
     padding: 20px 0 0 10px;
   }
-  body .top--teamLogo img {
+  section .top--teamLogo img {
     width: 100px;
   }
-  body .top--main__titleLogo {
+  section .top--main__titleLogo {
     margin-top: 60px;
   }
-  body .top--main__titleLogo img {
-    width: 400px;
+  section .top--main__titleLogo img {
+    width: 350px;
     height: auto;
   }
-  body .top--main__pageLink {
+  section .top--main__title {
+    animation: Down 1.6s;
+    text-align: center;
+  }
+  section .top--main__title img {
+    width: 420px;
+    height: auto;
+    text-align: center;
+  }
+  section .top--main__pageLink {
     width: 100%;
   }
-  body .top--main__pageLink ul {
+  section .top--main__pageLink ul {
     margin: 0 60px;
     display: flex;
     justify-content: space-around;
   }
-  body .top--main__pageLink ul li {
+  section .top--main__pageLink ul li {
     text-align: center;
     z-index: 2;
     text-shadow: 2px 3px 2px #e1ffe1;
-    padding: 5px;
+    padding: 0px;
   }
-  body .top--main__pageLink ul li a:hover {
+  section .top--main__pageLink ul li a:hover {
     color: pink;
   }
-  body .top--main__pageLink ul li a i {
+  section .top--main__pageLink ul li a i {
     font-size: 2.5rem;
   }
-  body .top--main__pageLink ul li a p {
-    font-size: 1.2rem;
+  section .top--main__pageLink ul li a p {
+    font-size: 1rem;
     white-space: nowrap;
+    margin-right: 3px;
   }
-  body .top--animal__tori {
+  section .top--animal__tori {
     width: 35%;
     top: 10%;
     left: -12%;
   }
-  body .top--animal__tori img {
+  section .top--animal__tori img {
     transform: rotate(20deg);
   }
-  body .top--animal__kuma {
+  section .top--animal__kuma {
     width: 35%;
   }
-  body .top--animal__minikuma {
+  section .top--animal__minikuma {
     width: 22%;
     right: 35%;
   }
-  body .top--animal__kame .css_work_last img {
+  section .top--animal__kame .css_work_last img {
     overflow: hidden;
     width: 50%;
     bottom: 5%;
     left: 5%;
   }
-  body .top--animal__rakko {
+  section .top--animal__rakko {
     width: 35%;
     top: 45%;
     right: -5%;
     animation: Yurayura_sm 7s ease infinite;
   }
-  body .top--animal__koumori {
+  section .top--animal__koumori {
     width: 40%;
     top: 50%;
     left: -15%;
@@ -457,76 +490,76 @@ body .top--animal__kame img {
 }
 
 @media (max-width: 380px) {
-  html {
+  template {
     height: 100%;
   }
-  html body {
+  template section {
     height: 100%;
     background-size: cover;
-    background-image: url("../../common/images/ground_smartpone.svg");
+    background-image: url("../static/images/ground_smartpone.svg");
   }
-  html body .top--teamLogo {
+  template section .top--teamLogo {
     padding: 20px 0 0 10px;
   }
-  html body .top--teamLogo img {
+  template section .top--teamLogo img {
     width: 100px;
   }
-  html body .top--main__titleLogo {
+  template section .top--main__titleLogo {
     margin-top: 60px;
   }
-  html body .top--main__titleLogo img {
-    width: 370px;
+  template section .top--main__titleLogo img {
+    width: 300px;
     height: auto;
   }
-  html body .top--main__pageLink {
+  template section .top--main__pageLink {
     width: 100%;
   }
-  html body .top--main__pageLink ul {
+  template section .top--main__pageLink ul {
     margin: 0 60px;
     display: flex;
     justify-content: space-around;
   }
-  html body .top--main__pageLink ul li {
+  template section .top--main__pageLink ul li {
     text-align: center;
     z-index: 2;
     text-shadow: 2px 3px 2px #e1ffe1;
     padding: 5px;
   }
-  html body .top--main__pageLink ul li a i {
+  template section .top--main__pageLink ul li a i {
     font-size: 2.5rem;
   }
-  html body .top--main__pageLink ul li a p {
+  template section .top--main__pageLink ul li a p {
     font-size: 1.2rem;
     white-space: nowrap;
   }
-  html body .top--animal__tori {
+  template section .top--animal__tori {
     width: 35%;
     top: 15%;
     left: -12%;
   }
-  html body .top--animal__tori img {
+  template section .top--animal__tori img {
     transform: rotate(15deg);
   }
-  html body .top--animal__kuma {
+  template section .top--animal__kuma {
     width: 40%;
   }
-  html body .top--animal__minikuma {
+  template section .top--animal__minikuma {
     width: 25%;
     right: 40%;
   }
-  html body .top--animal__kame .css_work_last img {
+  template section .top--animal__kame .css_work_last img {
     overflow: hidden;
     width: 45%;
     bottom: 30%;
     left: 5%;
   }
-  html body .top--animal__rakko {
+  template section .top--animal__rakko {
     width: 38%;
     top: 45%;
     right: -5%;
     animation: Yurayura_sm_s 7s ease infinite;
   }
-  html body .top--animal__koumori {
+  template section .top--animal__koumori {
     width: 45%;
     top: 50%;
     left: -15%;
