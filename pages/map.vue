@@ -35,7 +35,7 @@
             <span class="area_btn area6" data-area="6">中国</span>
             <span class="area_btn area7" data-area="7">四国</span>
             <span class="area_btn area8" data-area="8">九州・沖縄</span>
-            
+
             <div class="area_overlay"></div>
             <div class="pref_area">
                 <div class="pref_list data1" data-list="1">
