@@ -496,13 +496,13 @@
                     </li>
                 </ul>
             </div>
-            
+
             <div class="main__checkbox--sent">
                 <input value="検索" type="submit" onClick="mapDate();">
             </div>
             <div id="sample"></div>
         </form>
-        
+
         <!-- vue -->
         <div>{{contents}}</div>
 
@@ -530,9 +530,7 @@ export default {
     } catch (err) {
       console.log(err);
     }
-    console.log( this.contents.contents[0].animal );
-
   }
-}  
+}
 
 </script>
