@@ -74,14 +74,35 @@
                     </div>
                 </div>
             </div>
+                <p id="p1" onmouseover="mouseOver1()" onmouseout="mouseOut1()">テスト１</p>
         </div>
     </section>
   </div>
 </template>
 
+<script>
+
+
+function mouseOver1(){
+	document.getElementById("p1").style.backgroundColor = "Aquamarine";
+}
+function mouseOut1(){
+	document.getElementById("p1").style.backgroundColor = "transparent";
+}
+
+
+</script>
+
+
 
 <script src="../assets/javascript/index.js" type="text/javascript">
 import axios from 'axios'
+export default {
+
+// マウスオーバー時の処理P
+if (process,browser) {
+}
+ }
 </script>
 
 <style lang="scss"scoped>
