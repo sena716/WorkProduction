@@ -9,13 +9,13 @@
 
     <section class="header">
         <p class="header--titleLogo">
-            <a href="../index.vue"><img src="static/common/images/titlepcLogo.svg" alt="絶滅危惧種図鑑"></a>
+            <a href="index.vue"><img src="../static/images/titlepcLogo.svg" alt="絶滅危惧種図鑑"></a>
         </p>
 
         <ul class="header--pageLink">
             <li><a href="map.vue">地図から探す</a></li>
             <li><a href="photo.vue">写真から探す</a></li>
-            <li><a href="conditions.vue">条件から探す</a></li>
+            <li><a href="condition.vue">条件から探す</a></li>
             <li><a href="name.vue">名前から探す</a></li>
             <li><a href="ranking.vue">ランキング</a></li>
         </ul>
@@ -26,7 +26,7 @@
         <h1>地図から探す</h1>
 
         <div class="main__map">
-            <img src="/common/images/map/japanMap.png" alt="日本地図">
+            <img src="../static/images/map/japanMap.png" alt="日本地図">
             <span class="area_btn area1" data-area="1">北海道</span>
             <span class="area_btn area2" data-area="2">東北</span>
             <span class="area_btn area3" data-area="3">関東</span>
@@ -35,7 +35,7 @@
             <span class="area_btn area6" data-area="6">中国</span>
             <span class="area_btn area7" data-area="7">四国</span>
             <span class="area_btn area8" data-area="8">九州・沖縄</span>
-            
+
             <div class="area_overlay"></div>
             <div class="pref_area">
                 <div class="pref_list data1" data-list="1">
@@ -119,7 +119,7 @@
         <form class="main__checkbox">
 
             <!-- 東日本 -->
-            <div class="main__checkbox--east checkboxCommon">
+            <div class="main__checkbox--east c../heckbo">
                 <ul class="main__checkbox--east-category category">
                     <li>
                         <input value="checkbox" id="East" type="checkbox" name="map-1" onClick="eastAllCheck();">
@@ -308,7 +308,7 @@
             </div>
 
             <!-- 西日本 -->
-            <div class="main__checkbox--west checkboxCommon">
+            <div class="main__checkbox--west c../heckbo">
                 <ul class="main__checkbox--west-category category">
                     <li>
                         <input value="checkbox" id="Wast" name="map-2" type="checkbox" onClick="wastAllCheck();">
@@ -496,25 +496,49 @@
                     </li>
                 </ul>
             </div>
-            
+
             <div class="main__checkbox--sent">
                 <input value="検索" type="submit" onClick="mapDate();">
             </div>
+            <div id="sample"></div>
         </form>
-        
+
+        <!-- vue -->
+        <div>{{contents}}</div>
+
     </section>
 
   </div>
 </template>
 
 <script>
-import axios from 'axios'
+import axios from "axios";
 export default {
-  data: function() {
+  data() {
     return {
+      contents: null
     }
   },
-  methods: {
+  async created() {
+    try {
+      const res = await axios.get('https://workproduction.microcms.io/api/v1/map', {
+        headers: {
+          'X-API-KEY': 'c2aa018e-aeb0-43c6-b6c2-e2bc343ab15e'
+        }
+      })
+
+      const obj = {
+          prefecture: res.data.contents[0].prefecture,
+          id: res.data.contents[0].prefecture
+      };
+
+      console.log( obj );
+
+      this.contents = obj;
+    } catch (err) {
+      console.log(err);
+    }
   }
 }
+
 </script>
