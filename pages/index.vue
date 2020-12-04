@@ -3,7 +3,7 @@
 <template>
 <div id="app">
  <section class="top">
-
+{{name()}}
 
         <p class="top--teamLogo">
             <img src="../static/images/teamLogo.svg" alt="チームロゴ">
@@ -79,21 +79,19 @@
   </div>
 </template>
 
-<script>
-// import axios from 'axios'
-// export default {
-//  mounted(){
-//      //処理
-
-
-//  }
-// }
-</script>
-<style>
-/* .top--teamLogo {
-    width: 100px;
-} */
-</style>
 <style lang="scss"scoped>
 @import"~assets/css/index/style.scss";
 </style>
+<script>
+// import name from './pages/index.js';
+
+export default {
+   methods: {
+       name() {
+           console.log('繋げました');
+       }
+   }
+}
+
+</script>
+
