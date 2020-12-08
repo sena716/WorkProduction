@@ -1,0 +1,630 @@
+// 変数
+$sm_s: 380px; //iphone8などできれいに映る
+$sm: 450px; //iphone10などできれいに映る
+$tb: 768px;
+$tb_l: 850px; //768pxだとipadできれいにうつらないため
+$pc: 1080px;
+
+html {
+  overflow: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(230, 255, 245);
+  background-image: url("../../common/images/ground.svg");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  overflow: hidden;
+
+  .top {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+
+    // チームロゴ
+    &--teamLogo {
+      height: 0;
+      padding: 30px 0 0 40px;
+      margin: 0;
+      text-align: left;
+      position: absolute;
+
+      img {
+        width: 150px;
+        height: auto;
+      }
+    }
+
+    &--main {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      // &__titleLogo__war{
+      //     position: absolute;
+      //     left: 15%;
+      //     top: 5%;
+      //     img{
+      //         width: 400px;
+      //         height: auto;
+      //     }
+      // }
+      // タイトルロゴ
+      &__titleLogo {
+        margin: 0;
+        // animation-name:Animate;
+
+        img {
+          width: 800px; //元は900px
+          height: auto;
+          text-align: center;
+        }
+      }
+      // ページリンク
+      &__pageLink {
+        width: 960px;
+        padding-bottom: 10%;
+        margin: 0 auto;
+
+        ul {
+          margin: 0 60px;
+          display: flex;
+          justify-content: space-around;
+
+          li {
+            text-align: center;
+            z-index: 2;
+            a {
+              &:hover {
+                color: pink;
+              }
+              i {
+                font-size: 4rem;
+              }
+              p {
+                font-size: 2rem;
+                white-space: nowrap;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // 動物画像
+    &--animal {
+      p {
+        margin: 0;
+        position: absolute;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      &__tori {
+        width: 20%;
+        top: -17%;
+        left: 10%;
+
+        img {
+          transform: scale(-1, 1);
+          transform: scale(1, -1);
+        }
+      }
+      &__kuma {
+        width: 18%;
+        top: 0%;
+        right: 3%;
+
+        img {
+          transform: rotateX(180deg);
+        }
+      }
+      &__minikuma {
+        width: 10%;
+        top: 0%;
+        right: 20%;
+
+        img {
+          transform: rotateX(180deg);
+        }
+      }
+      &__rakko {
+        width: 17%;
+        top: 40%;
+        right: 10%;
+        animation: Yurayura 10s ease infinite;
+      }
+      &__koumori {
+        width: 20%;
+        top: 30%;
+        left: -5%;
+        animation: Fly 20s ease infinite;
+      }
+      &__kame {
+        img {
+          width: 70%;
+          bottom: -10%;
+          left: 5%;
+        }
+      }
+    }
+  }
+}
+
+@keyframes Yurayura {
+  0% {
+    transform: translateX(-30px);
+  }
+  50% {
+    transform: translateX(-100px) translateY(10px);
+  }
+  100% {
+    transform: translateX(-30px);
+  }
+}
+
+@keyframes Fly {
+  0% {
+    transform: translateY(0%);
+  }
+  10% {
+    transform: translateY(-20%) translateX(5%);
+  }
+  20% {
+    transform: translateY(-30%) translateX(7%);
+  }
+  30% {
+    transform: translateY(-60%) translateX(10%);
+  }
+  50% {
+    transform: translateY(-20%) translateX(0%);
+  }
+  70% {
+    transform: translateY(-10%);
+  }
+  90% {
+    transform: translateY(-10%);
+  }
+  95% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes In {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    // transition: transform 0.5s linear cubic-bezier(0.4, 0, 1, 1);
+    transform: translateX(100vw);
+  }
+}
+@keyframes Shake {
+  from {
+    transform: translate(0, 0px);
+  }
+  to {
+    transform: translate(0, -20px);
+  }
+}
+
+.css_work_farst {
+  position: absolute;
+  bottom: -5%;
+  animation-name: In;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  transition-timing-function: linear;
+}
+.css_work_last {
+  animation-name: Shake;
+  animation-timing-function: cubic-bezier(0, 0, 1, 1.02);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 0.7s;
+  overflow: hidden;
+}
+
+@media (max-width: $tb) {
+  body {
+    background-size: cover;
+    background-image: url("../../common/images/ground_tabret.svg");
+    .top {
+      &--teamLogo {
+        padding: 30px 0 0 20px;
+        img {
+          width: 150px;
+        }
+      }
+      &--main {
+        &__titleLogo {
+          margin-top: 60px;
+          // animation-name:Animate;
+
+          img {
+            width: 670px; //元は900px
+            height: auto;
+          }
+        }
+        &__pageLink {
+          width: 100%;
+          ul {
+            margin: 0 60px;
+            display: flex;
+            justify-content: space-around;
+
+            li {
+              text-align: center;
+              z-index: 2;
+              //文字が見にくかったので影付け
+              text-shadow: 2px 3px 2px rgb(225, 255, 225);
+              a {
+                &:hover {
+                  color: pink;
+                }
+                i {
+                  font-size: 4rem;
+                }
+                p {
+                  font-size: 2rem;
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+        }
+      }
+      &--animal {
+        &__tori {
+          width: 30%;
+          top: -10%;
+          left: 10%;
+        }
+        &__kuma {
+          width: 30%;
+          right: 3%;
+        }
+        &__minikuma {
+          width: 20%;
+          right: 30%;
+        }
+        &__kame {
+          .css_work_last img {
+            overflow: hidden;
+            width: 80%;
+            bottom: -20%;
+            left: 5%;
+          }
+        }
+        &__rakko {
+          width: 30%;
+          top: 45%;
+          right: -3%;
+        }
+        &__koumori {
+          width: 30%;
+          top: 50%;
+          left: -3%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $tb_l) {
+  html {
+    height: 100%;
+    body {
+      height: 100%;
+      background-size: cover;
+      background-image: url("../../common/images/ground_tabret.svg");
+      .top {
+        &--teamLogo {
+          padding: 30px 0 0 20px;
+          img {
+            width: 150px;
+          }
+        }
+        &--main {
+          &__titleLogo {
+            margin-top: 30px;
+            // animation-name:Animate;
+
+            img {
+              width: 700px; //元は900px
+              height: auto;
+            }
+          }
+          &__pageLink {
+            width: 100%;
+            ul {
+              margin: 0 60px;
+              display: flex;
+              justify-content: space-around;
+
+              li {
+                text-align: center;
+                z-index: 2;
+                //文字が見にくかったので影付け
+                text-shadow: 2px 3px 2px rgb(225, 255, 225);
+                a {
+                  &:hover {
+                    color: pink;
+                  }
+                  i {
+                    font-size: 4rem;
+                  }
+                  p {
+                    font-size: 2rem;
+                    white-space: nowrap;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &--animal {
+          &__tori {
+            width: 30%;
+            top: -10%;
+            left: 10%;
+          }
+          &__kuma {
+            width: 30%;
+            right: 3%;
+          }
+          &__minikuma {
+            width: 20%;
+            right: 30%;
+          }
+          &__kame {
+            .css_work_last img {
+              overflow: hidden;
+              width: 80%;
+              bottom: -20%;
+              left: 5%;
+            }
+          }
+          &__rakko {
+            width: 30%;
+            top: 45%;
+            right: -3%;
+          }
+          &__koumori {
+            width: 35%;
+            top: 50%;
+            left: -3%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  body {
+    background-size: cover;
+    background-image: url("../../common/images/ground_smartpone.svg");
+    .top {
+      &--teamLogo {
+        padding: 20px 0 0 10px;
+        img {
+          width: 100px;
+        }
+      }
+      &--main {
+        &__titleLogo {
+          margin-top: 60px;
+          // animation-name:Animate;
+
+          img {
+            width: 400px; //元は900px
+            height: auto;
+          }
+        }
+        &__pageLink {
+          width: 100%;
+          ul {
+            margin: 0 60px;
+            display: flex;
+            justify-content: space-around;
+
+            li {
+              text-align: center;
+              z-index: 2;
+              //文字が見にくかったので影付け
+              text-shadow: 2px 3px 2px rgb(225, 255, 225);
+              padding: 5px;
+              a {
+                &:hover {
+                  color: pink;
+                }
+                i {
+                  font-size: 1rem;
+                }
+                p {
+                  font-size: 1.2rem;
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+        }
+      }
+      &--animal {
+        &__tori {
+          width: 35%;
+          top: 10%;
+          left: -12%;
+          img {
+            transform: rotate(20deg);
+          }
+        }
+        &__kuma {
+          width: 35%;
+        }
+        &__minikuma {
+          width: 22%;
+          right: 35%;
+        }
+        &__kame {
+          .css_work_last img {
+            overflow: hidden;
+            width: 50%;
+            bottom: 5%;
+            left: 5%;
+          }
+        }
+        &__rakko {
+          width: 35%;
+          top: 45%;
+          right: -5%;
+          animation: Yurayura_sm 7s ease infinite;
+        }
+        &__koumori {
+          width: 40%;
+          top: 50%;
+          left: -15%;
+        }
+      }
+    }
+  }
+}
+
+@keyframes Yurayura_sm {
+  0% {
+    transform: translateX(-20px);
+  }
+  50% {
+    transform: translateX(-60px) translateY(10px);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
+
+@media (max-width: $sm_s) {
+  html {
+    height: 100%;
+    body {
+      height: 100%;
+      background-size: cover;
+      background-image: url("../../common/images/ground_smartpone.svg");
+      .top {
+        &--teamLogo {
+          padding: 20px 0 0 10px;
+          img {
+            width: 100px;
+          }
+        }
+        &--main {
+          &__titleLogo {
+            margin-top: 60px;
+            // animation-name:Animate;
+
+            img {
+              width: 370px; //元は900px
+              height: auto;
+            }
+          }
+          &__pageLink {
+            width: 100%;
+            ul {
+              margin: 0 60px;
+              display: flex;
+              justify-content: space-around;
+
+              li {
+                text-align: center;
+                z-index: 2;
+                //文字が見にくかったので影付け
+                text-shadow: 2px 3px 2px rgb(225, 255, 225);
+                padding: 5px;
+                a {
+                  i {
+                    font-size: 2.5rem;
+                  }
+                  p {
+                    font-size: 1.2rem;
+                    white-space: nowrap;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &--animal {
+          &__tori {
+            width: 35%;
+            top: 15%;
+            left: -12%;
+            img {
+              transform: rotate(15deg);
+            }
+          }
+          &__kuma {
+            width: 40%;
+          }
+          &__minikuma {
+            width: 25%;
+            right: 40%;
+          }
+          &__kame {
+            .css_work_last img {
+              overflow: hidden;
+              width: 45%;
+              bottom: 30%;
+              left: 5%;
+            }
+          }
+          &__rakko {
+            width: 38%;
+            top: 45%;
+            right: -5%;
+            animation: Yurayura_sm_s 7s ease infinite;
+          }
+          &__koumori {
+            width: 45%;
+            top: 50%;
+            left: -15%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes Yurayura_sm_s {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(-40px) translateY(5px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes Yurayura_sm_s {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(-40px) translateY(5px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
