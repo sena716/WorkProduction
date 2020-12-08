@@ -1,0 +1,27 @@
+body {
+  section {
+    .main {
+      &--rank {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__1,
+        &__2,
+        &__3 {
+          img {
+            width: 400px;
+            height: auto;
+          }
+        }
+        p {
+          font-size: 2.5rem;
+        }
+      }
+      &--bumon {
+        font-size: 6rem;
+        text-align: center;
+      }
+    }
+  }
+}
