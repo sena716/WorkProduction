@@ -1,0 +1,43 @@
+html {
+  overflow: hidden;
+}
+
+body .main {
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+
+@media (max-width: 768px) {
+  body .main {
+    font-size: 1rem;
+  }
+}
+
+body .main h1 {
+  padding-left: 50px;
+  border-left: 8px solid #000;
+  border-radius: 6px;
+}
+
+body .main--info {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  body .main--info {
+    flex-direction: column;
+  }
+}
+
+body .main--info__details {
+  padding-left: 10px;
+}
+
+body .main--info__details table {
+  line-height: 3rem;
+}
+
+body .main--info__details table tr th {
+  width: 20%;
+  vertical-align: top;
+}
