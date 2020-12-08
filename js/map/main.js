@@ -401,14 +401,16 @@ function kyusyuAllCheck(){
 // mapSelect選択情報取得
 function mapDateSelect(click_class){
     // CMS接続
-    fetch("https://workproduction.microcms.io/api/v1/date", {
+    fetch("https://workproduction.microcms.io/api/v1/date?limit=30", {
         headers: {
             "X-API-KEY": "c2aa018e-aeb0-43c6-b6c2-e2bc343ab15e"
         }
     })
     .then(res => res.json())
     .then(json => {
+
         contents = json.contents;
+
         $('.main').empty();
         $('.main').append('<h1>検索結果</h1>');
         $('.main').append('<ul class="main__each"></ul>');
@@ -432,7 +434,7 @@ function mapDateCheckbox(){
     }
 
     // CMS接続
-    fetch("https://workproduction.microcms.io/api/v1/date", {
+    fetch("https://workproduction.microcms.io/api/v1/date?limit=30", {
         headers: {
             "X-API-KEY": "c2aa018e-aeb0-43c6-b6c2-e2bc343ab15e"
         }
@@ -443,8 +445,6 @@ function mapDateCheckbox(){
         $('.main').empty();
         $('.main').append('<h1>検索結果</h1>');
         $('.main').append('<ul class="main__each"></ul>');
-        console.log( contents );
-        console.log( contents.length, checkI.length);
         for( let i = 0; contents.length > i; i++ ){
             for( let j = 0; checkI.length > j; j++ ){
                 console.log( checkI[j] );
@@ -491,13 +491,8 @@ $(function(){
     }
 });
 
-// CMS接続
-fetch("https://workproduction.microcms.io/api/v1/date", {
-    headers: {
-        "X-API-KEY": "c2aa018e-aeb0-43c6-b6c2-e2bc343ab15e"
-    }
-})
-.then(res => res.json())
-.then(json => {
-    contents = json.contents;
+
+$('.link').click(function(){
+    let ma = "1ma";
+    location.href = '../sm.js' + encodeURIComponent(ma);
 });
