@@ -31,32 +31,36 @@ function nameSearch (Initial){
     .then(res => res.json())
     .then(json => {
         contents = json.contents;
+
+        var str = [];
+
         for(let i  = 0;i <contents.length;i++){
-            InitialSearch();
+            // InitialSearch();
             // 動物の名前をstrに代入
-            var str= contents[i].name;
-            // strから名前の頭文字
-            var a =  str.slice(0,1);
-            // 並び替え途中
-            var list = [
-                { str },
-                
-            ];
-
-            console.log( list );
-            list.sort(function(a, b) {
-                    if (a.str > b.str) {
-                        return 1;
-                    } else {
-                        return -1;
-                    }
-                })
+            str.push(contents[i].name, contents[i].id);
+        }
+        
+        // 名前順に並び替え
+        str.sort(function (a, b) {
+            
+           if(a<b) return -1;
+            if(b>a) return 1;
+            return 0;
+        });
+        //strのidとcontentsのidを照合
+        for(let i  = 0;i <str.length/2;i++){
+            for( let j = 0;j<contents.length;j++){
+                if(contents[j].id == str[i] ){
+                    
+                    console.log(contents[j].name);
+                       
+                }
             }
+        };
 
-        /*$('.main').empty();
+        $('.main').empty();
         $('.main').append('<h1>検索結果</h1>');
         $('.main').append('<ul class="main__each"></ul>');
-        */
         // for( let i = 0; contents.length > i; i++ ){
         //     for( let j = 0; checkI.length > j; j++ ){
         //         if( contents[i].name == checkI[j] ){
@@ -64,5 +68,7 @@ function nameSearch (Initial){
         //         }
         //     }
         // }
+
+      
     });
 }
