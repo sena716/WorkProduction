@@ -23,8 +23,8 @@ fetch("https://workproduction.microcms.io/api/v1/date?limit=30", {
     $('.main--rank__S1').css('background-image',contents[0].img.url);
     console.log(contents[0].img.url);
     // $('.main--rank__S1').append('<img src="'+ contents[0].img.url +'"><p>'+ contents[0].name +'</p><p>'+ contents[0].bodyWeight +'</p>');
-    $('.main--rank__S2').append('<img src="'+ contents[1].img.url +'"><p>'+ contents[1].name +'</p><p>'+ contents[1].bodyWeight +'</p>');
-    $('.main--rank__S3').append('<img src="'+ contents[2].img.url +'"><p>'+ contents[2].name +'</p><p>'+ contents[2].bodyWeight +'</p>');
+    $('.main--rank__S2').append('<img src="'+ contents[1].img.url +'"><p class="comment">'+ contents[1].name +'</p><p class="comment">'+ contents[1].bodyWeight +'</p>');
+    $('.main--rank__S3').append('<img src="'+ contents[2].img.url +'"><p class="comment">'+ contents[2].name +'</p><p class="comment">'+ contents[2].bodyWeight +'</p>');
 
 
 

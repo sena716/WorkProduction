@@ -9,9 +9,19 @@ body section .main--rank {
   align-items: center;
 }
 
+body section .main--rank .rank_asc {
+  width: 200px;
+  float: left;
+  padding-right: 50px;
+}
+
 body section .main--rank__S1 {
   width: 500px;
   height: 500px;
+}
+
+body section .main--rank__S2, body section .main--rank__S3 {
+  padding-bottom: 50px;
 }
 
 body section .main--rank__S2 img, body section .main--rank__S3 img {
@@ -24,8 +34,7 @@ body section .main--rank__L1 img, body section .main--rank__L2 img, body section
   height: auto;
 }
 
-body section .main--rank p {
+body section .main--rank .comment {
   font-size: 2.5rem;
   float: left;
-  margin-right: 100px;
 }
