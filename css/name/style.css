@@ -1,38 +1,39 @@
-.main .active {
+body {
+  background-image: url("../../common/images/ground_name.svg");
+  background-size: 100% auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+body .main .active {
   display: inline-block;
 }
 
-.main__select {
-  display: -webkit-box;
-  display: -ms-flexbox;
+body .main__select {
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
-.main__line {
+body .main__line {
   display: none;
 }
 
-.main__line--select {
-  display: -webkit-box;
-  display: -ms-flexbox;
+body .main__line--select {
   display: flex;
 }
 
-.main__line--select li {
+body .main__line--select li {
   padding: 0 10px;
   font-size: 2rem;
   width: 100%;
   height: 100%;
 }
 
-.main__line--name {
+body .main__line--name {
   padding-top: 50px;
   font-size: 2.5rem;
 }
 
-.main__search {
+body .main__search {
   display: none;
 }
-/*# sourceMappingURL=style.css.map */
