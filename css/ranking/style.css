@@ -16,6 +16,18 @@ body section .main--rank {
   align-items: center;
 }
 
+body section .main--rank li .rank_asc {
+  width: 200px;
+  height: auto;
+}
+
+body section .main--rank li img {
+  object-fit: cover;
+  object-position: center top;
+  width: 500px;
+  height: 300px;
+}
+
 body section .main--rank .rank_asc {
   width: 200px;
   float: left;
