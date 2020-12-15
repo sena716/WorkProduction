@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
   background-image: url("../../common/images/ground_tizu.svg");
-  background-size: contain;
+  background-size: 100% auto;
   background-position: center bottom;
   background-repeat: no-repeat;
 }
