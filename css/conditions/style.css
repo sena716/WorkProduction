@@ -1,8 +1,9 @@
 body {
-  background-image: url("../../common/images/ground_zyouken.svg");
+  background-image: url("../../common/images/ground_smartphone_fixed.svg");
   background-size: 100% auto;
   background-position: center bottom;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 body .main__type ul {
