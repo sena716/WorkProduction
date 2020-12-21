@@ -1,10 +1,18 @@
-.main__type ul {
+body {
+  background-image: url("../../common/images/ground_smartphone_fixed.svg");
+  background-size: 100% auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body .main__type ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.main__type ul li {
+body .main__type ul li {
   width: 250px;
   padding: 20px 10px;
   margin: 10px;
@@ -14,24 +22,24 @@
 }
 
 @media (max-width: 450px) {
-  .main__type ul li {
+  body .main__type ul li {
     width: 100%;
     margin: 20px;
   }
 }
 
-.main__type ul li img {
+body .main__type ul li img {
   width: 80px;
   height: 80px;
 }
 
 @media (max-width: 450px) {
-  .main__type ul li img {
+  body .main__type ul li img {
     width: 160px;
     height: 160px;
   }
 }
 
-.main__type ul li p {
+body .main__type ul li p {
   margin-bottom: 0;
 }

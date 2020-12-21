@@ -2,39 +2,44 @@
 $sm: 450px;
 $tb: 768px;
 $pc: 980px;
+body {
+  background-image: url("../../common/images/ground_smartphone_fixed.svg");
+  background-size: 100% auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  .main {
+    &__type {
+      ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
 
-.main{
- 
-    &__type{
-        ul{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+        li {
+          width: 250px;
+          padding: 20px 10px;
+          margin: 10px;
+          font-size: 3rem;
+          border: 2px solid #000;
+          text-align: center;
+          @media (max-width: $sm) {
+            width: 100%;
+            margin: 20px;
+          }
 
-            li{
-                width: 250px;
-                padding: 20px 10px;
-                margin: 10px;
-                font-size: 3rem;
-                border: 2px solid #000;
-                text-align: center;
-                @media (max-width:$sm){
-                    width: 100%;
-                    margin: 20px;
-                }
-
-                img{
-                    width: 80px;
-                    height: 80px;
-                    @media (max-width:$sm){
-                        width: 160px;
-                        height: 160px;
-                    }
-                }
-                p{
-                    margin-bottom: 0;
-                }
+          img {
+            width: 80px;
+            height: 80px;
+            @media (max-width: $sm) {
+              width: 160px;
+              height: 160px;
             }
+          }
+          p {
+            margin-bottom: 0;
+          }
         }
+      }
     }
+  }
 }
