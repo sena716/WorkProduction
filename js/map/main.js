@@ -1,3 +1,8 @@
+// cookie削除
+$.removeCookie('cookieDate');
+$.cookie("cookieDate", null );
+console.log( $.cookie("cookieDate") );
+
 let checkInspection;
 let checkI = [];
 let contents;
@@ -104,7 +109,7 @@ let contents;
 //         {code : 46, name: "鹿児島",   color: "#ff9999", hoverColor: "#ffbdbd", prefectures: [46]},
 //         {code : 47, name: "沖縄",   color: "#eb98ff", hoverColor: "#f5c9ff", prefectures: [47]},
 //     ];
- 
+
 //     $("#map-container").japanMap({
 //         width: 880,
 //         selection: "area",
@@ -134,66 +139,66 @@ let contents;
 
 function eastAllCheck(){
     if( $('input[name="map-1"]').prop('checked')){
-        $('input[name="map-1-1"]').prop('checked', true );    
-        $('input[name="map-1-1-1"]').prop('checked', true );    
-        $('input[name="map-1-2"]').prop('checked', true );    
-        $('input[name="map-1-2-1"]').prop('checked', true );    
-        $('input[name="map-1-2-2"]').prop('checked', true );    
-        $('input[name="map-1-2-3"]').prop('checked', true );    
-        $('input[name="map-1-2-4"]').prop('checked', true );    
-        $('input[name="map-1-2-5"]').prop('checked', true );    
-        $('input[name="map-1-2-6"]').prop('checked', true );    
-        $('input[name="map-1-3"]').prop('checked', true );    
-        $('input[name="map-1-3-1"]').prop('checked', true );    
-        $('input[name="map-1-3-2"]').prop('checked', true );    
-        $('input[name="map-1-3-3"]').prop('checked', true );    
-        $('input[name="map-1-3-4"]').prop('checked', true );    
-        $('input[name="map-1-3-5"]').prop('checked', true );    
-        $('input[name="map-1-3-6"]').prop('checked', true );    
-        $('input[name="map-1-4"]').prop('checked', true );    
-        $('input[name="map-1-4-1"]').prop('checked', true );    
-        $('input[name="map-1-4-2"]').prop('checked', true );    
-        $('input[name="map-1-4-3"]').prop('checked', true );    
-        $('input[name="map-1-4-4"]').prop('checked', true );    
-        $('input[name="map-1-4-5"]').prop('checked', true );    
-        $('input[name="map-1-4-6"]').prop('checked', true );    
-        $('input[name="map-1-4-7"]').prop('checked', true );    
-        $('input[name="map-1-4-8"]').prop('checked', true );    
-        $('input[name="map-1-4-9"]').prop('checked', true );    
+        $('input[name="map-1-1"]').prop('checked', true );
+        $('input[name="map-1-1-1"]').prop('checked', true );
+        $('input[name="map-1-2"]').prop('checked', true );
+        $('input[name="map-1-2-1"]').prop('checked', true );
+        $('input[name="map-1-2-2"]').prop('checked', true );
+        $('input[name="map-1-2-3"]').prop('checked', true );
+        $('input[name="map-1-2-4"]').prop('checked', true );
+        $('input[name="map-1-2-5"]').prop('checked', true );
+        $('input[name="map-1-2-6"]').prop('checked', true );
+        $('input[name="map-1-3"]').prop('checked', true );
+        $('input[name="map-1-3-1"]').prop('checked', true );
+        $('input[name="map-1-3-2"]').prop('checked', true );
+        $('input[name="map-1-3-3"]').prop('checked', true );
+        $('input[name="map-1-3-4"]').prop('checked', true );
+        $('input[name="map-1-3-5"]').prop('checked', true );
+        $('input[name="map-1-3-6"]').prop('checked', true );
+        $('input[name="map-1-4"]').prop('checked', true );
+        $('input[name="map-1-4-1"]').prop('checked', true );
+        $('input[name="map-1-4-2"]').prop('checked', true );
+        $('input[name="map-1-4-3"]').prop('checked', true );
+        $('input[name="map-1-4-4"]').prop('checked', true );
+        $('input[name="map-1-4-5"]').prop('checked', true );
+        $('input[name="map-1-4-6"]').prop('checked', true );
+        $('input[name="map-1-4-7"]').prop('checked', true );
+        $('input[name="map-1-4-8"]').prop('checked', true );
+        $('input[name="map-1-4-9"]').prop('checked', true );
     } else {
-        $('input[name="map-1-1"]').prop('checked', false );    
-        $('input[name="map-1-1-1"]').prop('checked', false );    
-        $('input[name="map-1-2"]').prop('checked', false );    
-        $('input[name="map-1-2-1"]').prop('checked', false );    
-        $('input[name="map-1-2-2"]').prop('checked', false );    
-        $('input[name="map-1-2-3"]').prop('checked', false );    
-        $('input[name="map-1-2-4"]').prop('checked', false );    
-        $('input[name="map-1-2-5"]').prop('checked', false );    
-        $('input[name="map-1-2-6"]').prop('checked', false );    
-        $('input[name="map-1-3"]').prop('checked', false );    
-        $('input[name="map-1-3-1"]').prop('checked', false );    
-        $('input[name="map-1-3-2"]').prop('checked', false );    
-        $('input[name="map-1-3-3"]').prop('checked', false );    
-        $('input[name="map-1-3-4"]').prop('checked', false );    
-        $('input[name="map-1-3-5"]').prop('checked', false );    
-        $('input[name="map-1-3-6"]').prop('checked', false );    
-        $('input[name="map-1-4"]').prop('checked', false );    
-        $('input[name="map-1-4-1"]').prop('checked', false );    
-        $('input[name="map-1-4-2"]').prop('checked', false );    
-        $('input[name="map-1-4-3"]').prop('checked', false );    
-        $('input[name="map-1-4-4"]').prop('checked', false );    
-        $('input[name="map-1-4-5"]').prop('checked', false );    
-        $('input[name="map-1-4-6"]').prop('checked', false );    
-        $('input[name="map-1-4-7"]').prop('checked', false );    
-        $('input[name="map-1-4-8"]').prop('checked', false );    
-        $('input[name="map-1-4-9"]').prop('checked', false );    
+        $('input[name="map-1-1"]').prop('checked', false );
+        $('input[name="map-1-1-1"]').prop('checked', false );
+        $('input[name="map-1-2"]').prop('checked', false );
+        $('input[name="map-1-2-1"]').prop('checked', false );
+        $('input[name="map-1-2-2"]').prop('checked', false );
+        $('input[name="map-1-2-3"]').prop('checked', false );
+        $('input[name="map-1-2-4"]').prop('checked', false );
+        $('input[name="map-1-2-5"]').prop('checked', false );
+        $('input[name="map-1-2-6"]').prop('checked', false );
+        $('input[name="map-1-3"]').prop('checked', false );
+        $('input[name="map-1-3-1"]').prop('checked', false );
+        $('input[name="map-1-3-2"]').prop('checked', false );
+        $('input[name="map-1-3-3"]').prop('checked', false );
+        $('input[name="map-1-3-4"]').prop('checked', false );
+        $('input[name="map-1-3-5"]').prop('checked', false );
+        $('input[name="map-1-3-6"]').prop('checked', false );
+        $('input[name="map-1-4"]').prop('checked', false );
+        $('input[name="map-1-4-1"]').prop('checked', false );
+        $('input[name="map-1-4-2"]').prop('checked', false );
+        $('input[name="map-1-4-3"]').prop('checked', false );
+        $('input[name="map-1-4-4"]').prop('checked', false );
+        $('input[name="map-1-4-5"]').prop('checked', false );
+        $('input[name="map-1-4-6"]').prop('checked', false );
+        $('input[name="map-1-4-7"]').prop('checked', false );
+        $('input[name="map-1-4-8"]').prop('checked', false );
+        $('input[name="map-1-4-9"]').prop('checked', false );
     }
 }
 
 // 北海道地方 click イベント
 function hokkaidouAllCheck(){
     if( $('input[name="map-1-1"]').prop('checked')){
-        $('input[name="map-1-1-1"]').prop('checked', true );    
+        $('input[name="map-1-1-1"]').prop('checked', true );
     } else {
         $('[name="map-1-1-1"]').prop('checked', false );
     }
@@ -202,12 +207,12 @@ function hokkaidouAllCheck(){
 // 東北地方　click イベント
 function touhokuAllCheck(){
     if( $('input[name="map-1-2"]').prop('checked')){
-        $('input[name="map-1-2-1"]').prop('checked', true );    
-        $('input[name="map-1-2-2"]').prop('checked', true );    
-        $('input[name="map-1-2-3"]').prop('checked', true );    
-        $('input[name="map-1-2-4"]').prop('checked', true );    
-        $('input[name="map-1-2-5"]').prop('checked', true );    
-        $('input[name="map-1-2-6"]').prop('checked', true );    
+        $('input[name="map-1-2-1"]').prop('checked', true );
+        $('input[name="map-1-2-2"]').prop('checked', true );
+        $('input[name="map-1-2-3"]').prop('checked', true );
+        $('input[name="map-1-2-4"]').prop('checked', true );
+        $('input[name="map-1-2-5"]').prop('checked', true );
+        $('input[name="map-1-2-6"]').prop('checked', true );
     } else {
         $('[name="map-1-2-1"]').prop('checked', false );
         $('[name="map-1-2-2"]').prop('checked', false );
@@ -215,18 +220,18 @@ function touhokuAllCheck(){
         $('[name="map-1-2-4"]').prop('checked', false );
         $('[name="map-1-2-5"]').prop('checked', false );
         $('[name="map-1-2-6"]').prop('checked', false );
-    }  
+    }
 }
 
 // 関東 click イベント
 function kantouAllCheck(){
     if( $('input[name="map-1-3"]').prop('checked')){
-        $('input[name="map-1-3-1"]').prop('checked', true );    
-        $('input[name="map-1-3-2"]').prop('checked', true );    
-        $('input[name="map-1-3-3"]').prop('checked', true );    
-        $('input[name="map-1-3-4"]').prop('checked', true );    
-        $('input[name="map-1-3-5"]').prop('checked', true );    
-        $('input[name="map-1-3-6"]').prop('checked', true );    
+        $('input[name="map-1-3-1"]').prop('checked', true );
+        $('input[name="map-1-3-2"]').prop('checked', true );
+        $('input[name="map-1-3-3"]').prop('checked', true );
+        $('input[name="map-1-3-4"]').prop('checked', true );
+        $('input[name="map-1-3-5"]').prop('checked', true );
+        $('input[name="map-1-3-6"]').prop('checked', true );
     } else {
         $('[name="map-1-3-1"]').prop('checked', false );
         $('[name="map-1-3-2"]').prop('checked', false );
@@ -234,21 +239,21 @@ function kantouAllCheck(){
         $('[name="map-1-3-4"]').prop('checked', false );
         $('[name="map-1-3-5"]').prop('checked', false );
         $('[name="map-1-3-6"]').prop('checked', false );
-    }  
+    }
 }
 
 // 中部 click イベント
 function tyubuAllCheck(){
     if( $('input[name="map-1-4"]').prop('checked')){
-        $('input[name="map-1-4-1"]').prop('checked', true );    
-        $('input[name="map-1-4-2"]').prop('checked', true );    
-        $('input[name="map-1-4-3"]').prop('checked', true );    
-        $('input[name="map-1-4-4"]').prop('checked', true );    
-        $('input[name="map-1-4-5"]').prop('checked', true );    
-        $('input[name="map-1-4-6"]').prop('checked', true );    
-        $('input[name="map-1-4-7"]').prop('checked', true );    
-        $('input[name="map-1-4-8"]').prop('checked', true );    
-        $('input[name="map-1-4-9"]').prop('checked', true );    
+        $('input[name="map-1-4-1"]').prop('checked', true );
+        $('input[name="map-1-4-2"]').prop('checked', true );
+        $('input[name="map-1-4-3"]').prop('checked', true );
+        $('input[name="map-1-4-4"]').prop('checked', true );
+        $('input[name="map-1-4-5"]').prop('checked', true );
+        $('input[name="map-1-4-6"]').prop('checked', true );
+        $('input[name="map-1-4-7"]').prop('checked', true );
+        $('input[name="map-1-4-8"]').prop('checked', true );
+        $('input[name="map-1-4-9"]').prop('checked', true );
     } else {
         $('[name="map-1-4-1"]').prop('checked', false );
         $('[name="map-1-4-2"]').prop('checked', false );
@@ -259,81 +264,81 @@ function tyubuAllCheck(){
         $('[name="map-1-4-7"]').prop('checked', false );
         $('[name="map-1-4-8"]').prop('checked', false );
         $('[name="map-1-4-9"]').prop('checked', false );
-    }  
+    }
 }
 
 // 西日本
 // 西日本 click イベント
 function wastAllCheck(){
     if( $('input[name="map-2"]').prop('checked')){
-        $('input[name="map-2-1"]').prop('checked', true );    
-        $('input[name="map-2-1-1"]').prop('checked', true );    
-        $('input[name="map-2-1-2"]').prop('checked', true );    
-        $('input[name="map-2-1-3"]').prop('checked', true );    
-        $('input[name="map-2-1-4"]').prop('checked', true );    
-        $('input[name="map-2-1-5"]').prop('checked', true );    
-        $('input[name="map-2-1-6"]').prop('checked', true );    
-        $('input[name="map-2-1-7"]').prop('checked', true );    
-        $('input[name="map-2-2"]').prop('checked', true );    
-        $('input[name="map-2-2-1"]').prop('checked', true );    
-        $('input[name="map-2-2-2"]').prop('checked', true );    
-        $('input[name="map-2-2-3"]').prop('checked', true );    
-        $('input[name="map-2-2-4"]').prop('checked', true );    
-        $('input[name="map-2-2-5"]').prop('checked', true );    
-        $('input[name="map-2-3"]').prop('checked', true ); 
-        $('input[name="map-2-3-1"]').prop('checked', true );    
-        $('input[name="map-2-3-2"]').prop('checked', true );    
-        $('input[name="map-2-3-3"]').prop('checked', true );    
-        $('input[name="map-2-3-4"]').prop('checked', true );    
-        $('input[name="map-2-4"]').prop('checked', true );    
-        $('input[name="map-2-4-1"]').prop('checked', true );    
-        $('input[name="map-2-4-2"]').prop('checked', true );    
-        $('input[name="map-2-4-3"]').prop('checked', true );    
-        $('input[name="map-2-4-4"]').prop('checked', true );    
-        $('input[name="map-2-4-5"]').prop('checked', true );    
-        $('input[name="map-2-4-6"]').prop('checked', true );    
+        $('input[name="map-2-1"]').prop('checked', true );
+        $('input[name="map-2-1-1"]').prop('checked', true );
+        $('input[name="map-2-1-2"]').prop('checked', true );
+        $('input[name="map-2-1-3"]').prop('checked', true );
+        $('input[name="map-2-1-4"]').prop('checked', true );
+        $('input[name="map-2-1-5"]').prop('checked', true );
+        $('input[name="map-2-1-6"]').prop('checked', true );
+        $('input[name="map-2-1-7"]').prop('checked', true );
+        $('input[name="map-2-2"]').prop('checked', true );
+        $('input[name="map-2-2-1"]').prop('checked', true );
+        $('input[name="map-2-2-2"]').prop('checked', true );
+        $('input[name="map-2-2-3"]').prop('checked', true );
+        $('input[name="map-2-2-4"]').prop('checked', true );
+        $('input[name="map-2-2-5"]').prop('checked', true );
+        $('input[name="map-2-3"]').prop('checked', true );
+        $('input[name="map-2-3-1"]').prop('checked', true );
+        $('input[name="map-2-3-2"]').prop('checked', true );
+        $('input[name="map-2-3-3"]').prop('checked', true );
+        $('input[name="map-2-3-4"]').prop('checked', true );
+        $('input[name="map-2-4"]').prop('checked', true );
+        $('input[name="map-2-4-1"]').prop('checked', true );
+        $('input[name="map-2-4-2"]').prop('checked', true );
+        $('input[name="map-2-4-3"]').prop('checked', true );
+        $('input[name="map-2-4-4"]').prop('checked', true );
+        $('input[name="map-2-4-5"]').prop('checked', true );
+        $('input[name="map-2-4-6"]').prop('checked', true );
         $('input[name="map-2-4-7"]').prop('checked', true );
     } else {
-        $('input[name="map-2-1"]').prop('checked', false );    
-        $('input[name="map-2-1-1"]').prop('checked', false );    
-        $('input[name="map-2-1-2"]').prop('checked', false );    
-        $('input[name="map-2-1-3"]').prop('checked', false );    
-        $('input[name="map-2-1-4"]').prop('checked', false );    
-        $('input[name="map-2-1-5"]').prop('checked', false );    
-        $('input[name="map-2-1-6"]').prop('checked', false );    
-        $('input[name="map-2-1-7"]').prop('checked', false );    
-        $('input[name="map-2-2"]').prop('checked', false );    
-        $('input[name="map-2-2-1"]').prop('checked', false );    
-        $('input[name="map-2-2-2"]').prop('checked', false );    
-        $('input[name="map-2-2-3"]').prop('checked', false );    
-        $('input[name="map-2-2-4"]').prop('checked', false );    
-        $('input[name="map-2-2-5"]').prop('checked', false );    
-        $('input[name="map-2-3"]').prop('checked', false ); 
-        $('input[name="map-2-3-1"]').prop('checked', false );    
-        $('input[name="map-2-3-2"]').prop('checked', false );    
-        $('input[name="map-2-3-3"]').prop('checked', false );    
-        $('input[name="map-2-3-4"]').prop('checked', false );    
-        $('input[name="map-2-4"]').prop('checked', false );    
-        $('input[name="map-2-4-1"]').prop('checked', false );    
-        $('input[name="map-2-4-2"]').prop('checked', false );    
-        $('input[name="map-2-4-3"]').prop('checked', false );    
-        $('input[name="map-2-4-4"]').prop('checked', false );    
-        $('input[name="map-2-4-5"]').prop('checked', false );    
-        $('input[name="map-2-4-6"]').prop('checked', false );    
+        $('input[name="map-2-1"]').prop('checked', false );
+        $('input[name="map-2-1-1"]').prop('checked', false );
+        $('input[name="map-2-1-2"]').prop('checked', false );
+        $('input[name="map-2-1-3"]').prop('checked', false );
+        $('input[name="map-2-1-4"]').prop('checked', false );
+        $('input[name="map-2-1-5"]').prop('checked', false );
+        $('input[name="map-2-1-6"]').prop('checked', false );
+        $('input[name="map-2-1-7"]').prop('checked', false );
+        $('input[name="map-2-2"]').prop('checked', false );
+        $('input[name="map-2-2-1"]').prop('checked', false );
+        $('input[name="map-2-2-2"]').prop('checked', false );
+        $('input[name="map-2-2-3"]').prop('checked', false );
+        $('input[name="map-2-2-4"]').prop('checked', false );
+        $('input[name="map-2-2-5"]').prop('checked', false );
+        $('input[name="map-2-3"]').prop('checked', false );
+        $('input[name="map-2-3-1"]').prop('checked', false );
+        $('input[name="map-2-3-2"]').prop('checked', false );
+        $('input[name="map-2-3-3"]').prop('checked', false );
+        $('input[name="map-2-3-4"]').prop('checked', false );
+        $('input[name="map-2-4"]').prop('checked', false );
+        $('input[name="map-2-4-1"]').prop('checked', false );
+        $('input[name="map-2-4-2"]').prop('checked', false );
+        $('input[name="map-2-4-3"]').prop('checked', false );
+        $('input[name="map-2-4-4"]').prop('checked', false );
+        $('input[name="map-2-4-5"]').prop('checked', false );
+        $('input[name="map-2-4-6"]').prop('checked', false );
         $('input[name="map-2-4-7"]').prop('checked', false );
-    }  
+    }
 }
 
 // 近畿地方　click イベント
 function kinkiAllCheck(){
     if( $('input[name="map-2-1"]').prop('checked')){
-        $('input[name="map-2-1-1"]').prop('checked', true );    
-        $('input[name="map-2-1-2"]').prop('checked', true );    
-        $('input[name="map-2-1-3"]').prop('checked', true );    
-        $('input[name="map-2-1-4"]').prop('checked', true );    
-        $('input[name="map-2-1-5"]').prop('checked', true );    
-        $('input[name="map-2-1-6"]').prop('checked', true );    
-        $('input[name="map-2-1-7"]').prop('checked', true );    
+        $('input[name="map-2-1-1"]').prop('checked', true );
+        $('input[name="map-2-1-2"]').prop('checked', true );
+        $('input[name="map-2-1-3"]').prop('checked', true );
+        $('input[name="map-2-1-4"]').prop('checked', true );
+        $('input[name="map-2-1-5"]').prop('checked', true );
+        $('input[name="map-2-1-6"]').prop('checked', true );
+        $('input[name="map-2-1-7"]').prop('checked', true );
     } else {
         $('[name="map-2-1-1"]').prop('checked', false );
         $('[name="map-2-1-2"]').prop('checked', false );
@@ -342,24 +347,24 @@ function kinkiAllCheck(){
         $('[name="map-2-1-5"]').prop('checked', false );
         $('[name="map-2-1-6"]').prop('checked', false );
         $('[name="map-2-1-7"]').prop('checked', false );
-    }  
+    }
 }
 
 // 中国地方　click イベント
 function tyugokuAllCheck(){
     if( $('input[name="map-2-2"]').prop('checked')){
-        $('input[name="map-2-2-1"]').prop('checked', true );    
-        $('input[name="map-2-2-2"]').prop('checked', true );    
-        $('input[name="map-2-2-3"]').prop('checked', true );    
-        $('input[name="map-2-2-4"]').prop('checked', true );    
-        $('input[name="map-2-2-5"]').prop('checked', true );    
+        $('input[name="map-2-2-1"]').prop('checked', true );
+        $('input[name="map-2-2-2"]').prop('checked', true );
+        $('input[name="map-2-2-3"]').prop('checked', true );
+        $('input[name="map-2-2-4"]').prop('checked', true );
+        $('input[name="map-2-2-5"]').prop('checked', true );
     } else {
         $('[name="map-2-2-1"]').prop('checked', false );
         $('[name="map-2-2-2"]').prop('checked', false );
         $('[name="map-2-2-3"]').prop('checked', false );
         $('[name="map-2-2-4"]').prop('checked', false );
         $('[name="map-2-2-5"]').prop('checked', false );
-    }  
+    }
 }
 
 // 四国地方　click イベント
@@ -367,26 +372,26 @@ function shikokuAllCheck(){
     if( $('input[name="map-2-3"]').prop('checked')){
         $('input[name="map-2-3-1"]').prop('checked', true );
         $('input[name="map-2-3-2"]').prop('checked', true );
-        $('input[name="map-2-3-3"]').prop('checked', true );    
-        $('input[name="map-2-3-4"]').prop('checked', true );    
+        $('input[name="map-2-3-3"]').prop('checked', true );
+        $('input[name="map-2-3-4"]').prop('checked', true );
     } else {
         $('[name="map-2-3-1"]').prop('checked', false );
         $('[name="map-2-3-2"]').prop('checked', false );
         $('[name="map-2-3-3"]').prop('checked', false );
         $('[name="map-2-3-4"]').prop('checked', false );
-    }  
+    }
 }
 
 // 九州地方　click イベント
 function kyusyuAllCheck(){
     if( $('input[name="map-2-4"]').prop('checked')){
-        $('input[name="map-2-4-1"]').prop('checked', true );    
-        $('input[name="map-2-4-2"]').prop('checked', true );    
-        $('input[name="map-2-4-3"]').prop('checked', true );    
-        $('input[name="map-2-4-4"]').prop('checked', true );    
-        $('input[name="map-2-4-5"]').prop('checked', true );    
-        $('input[name="map-2-4-6"]').prop('checked', true );    
-        $('input[name="map-2-4-7"]').prop('checked', true );    
+        $('input[name="map-2-4-1"]').prop('checked', true );
+        $('input[name="map-2-4-2"]').prop('checked', true );
+        $('input[name="map-2-4-3"]').prop('checked', true );
+        $('input[name="map-2-4-4"]').prop('checked', true );
+        $('input[name="map-2-4-5"]').prop('checked', true );
+        $('input[name="map-2-4-6"]').prop('checked', true );
+        $('input[name="map-2-4-7"]').prop('checked', true );
     } else {
         $('[name="map-2-4-1"]').prop('checked', false );
         $('[name="map-2-4-2"]').prop('checked', false );
@@ -395,7 +400,7 @@ function kyusyuAllCheck(){
         $('[name="map-2-4-5"]').prop('checked', false );
         $('[name="map-2-4-6"]').prop('checked', false );
         $('[name="map-2-4-7"]').prop('checked', false );
-    }  
+    }
 }
 
 // mapSelect選択情報取得
@@ -411,14 +416,19 @@ function mapDateSelect(click_class){
 
         contents = json.contents;
 
+        let cookie_date;
+
         $('.main').empty();
         $('.main').append('<h1>検索結果</h1>');
         $('.main').append('<ul class="main__each"></ul>');
         for( let i = 0; contents.length > i; i++ ){
             if( contents[i].prefectureen == click_class.className ){
-                $('.main__each').append('<li><img src="'+ contents[i].img.url +'"><p>'+ contents[i].name +'</p></li>');
+                // $('.main__each').append('<li><img src="'+ contents[i].img.url +'"><p>'+ contents[i].name +'</p></li>');
+                cookie_date += '<li><img src="'+ contents[i].img.url +'"><p>'+ contents[i].name +'</p></li>';
             }
         }
+
+        $.cookie('cookieDate', cookie_date,{path: '/' });
     });
 }
 
@@ -465,12 +475,12 @@ $(function(){
         $('[data-list]').hide();
         $('[data-list="' + area + '"]').show();
     });
-    
+
     //レイヤーをタップ
     $('.area_overlay').click(function(){
         prefReset();
     });
-    
+
     //都道府県をクリック
     $('.pref_list [data-id]').click(function(){
         if($(this).data('id')){
@@ -496,3 +506,9 @@ $('.link').click(function(){
     let ma = "1ma";
     location.href = '../sm.js' + encodeURIComponent(ma);
 });
+
+
+// cookie
+// $.removeCookie("key");
+// $.cookie('key', 'abc',{expires:7, path: '/' });
+// console.log( $.cookie("key") );
