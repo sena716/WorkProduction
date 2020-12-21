@@ -108,7 +108,6 @@ body .main__map .area8 {
 body .main__map .area_overlay {
   display: none;
   position: absolute;
-  z-index: 2;
   top: 0;
   left: 0;
   min-width: 100%;
@@ -131,7 +130,7 @@ body .main__map .pref_area .pref_list {
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   -webkit-transform: translateY(-50%) translateX(-50%);
-  z-index: 3;
+  z-index: 0;
   box-sizing: border-box;
   display: -webkit-flex;
   display: flex;
