@@ -1,8 +1,7 @@
 $(function(){
 // cookie削除
-    // $.cookie('cookieDate','',{expires:-1, path:"/"});
-    console.log( $.cookie("cookieDate") );
-});
+
+console.log( $.cookie("cookieDate") );
 
 let checkInspection;
 let checkI = [];
@@ -21,7 +20,6 @@ function mapDateSelect(click_class){
     .then(json => {
 
         contents = json.contents;
-
         let cookie_date;
 
         for( let i = 0; contents.length > i; i++ ){
@@ -31,7 +29,7 @@ function mapDateSelect(click_class){
         }
 
         // console.log( cookie_date );
-        $.cookie('cookieDate', cookie_date,{path: '/'});
+        $.cookie('cookieDate', cookie_date,{path: '/', expires: 7});
         console.log( $.cookie('cookieDate') );
     });
 }
@@ -384,9 +382,3 @@ $('.link').click(function(){
     let ma = "1ma";
     location.href = '../sm.js' + encodeURIComponent(ma);
 });
-
-
-// cookie
-// $.removeCookie("key");
-// $.cookie('key', 'abc',{expires:7, path: '/' });
-// console.log( $.cookie("key") );
