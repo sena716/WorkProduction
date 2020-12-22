@@ -77,8 +77,8 @@ body{
             width: 40px;
             border-bottom: solid 4px #333;
             -webkit-transition: .35s ease-in-out;
-            -moz-transition: .35s ease-in-out;	
-            transition: .35s ease-in-out;		
+            -moz-transition: .35s ease-in-out;
+            transition: .35s ease-in-out;
 
             &:nth-child(1) {
                 top:5px;
@@ -98,7 +98,7 @@ body{
         -moz-transform: rotate(-45deg);
         transform: rotate(-45deg);
     }
-        
+
     .Toggle.active span:nth-child(2),
     .Toggle.active span:nth-child(3) {
         top: 18px;
@@ -208,7 +208,7 @@ body{
                 width: 100%;
                 height: 0;
             }
-    
+
             li{
                 border: 2px solid #000;
                 margin: 20px;
@@ -217,20 +217,20 @@ body{
                 &:hover{
                     cursor: pointer;
                 }
-    
+
                 @media (max-width:$tb){
                     width: 49%;
                     margin: 5px 0;
                 }
-                
+
                 img{
                     width: 240px;
                     height: 300px;
                     object-fit: cover;
                     object-position: top center;
-    
+
                     @media (max-width:$tb){
-                        width: 100%;                        
+                        width: 100%;
                         height: 300px;
                     }
                     @media (max-width:$sm){
@@ -241,7 +241,7 @@ body{
 
                 p{
                     text-align: center;
-    
+
                     @media (max-width:$sm){
                         margin: 5px 0;
                     }
