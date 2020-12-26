@@ -243,11 +243,14 @@ body {
     }
   }
 }
+@media (max-width: $tb) {
+  body {
+    background-image: url("../../common/images/ground_tabret_tizu.svg");
+  }
+}
+
 @media (max-width: $sm) {
   body {
     background-image: url("../../common/images/ground_smartpone_tizu.svg");
-    background-size: 100% auto;
-    background-position: center bottom;
-    background-repeat: no-repeat;
   }
 }
