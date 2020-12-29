@@ -34,23 +34,14 @@ body section .main--rank .rank_asc {
   padding-right: 50px;
 }
 
-body section .main--rank__S1 {
+body section .main--rank__S1, body section .main--rank__S2, body section .main--rank__S3 {
   width: 500px;
   height: 500px;
 }
 
-body section .main--rank__S2, body section .main--rank__S3 {
-  padding-bottom: 50px;
-}
-
-body section .main--rank__S2 img, body section .main--rank__S3 img {
-  width: 400px;
-  height: auto;
-}
-
-body section .main--rank__L1 img, body section .main--rank__L2 img, body section .main--rank__L3 img {
-  width: 400px;
-  height: auto;
+body section .main--rank__L1, body section .main--rank__L2, body section .main--rank__L3 {
+  width: 500px;
+  height: 500px;
 }
 
 body section .main--rank .comment {
