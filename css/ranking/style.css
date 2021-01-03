@@ -31,17 +31,23 @@ body section .main--rank li img {
 body section .main--rank .rank_asc {
   width: 200px;
   float: left;
-  padding-right: 50px;
+  padding-right: 30px;
 }
 
 body section .main--rank__S1, body section .main--rank__S2, body section .main--rank__S3 {
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
+  text-align: center;
+}
+
+body section .main--rank p {
+  font-size: 3rem;
 }
 
 body section .main--rank__L1, body section .main--rank__L2, body section .main--rank__L3 {
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
+  text-align: center;
 }
 
 body section .main--rank .comment {

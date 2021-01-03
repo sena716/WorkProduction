@@ -27,39 +27,47 @@ body {
             height: 300px;
           }
         }
-
+        
         .rank_asc {
           width: 200px;
           float: left;
-          padding-right: 50px;
+          padding-right: 30px;
         }
         // &__S1 {
-        //   img {
-        //     width: 500px;
-        //     height: auto;
-        //   }
-        // }
+          //   img {
+            //     width: 500px;
+            //     height: auto;
+            //   }
+            // }
+            
+            &__S1,
+            &__S2,
+            &__S3{
+              width: 600px;
+              height: 600px;
 
-        &__S1,
-        &__S2,
-        &__S3{
-          width: 500px;
-          height: 500px;
-        }
+              text-align: center;
+            }
 
-
-        // &__S3 {
-        //   padding-bottom: 50px;
-        //   img {
-        //     width: 400px;
-        //     height: auto;
-        //   }
-        // }
+            
+            p{
+                font-size: 3rem;
+            }
+            
+            // &__S3 {
+              //   padding-bottom: 50px;
+              //   img {
+                //     width: 400px;
+                //     height: auto;
+                //   }
+                // }
         &__L1,
         &__L2,
         &__L3 {
-          width: 500px;
-          height: 500px;
+          width: 600px;
+          height: 600px;
+
+          text-align: center;
           // img {
           //   width: 400px;
           //   height: auto;
