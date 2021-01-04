@@ -49,3 +49,9 @@ body .main__type ul li p {
     background-image: url("../../common/images/ground_tabret_fixed.svg");
   }
 }
+
+@media (max-width: 450px) {
+  body {
+    background-image: url("../../common/images/ranking_background_smartphone_img.svg");
+  }
+}
