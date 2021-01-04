@@ -54,3 +54,9 @@ body section .main--rank .comment {
   font-size: 2.5rem;
   float: left;
 }
+
+@media (max-width: 768px) {
+  body {
+    background-image: url("../../common/images/ranking_background_tabret_img.svg");
+  }
+}
