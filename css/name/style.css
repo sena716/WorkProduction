@@ -42,3 +42,8 @@ body .main__search {
     background-image: url("../../common/images/ground_tabret_name.svg");
   }
 }
+@media (max-width: 450px) {
+  body {
+    background-image: url("../../common/images/ground_tabret_fixed.svg");
+  }
+}
