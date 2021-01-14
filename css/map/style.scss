@@ -1,6 +1,7 @@
 // 変数
 $sm: 450px;
 $tb: 768px;
+$tb_l: 850px; //768pxだとipadできれいにうつらないため
 $pc: 980px;
 body {
   background-image: url("../../common/images/ground_tizu.svg");
@@ -219,7 +220,6 @@ body {
               @media (max-width: $tb) {
                 flex-direction: column;
               }
-
               li {
                 font-size: 1.8rem;
                 padding: 0 10px 0 0;
@@ -243,9 +243,21 @@ body {
     }
   }
 }
+
+@media (max-width: $pc) {
+  body {
+    background-image: url("../../common/images/ground_tabretL_tizu.svg");
+  }
+}
 @media (max-width: $tb) {
   body {
     background-image: url("../../common/images/ground_tabret_tizu.svg");
+  }
+}
+
+@media (max-width: $tb_l) {
+  body {
+    background-image: url("../../common/images/ground_tabretL_tizu.svg");
   }
 }
 

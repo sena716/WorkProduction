@@ -236,9 +236,19 @@ body .main__checkbox--sent input[type=submit] {
   border-radius: 5px;
 }
 
+@media (max-width: 980px) {
+  body {
+    background-image: url("../../common/images/ground_tabretL_tizu.svg");
+  }
+}
 @media (max-width: 768px) {
   body {
     background-image: url("../../common/images/ground_tabret_tizu.svg");
+  }
+}
+@media (max-width: 850px) {
+  body {
+    background-image: url("../../common/images/ground_tabretL_tizu.svg");
   }
 }
 @media (max-width: 450px) {
