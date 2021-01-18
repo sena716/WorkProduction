@@ -38,35 +38,40 @@ function nameSearch (Initial){
             //         return String.fromCharCode(chr);
             //     });
             // }
+
             let i = 0;
             var a = str[i].slice(0,1);
             if(Initial== a ){
                 //あ行を抽出                  
             } else if( Initial === "あ" ) //←ここを行ごとに変更する
             {
-
-                    $('.main').append('<ul class="main__each"></ul>');
-
-                    for(let i  = 0;i <str.length;i++){
-                        
-                        for( let j = 0;j<contents.length;j++)
-                        {                           
-                            if(contents[j].name == str[i] )
+                $('.main__each').remove();
+                
+                $('.main').append('<ul class="main__each"></ul>');
+                // $('.main__each').empty();
+                
+                for(let i  = 0;i <str.length;i++){
+                    
+                    for( let j = 0;j<contents.length;j++)
+                    {                           
+                        if(contents[j].name == str[i] )
+                        {
+                            //あいうえおのものだけを抽出
+                            if (str[i].match(/^ア|^イ|^ウ|^エ|^オ/))//←ここを条件ごとに変更する
                             {
-                                //あいうえおのものだけを抽出
-                                if (str[i].match(/^ア|^イ|^ウ|^エ|^オ/))//←ここを条件ごとに変更する
-                                {
-                                    // $('.main__each').empty();
-                                    //main__eachにcontentsを付与
-                                    $('.main__each').append('<li><img src="'+ contents[j].img.url +'"><p>'+ contents[j].name +'</p></li>');    
-                                }
+                                //main__eachにcontentsを付与
+                                $('.main__each').append('<li><img src="'+ contents[j].img.url +'"><p>'+ contents[j].name +'</p></li>');    
                             }
+                        }
                         }
                     };   
                 }
 
                 else if( Initial === "か" ) 
                 {
+
+                    // $('.main__each').empty();
+                    $('.main__each').remove();
 
                     $('.main').append('<ul class="main__each"></ul>');
 
@@ -79,7 +84,6 @@ function nameSearch (Initial){
                                 //あいうえおのものだけを抽出
                                 if (str[i].match(/^カ|^キ|^ク|^ケ|^コ/))
                                 {
-                                    // $('.main__each').empty();
                                     //main__eachにcontentsを付与
                                     $('.main__each').append('<li><img src="'+ contents[j].img.url +'"><p>'+ contents[j].name +'</p></li>');    
                                 }
@@ -90,6 +94,9 @@ function nameSearch (Initial){
 
                 else if( Initial === "さ" ) 
                 {
+
+                    $('.main__each').remove();
+
 
                     $('.main').append('<ul class="main__each"></ul>');
 
@@ -113,6 +120,8 @@ function nameSearch (Initial){
 
                 else if( Initial === "た" ) 
                 {
+                    $('.main__each').remove();
+
 
                     $('.main').append('<ul class="main__each"></ul>');
 
@@ -125,6 +134,7 @@ function nameSearch (Initial){
                                 //あいうえおのものだけを抽出
                                 if (str[i].match(/^タ|^チ|^ツ|^テ|^ト/))
                                 {
+                                    
                                     // $('.main__each').empty();
                                     //main__eachにcontentsを付与
                                     $('.main__each').append('<li><img src="'+ contents[j].img.url +'"><p>'+ contents[j].name +'</p></li>');    
@@ -133,9 +143,11 @@ function nameSearch (Initial){
                         }
                     };   
                 }
-
+                
                 else if( Initial === "な" ) 
                 {
+                    $('.main__each').remove();
+
 
                     $('.main').append('<ul class="main__each"></ul>');
 
@@ -148,7 +160,6 @@ function nameSearch (Initial){
                                 //あいうえおのものだけを抽出
                                 if (str[i].match(/^ナ|^ニ|^ヌ|^ネ|^ノ/))
                                 {
-                                    // $('.main__each').empty();
                                     //main__eachにcontentsを付与
                                     $('.main__each').append('<li><img src="'+ contents[j].img.url +'"><p>'+ contents[j].name +'</p></li>');    
                                 }
@@ -158,6 +169,8 @@ function nameSearch (Initial){
                 }
                 else if( Initial === "は" ) 
                 {
+
+                    $('.main__each').remove();
 
                     $('.main').append('<ul class="main__each"></ul>');
 
@@ -170,7 +183,6 @@ function nameSearch (Initial){
                                 //あいうえおのものだけを抽出
                                 if (str[i].match(/^ハ|^ヒ|^フ|^ヘ|^ホ/))
                                 {
-                                    // $('.main__each').empty();
                                     //main__eachにcontentsを付与
                                     $('.main__each').append('<li><img src="'+ contents[j].img.url +'"><p>'+ contents[j].name +'</p></li>');    
                                 }
@@ -181,6 +193,7 @@ function nameSearch (Initial){
 
                 else if( Initial === "ま" ) 
                 {
+                    $('.main__each').remove();
 
                     $('.main').append('<ul class="main__each"></ul>');
 
@@ -204,7 +217,7 @@ function nameSearch (Initial){
 
                 else if( Initial === "や" ) 
                 {
-
+                    $('.main__each').remove();
                     $('.main').append('<ul class="main__each"></ul>');
 
                     for(let i  = 0;i <str.length;i++){
@@ -227,9 +240,9 @@ function nameSearch (Initial){
 
                 else if( Initial === "ら" ) 
                 {
-
+                    $('.main__each').remove();
                     $('.main').append('<ul class="main__each"></ul>');
-
+                    
                     for(let i  = 0;i <str.length;i++){
                         
                         for( let j = 0;j<contents.length;j++)
@@ -251,8 +264,9 @@ function nameSearch (Initial){
                 else if( Initial === "わ" ) 
                 {
 
+                    $('.main__each').remove();
                     $('.main').append('<ul class="main__each"></ul>');
-
+                    
                     for(let i  = 0;i <str.length;i++){
                         
                         for( let j = 0;j<contents.length;j++)
@@ -269,6 +283,11 @@ function nameSearch (Initial){
                             }
                         }
                     };   
+                }
+                else if( Initial === "消去" ) 
+                {
+                    $('main__each').remove();
+
                 }
                                      
                 
