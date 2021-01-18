@@ -1,9 +1,12 @@
 $(function(){
 
-    console.log( $.cookie('cookieDate') );
+    // 受け取った値を書き込む
+    let animalInfo = sessionStorage.getItem('animalInfo');
+    $('.main__each').append(animalInfo);
 
-    let date = $.cookie('cookieDate');
+    $('.main__each li').on("click", function(){
+        let individualAnimal = $("animalName", this );
+        console.log( individualAnimal );
+    });
 
-    $('.main__each').append( date );
-})
-
+});

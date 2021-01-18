@@ -8,6 +8,6 @@ fetch("https://workproduction.microcms.io/api/v1/date?limit=30", {
 .then(json => {
     contents = json.contents;
     for( let i = 0; contents.length > i; i++ ){
-        $('.main__each').append('<li><a href="../sm.html"><img src="'+ contents[i].img.url +'"><p>'+ contents[i].name +'</p></a></li>');
+        animalInfo += '<li><img src="'+ contents[i].img.url +'"><p class="animalName">'+ contents[i].name +'</p></li>';
     }
 });

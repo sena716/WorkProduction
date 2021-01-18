@@ -8,13 +8,18 @@ function conditionData(click_class){
     .then(res => res.json())
     .then(json => {
         contents = json.contents;
-        $('.main').empty();
-        $('.main').append('<h1>検索結果</h1>');
-        $('.main').append('<ul class="main__each"></ul>');
+        let animalInfo;
+
         for( let i = 0; contents.length > i; i++ ){
             if( contents[i].type == click_class.className ){
-                $('.main__each').append('<li><img src="'+ contents[i].img.url +'"><p>'+ contents[i].name +'</p></li>');
+                animalInfo += '<li><img src="'+ contents[i].img.url +'"><p class="animalName">'+ contents[i].name +'</p></li>';
             }
         }
+
+        // 不要に入った文字列削除
+        let nAnimalInfo = ("" + animalInfo).replace("undefined","");
+
+        sessionStorage.setItem('animalInfo', nAnimalInfo);
+        location.href="/afterSearch/searchResults/searchResults.html";
     });
 }
