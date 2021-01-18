@@ -10,3 +10,9 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+@media (max-width: $tb) {
+  body {
+    background-image: url("../../common/images/ground_tabret_fixed.svg");
+  }
+}
+

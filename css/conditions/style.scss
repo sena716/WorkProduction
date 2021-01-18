@@ -49,3 +49,13 @@ body {
     }
   }
 }
+@media (max-width: $tb) {
+  body {
+    background-image: url("../../common/images/ground_tabret_fixed.svg");
+  }
+}
+@media (max-width: $sm) {
+  body {
+    background-image: url("../../common/images/ground_tabret_fixed.svg");
+  }
+}
