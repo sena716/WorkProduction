@@ -56,7 +56,6 @@ function nameSearch (Initial){
                     {                           
                         if(contents[j].name == str[i] )
                         {
-                            //あいうえおのものだけを抽出
                             if (str[i].match(/^ア|^イ|^ウ|^エ|^オ/))//←ここを条件ごとに変更する
                             {
                                 //main__eachにcontentsを付与
@@ -69,8 +68,7 @@ function nameSearch (Initial){
 
                 else if( Initial === "か" ) 
                 {
-
-                    // $('.main__each').empty();
+                    
                     $('.main__each').remove();
 
                     $('.main').append('<ul class="main__each"></ul>');
@@ -81,8 +79,8 @@ function nameSearch (Initial){
                         {                           
                             if(contents[j].name == str[i] )
                             {
-                                //あいうえおのものだけを抽出
-                                if (str[i].match(/^カ|^キ|^ク|^ケ|^コ/))
+
+                                if (str[i].match(/^カ|^キ|^ク|^ケ|^コ|^ガ|^ギ|^グ|^ゲ|^ゴ/))
                                 {
                                     //main__eachにcontentsを付与
                                     $('.main__each').append('<li><img src="'+ contents[j].img.url +'"><p>'+ contents[j].name +'</p></li>');    
@@ -106,8 +104,8 @@ function nameSearch (Initial){
                         {                           
                             if(contents[j].name == str[i] )
                             {
-                                //あいうえおのものだけを抽出
-                                if (str[i].match(/^サ|^シ|^ス|^セ|^ソ/))
+
+                                if (str[i].match(/^サ|^シ|^ス|^セ|^ソ|^ザ|^ジ|^ズ|^ゼ|^ゾ/))
                                 {
                                     // $('.main__each').empty();
                                     //main__eachにcontentsを付与
@@ -131,8 +129,8 @@ function nameSearch (Initial){
                         {                           
                             if(contents[j].name == str[i] )
                             {
-                                //あいうえおのものだけを抽出
-                                if (str[i].match(/^タ|^チ|^ツ|^テ|^ト/))
+
+                                if (str[i].match(/^タ|^チ|^ツ|^テ|^ト|^ダ|^ヂ|^ヅ|^デ|^ド/))
                                 {
                                     
                                     // $('.main__each').empty();
@@ -157,7 +155,7 @@ function nameSearch (Initial){
                         {                           
                             if(contents[j].name == str[i] )
                             {
-                                //あいうえおのものだけを抽出
+
                                 if (str[i].match(/^ナ|^ニ|^ヌ|^ネ|^ノ/))
                                 {
                                     //main__eachにcontentsを付与
@@ -180,8 +178,8 @@ function nameSearch (Initial){
                         {                           
                             if(contents[j].name == str[i] )
                             {
-                                //あいうえおのものだけを抽出
-                                if (str[i].match(/^ハ|^ヒ|^フ|^ヘ|^ホ/))
+
+                                if (str[i].match(/^ハ|^ヒ|^フ|^ヘ|^ホ|^バ|^ビ|^ブ|^ベ|^ボ|^パ|^ピ|^プ|^ペ|^ポ/))
                                 {
                                     //main__eachにcontentsを付与
                                     $('.main__each').append('<li><img src="'+ contents[j].img.url +'"><p>'+ contents[j].name +'</p></li>');    
@@ -203,7 +201,7 @@ function nameSearch (Initial){
                         {                           
                             if(contents[j].name == str[i] )
                             {
-                                //あいうえおのものだけを抽出
+
                                 if (str[i].match(/^マ|^ミ|^ム|^メ|^モ/))
                                 {
                                     // $('.main__each').empty();
@@ -226,7 +224,7 @@ function nameSearch (Initial){
                         {                           
                             if(contents[j].name == str[i] )
                             {
-                                //あいうえおのものだけを抽出
+
                                 if (str[i].match(/^ヤ|^ユ|^ヨ/))
                                 {
                                     // $('.main__each').empty();
@@ -249,7 +247,7 @@ function nameSearch (Initial){
                         {                           
                             if(contents[j].name == str[i] )
                             {
-                                //あいうえおのものだけを抽出
+
                                 if (str[i].match(/^ラ|^リ|^ル|^レ|^ロ/))
                                 {
                                     // $('.main__each').empty();
@@ -273,7 +271,7 @@ function nameSearch (Initial){
                         {                           
                             if(contents[j].name == str[i] )
                             {
-                                //あいうえおのものだけを抽出
+
                                 if (str[i].match(/^ワ|^ヲ|^ン/))
                                 {
                                     // $('.main__each').empty();
@@ -283,13 +281,7 @@ function nameSearch (Initial){
                             }
                         }
                     };   
-                }
-                else if( Initial === "消去" ) 
-                {
-                    $('main__each').remove();
-
-                }
-                                     
+                }                              
                 
 
         // $('.main__line--name').empty();
