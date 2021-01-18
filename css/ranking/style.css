@@ -60,3 +60,50 @@ body section .main--rank .comment {
     background-image: url("../../common/images/ranking_background_tabret_img.svg");
   }
 }
+@media (max-width: 450px) {
+  body {
+    background-image: url("../../common/images/ranking_background_smartphone_img.svg");
+    height: 100% auto;
+  }
+  body section .main--bumon {
+    font-size: 4rem;
+  }
+  body section .main--rank {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body section .main--rank li .rank_asc {
+    width: 130px;
+    height: auto;
+  }
+  body section .main--rank li img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center top;
+       object-position: center top;
+    width: 350px;
+    height: 200px;
+  }
+  body section .main--rank__S1, body section .main--rank__S2, body section .main--rank__S3 {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+  }
+  body section .main--rank p {
+    font-size: 2rem;
+    text-align: center;
+  }
+  body section .main--rank__L1, body section .main--rank__L2, body section .main--rank__L3 {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+  }
+}
