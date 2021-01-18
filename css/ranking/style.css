@@ -63,7 +63,6 @@ body section .main--rank .comment {
 @media (max-width: 450px) {
   body {
     background-image: url("../../common/images/ranking_background_smartphone_img.svg");
-    height: 100% auto;
   }
   body section .main--bumon {
     font-size: 4rem;
