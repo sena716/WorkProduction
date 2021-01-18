@@ -5,7 +5,7 @@ $(function(){
     $('.main__each').append(animalInfo);
 
     $('.main__each li').on("click", function(){
-        let individualAnimal = $("animalName", this );
+        let individualAnimal = $('p', this).className;
         console.log( individualAnimal );
     });
 

@@ -18,7 +18,7 @@ fetch("https://workproduction.microcms.io/api/v1/date?limit=30", {
             }
         }
     }
-    
+
     // $('.main--rank__S1').style.backgroundImage = contents[0].img.url;
     $('.main--rank__S1-img').attr('src', contents[0].img.url);
     $('.main--rank__S1-info').append('<p>' + contents[0].name + '</p><p>'+ contents[0].bodyWeight +'</p>');
@@ -27,7 +27,7 @@ fetch("https://workproduction.microcms.io/api/v1/date?limit=30", {
     $('.main--rank__S2-img').attr('src', contents[1].img.url);
     $('.main--rank__S2-info').append('<p>' + contents[1].name + '</p><p>'+ contents[1].bodyWeight +'</p>');
     console.log( $('.main--rank__S2'));
-    
+
     $('.main--rank__S3-img').attr('src', contents[2].img.url);
     $('.main--rank__S3-info').append('<p>' + contents[2].name + '</p><p>'+ contents[2].bodyWeight +'</p>');
     console.log( $('.main--rank__S3'));
