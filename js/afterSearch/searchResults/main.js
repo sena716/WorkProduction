@@ -6,7 +6,8 @@ $(function(){
 
     $('.main__each li').on("click", function(){
         let individualAnimal = $("p", this).html();
-        console.log( individualAnimal );
-    });
 
+        sessionStorage.setItem('animalInfo', individualAnimal);
+        location.href="/afterSearch/animalInfo/animalInfo.html";
+    });
 });

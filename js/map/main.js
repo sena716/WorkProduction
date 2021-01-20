@@ -27,7 +27,7 @@ function mapDateSelect(click_class){
         let nAnimalInfo = ("" + animalInfo).replace("undefined","");
 
         sessionStorage.setItem('animalInfo', nAnimalInfo);
-        location.href="/afterSearch/searchResults/searchResults.html"
+        location.href="/afterSearch/searchResults/searchResults.html";
     });
 }
 
