@@ -10,19 +10,26 @@ window.onload=function(){
         contents = json.contents;
         let a;
         
+        
         //先頭の一文字しか参照していない
         
         for( let i = 0; contents.length > i; i++ ){
             for( let j = 0; contents.length > j; j++ ){
-                if( contents[i].bodyLength < contents[j].bodyLength ){
+                if( contents[i].bodyLength < contents[j].bodyLength )
+                {
                     a=contents[i];
                     contents[i] = contents[j];
                     contents[j] = a;
+
                 }
             }
         }
-        console.log(contents);
+        for( let i = 0; contents.length > i; i++ ){
+            // if(contents[i].bodyLength.match(/[0-9]d{0,4}\/[a-z]+/i)){
 
+                console.log(contents[i].bodyLength);
+            // }
+            }
         // const data = '[12.1,55-3,23～1]';
         // const res = data.replace(/[^0-9.]/g, '');
         
@@ -57,8 +64,9 @@ window.onload=function(){
                 }
             }
         }
-        
-        console.log(contents);
+
+
+    
         
         $('.main--rank__L1-img').attr('src', contents[0].img.url);
         $('.main--rank__L1-info').append('<p>' + contents[0].name + '</p><p>'+ contents[0].bodyLength +'</p>');
