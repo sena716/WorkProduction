@@ -4,52 +4,52 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-
 body section .main--bumon {
   font-size: 7rem;
   text-align: center;
 }
-
 body section .main--rank {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
 body section .main--rank li .rank_asc {
   width: 200px;
   height: auto;
 }
-
 body section .main--rank li img {
-  object-fit: cover;
-  object-position: center top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
   width: 500px;
   height: 300px;
 }
-
 body section .main--rank .rank_asc {
   width: 200px;
   float: left;
   padding-right: 30px;
 }
-
 body section .main--rank__S1, body section .main--rank__S2, body section .main--rank__S3 {
   width: 600px;
   height: 600px;
   text-align: center;
 }
-
 body section .main--rank p {
   font-size: 3rem;
 }
-
 body section .main--rank__L1, body section .main--rank__L2, body section .main--rank__L3 {
   width: 600px;
   height: 600px;
   text-align: center;
 }
-
 body section .main--rank .comment {
   font-size: 2.5rem;
   float: left;
@@ -60,9 +60,9 @@ body section .main--rank .comment {
     background-image: url("../../common/images/ranking_background_tabret_img.svg");
   }
 }
-
 @media (max-width: 450px) {
   body {
+    height: 100%;
     background-image: url("../../common/images/ranking_background_smartphone_white_img.svg");
     background-position: top;
   }
@@ -70,23 +70,32 @@ body section .main--rank .comment {
     font-size: 4rem;
   }
   body section .main--rank {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   body section .main--rank li .rank_asc {
     width: 130px;
     height: auto;
   }
   body section .main--rank li img {
-    object-fit: cover;
-    object-position: center top;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center top;
+       object-position: center top;
     width: 350px;
     height: 230px;
   }
   body section .main--rank__S1, body section .main--rank__S2, body section .main--rank__S3 {
-    width: 400px;
-    height: 400px;
+    width: 370px;
+    height: 420px;
     text-align: center;
   }
   body section .main--rank p {
@@ -94,8 +103,8 @@ body section .main--rank .comment {
     text-align: center;
   }
   body section .main--rank__L1, body section .main--rank__L2, body section .main--rank__L3 {
-    width: 400px;
-    height: 400px;
+    width: 370px;
+    height: 420px;
     text-align: center;
   }
 }
