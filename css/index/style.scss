@@ -46,15 +46,6 @@ body {
       flex-direction: column;
       justify-content: space-around;
 
-      // &__titleLogo__war{
-      //     position: absolute;
-      //     left: 15%;
-      //     top: 5%;
-      //     img{
-      //         width: 400px;
-      //         height: auto;
-      //     }
-      // }
       // タイトルロゴ
       &__titleLogo {
         margin: 0;
@@ -81,8 +72,9 @@ body {
             text-align: center;
             z-index: 2;
             a {
+              transition: 1.0s;
               &:hover {
-                color: pink;
+                color: white;
               }
               i {
                 font-size: 4rem;

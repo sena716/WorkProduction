@@ -8,7 +8,8 @@ $(function(){
     .then(res => res.json())
     .then(json => {
 
-        let animalName = sessionStorage.getItem('animalInfo');
+        let animalName = sessionStorage.getItem('thisAnimalInfo');
+        let animalInfo = sessionStorage.getItem('animalInfo');
         contents = json.contents;
 
         for( let i = 0; contents.length > i; i++ ){
@@ -23,5 +24,7 @@ $(function(){
                 $('.animalInfo').append(contents[i].animalInfo);
             }
         }
+
+        sessionStorage.setItem('animalInfo', animalInfo);
     });
 });
