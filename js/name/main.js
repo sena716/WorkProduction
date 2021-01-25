@@ -4,7 +4,7 @@ function InitialSearch(){
 }
 function nameSearch (Initial){
 
-    fetch("https://workproduction.microcms.io/api/v1/date?limit=30&fields=id,name,img", {
+    fetch("https://workproduction.microcms.io/api/v1/date?limit=100&fields=id,name,img", {
         headers: {
             "X-API-KEY": "c2aa018e-aeb0-43c6-b6c2-e2bc343ab15e"
         }
@@ -41,6 +41,7 @@ function nameSearch (Initial){
 
             let i = 0;
             var a = str[i].slice(0,1);
+            console.log(contents);
             if(Initial== a ){
                 //あ行を抽出
             } else if( Initial === "あ" ) //←ここを行ごとに変更する
@@ -110,6 +111,7 @@ function nameSearch (Initial){
                                     // $('.main__each').empty();
                                     //main__eachにcontentsを付与
                                     $('.main__each').append('<li><img src="'+ contents[j].img.url +'"><p class="animalName">'+ contents[j].name +'</p></li>');
+                                    console.log(contents[j].name);
                                 }
                             }
                         }
