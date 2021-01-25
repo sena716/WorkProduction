@@ -92,7 +92,8 @@ body {
 
 @media (max-width: $sm) {
   body{
-    background-image: url("../../common/images/ranking_background_smartphone_img.svg");
+    background-image: url("../../common/images/ranking_background_smartphone_white_img.svg");
+    background-position: top;
     section {
       .main {
         &--bumon {
