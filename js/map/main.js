@@ -65,6 +65,7 @@ function mapDateCheckbox(){
         let animalInfo;
         let animalCount = 0;
         let ary;
+        let subBox;
 
         for( let i = 0; contents.length > i; i++ ){
             ary = contents[i].prefectureen;
@@ -72,8 +73,13 @@ function mapDateCheckbox(){
             for( let j = 0; checkI.length > j; j++ ){
                 for( let l = 0; ary.length > l; l++ ){
                     if( ary[l] == checkI[j] ){
-                        animalInfo += '<li><img src="'+ contents[i].img.url +'"><p class="animalName">'+ contents[i].name +'</p></li>';
-                        animalCount++;
+                        if( subBox == contents[i].prefectureen ){
+                            console.log( 1 );
+                        } else {
+                            animalInfo += '<li><img src="'+ contents[i].img.url +'"><p class="animalName">'+ contents[i].name +'</p></li>';
+                            animalCount++;
+                        }
+                        subBox = contents[i].prefectureen;
                     }
                 }
             }
