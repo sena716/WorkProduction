@@ -1,10 +1,7 @@
 // CMS接続
-
-function InitialSearch(){
-}
 function nameSearch (Initial){
 
-    fetch("https://workproduction.microcms.io/api/v1/date?limit=30&fields=id,name,img", {
+    fetch("https://workproduction.microcms.io/api/v1/date?limit=100&fields=id,name,img", {
         headers: {
             "X-API-KEY": "c2aa018e-aeb0-43c6-b6c2-e2bc343ab15e"
         }
@@ -12,32 +9,18 @@ function nameSearch (Initial){
     .then(res => res.json())
     .then(json => {
         contents = json.contents;
-
         var str = [];
-        for(let i  = 0;i <contents.length;i++){
-            // InitialSearch();
-            // 動物の名前をstrに代入
-            str.push(contents[i].name);
 
+        for(let i  = 0;i <contents.length;i++){
+            str.push(contents[i].name);
         }
+
         // 名前順に並び替え
         str.sort(function (a, b) {
            if(a<b) return -1;
             if(b>a) return 1;
             return 0;
         });
-        // for(let i  = 0;i <str.length;i++){
-        //     console.log(str.length);
-            // //カタカナをひらがなに変更
-            // var str = Initial;
-            // hiraToKana(str); //アイウ
-            // console.log(str);
-            // function hiraToKana(str) {
-            //     return str.replace(/[\u3041-\u3096]/g, function(match) {
-            //         var chr = match.charCodeAt(0) + 0x60;
-            //         return String.fromCharCode(chr);
-            //     });
-            // }
 
             let i = 0;
             var a = str[i].slice(0,1);
@@ -307,12 +290,65 @@ function nameSearch (Initial){
         //     }
         // }
 
+
+        // 個体情報へ情報を飛ばす
         $('.main__each li').on("click", function(){
             let individualAnimal = $("p", this).html();
 
             sessionStorage.setItem('animalInfo', individualAnimal);
+            console.log( individualAnimal );
             location.href="/afterSearch/animalInfo/animalInfo.html";
         });
 
     });
 }
+
+
+// クリックされた要素の画像を変更する
+let loopCount = 0;
+let clickCount = 0;
+let clickClass;
+$('.main__line--select > li').on("click", function(){
+    if( clickCount > 0 ){
+        console.log( clickClass );
+        switch( clickClass ){
+            case "line_a":
+                $('.line_a').attr('src', '../common/images/name/' + clickClass + '.svg');
+                break;
+            case "line_k":
+                $('.line_k').attr('src', '../common/images/name/' + clickClass + '.svg');
+                break;
+            case "line_s":
+                $('.line_s').attr('src', '../common/images/name/' + clickClass + '.svg');
+                break;
+            case "line_t":
+                $('.line_t').attr('src', '../common/images/name/' + clickClass + '.svg');
+                break;
+            case "line_n":
+                $('.line_n').attr('src', '../common/images/name/' + clickClass + '.svg');
+                break;
+            case "line_h":
+                $('.line_h').attr('src', '../common/images/name/' + clickClass + '.svg');
+                break;
+            case "line_m":
+                $('.line_m').attr('src', '../common/images/name/' + clickClass + '.svg');
+                break;
+            case "line_r":
+                $('.line_r').attr('src', '../common/images/name/' + clickClass + '.svg');
+                break;
+            case "line_y":
+                $('.line_y').attr('src', '../common/images/name/' + clickClass + '.svg');
+                break;
+            case "line_w":
+                $('.line_w').attr('src', '../common/images/name/' + clickClass + '.svg');
+                break;
+        }
+        clickClass = $(this).children('img').attr('class');
+        console.log( clickClass );
+        $(this).children('img').attr('src', '../common/images/name/' + clickClass + '_active.svg');
+    } else {
+        clickClass = $(this).children('img').attr('class');
+        $(this).children('img').attr('src', '../common/images/name/' + clickClass + '_active.svg');
+    }
+    clickCount++;
+});
