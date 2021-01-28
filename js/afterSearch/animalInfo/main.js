@@ -14,12 +14,28 @@ $(function(){
 
         for( let i = 0; contents.length > i; i++ ){
             if( contents[i].name == animalName ){
+
+                let bodyWeight = contents[i].bodyWeight.replace(/[^0-9.]/g, '');
+                let bodyLength = contents[i].bodyLength.replace(/[^0-9.]/g, '');
+                // 重さが1kg未満の場合gで表記
+                if( bodyWeight < 1 ){
+                    bodyWeight *= 1000;
+                    $('.bodyWeight').append(bodyWeight + "g");
+                } else {
+                    $('.bodyWeight').append(contents[i].bodyWeight);
+                }
+
+                // 全長が100cm以上の場合mで表記
+                if( bodyLength >= 100 ){
+                    bodyLength *= 0.01;
+                    $('.bodyLength').append(bodyLength + "m");
+                } else {
+                    $('.bodyLength').append(contents[i].bodyLength);
+                }
                 $('.name').append(contents[i].name);
                 $('.img').attr('src', contents[i].img.url );
                 $('.prefecturejp').append(contents[i].prefecturejp);
                 $('.type').append(contents[i].type);
-                $('.bodyWeight').append(contents[i].bodyWeight);
-                $('.bodyLength').append(contents[i].bodyLength);
                 $('.population > img').attr('src', contents[i].population.url );
                 $('.animalInfo').append(contents[i].animalInfo);
             }
