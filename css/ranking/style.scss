@@ -92,7 +92,9 @@ body {
 
 @media (max-width: $sm) {
   body{
-    background-image: url("../../common/images/ranking_background_smartphone_img.svg");
+    height: 100%;
+    background-image: url("../../common/images/ranking_background_smartphone_white_img.svg");
+    background-position: top;
     section {
       .main {
         &--bumon {
@@ -131,8 +133,8 @@ body {
               &__S1,
               &__S2,
               &__S3{
-                width: 400px;
-                height: 400px;
+                width: 370px;
+                height: 420px;
   
                 text-align: center;
               }
@@ -151,8 +153,8 @@ body {
                   &__L1,
                   &__L2,
           &__L3 {
-            width: 400px;
-            height: 400px;
+            width: 370px;
+            height: 420px;
             
             text-align: center;
             

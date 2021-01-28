@@ -24,6 +24,7 @@ function nameSearch (Initial){
 
             let i = 0;
             var a = str[i].slice(0,1);
+            console.log(contents);
             if(Initial== a ){
                 //あ行を抽出
             } else if( Initial === "あ" ) //←ここを行ごとに変更する
@@ -93,6 +94,7 @@ function nameSearch (Initial){
                                     // $('.main__each').empty();
                                     //main__eachにcontentsを付与
                                     $('.main__each').append('<li><img src="'+ contents[j].img.url +'"><p class="animalName">'+ contents[j].name +'</p></li>');
+                                    console.log(contents[j].name);
                                 }
                             }
                         }
