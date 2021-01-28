@@ -8,6 +8,13 @@ fetch("https://workproduction.microcms.io/api/v1/date?limit=100", {
 .then(json => {
 
     contents = json.contents;
+
+    // 毎回表示される順番を変更する
+    for( let i = contents.length - 1; i >= 0; i-- ){
+        const j = Math.floor( Math.random() * ( i + 1 ));
+        [contents[i], contents[j]] = [contents[j], contents[i]];
+    }
+
     let animalInfo;
 
     for( let i = 0; contents.length > i; i++ ){
