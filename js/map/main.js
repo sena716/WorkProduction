@@ -16,11 +16,16 @@ function mapDateSelect(click_class){
         contents = json.contents;
         let animalInfo;
         let animalCount = 0;
+        let ary;
 
         for( let i = 0; contents.length > i; i++ ){
-            if( contents[i].prefectureen == click_class.className ){
-                animalInfo += '<li><img src="'+ contents[i].img.url +'"><p class="animalName">'+ contents[i].name +'</p></li>';
-                animalCount++;
+            ary = contents[i].prefectureen;
+            ary = ary.split(',');
+            for( let j = 0; ary.length > j; j++ ){
+                if( ary[j] == click_class.className ){
+                    animalInfo += '<li><img src="'+ contents[i].img.url +'"><p class="animalName">'+ contents[i].name +'</p></li>';
+                    animalCount++;
+                }
             }
         }
 
@@ -59,12 +64,17 @@ function mapDateCheckbox(){
         contents = json.contents;
         let animalInfo;
         let animalCount = 0;
+        let ary;
 
         for( let i = 0; contents.length > i; i++ ){
+            ary = contents[i].prefectureen;
+            ary = ary.split(',');
             for( let j = 0; checkI.length > j; j++ ){
-                if( contents[i].prefectureen == checkI[j] ){
-                    animalInfo += '<li><img src="'+ contents[i].img.url +'"><p class="animalName">'+ contents[i].name +'</p></li>';
-                    animalCount++;
+                for( let l = 0; ary.length > l; l++ ){
+                    if( ary[l] == checkI[j] ){
+                        animalInfo += '<li><img src="'+ contents[i].img.url +'"><p class="animalName">'+ contents[i].name +'</p></li>';
+                        animalCount++;
+                    }
                 }
             }
         }
