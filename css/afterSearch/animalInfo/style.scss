@@ -4,7 +4,7 @@ body{
     .main{
         &__animal{
             h1{
-                padding: 0;
+                padding: 15px;
             }
             &--img{
                 margin: 0;
@@ -21,7 +21,7 @@ body{
                         padding: 10px;
                         display: inline-block;
                         text-align: center;
-                        
+
                         th{
                             display: inline-block;
                             width: 60px;
