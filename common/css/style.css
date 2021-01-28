@@ -48,14 +48,6 @@ body input[type="submit"] {
   appearance: none;
 }
 
-body .preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-  transition: none !important;
-}
-
 body .Toggle {
   display: none;
   position: fixed;

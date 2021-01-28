@@ -297,7 +297,7 @@ function nameSearch (Initial){
         $('.main__each li').on("click", function(){
             let individualAnimal = $("p", this).html();
 
-            sessionStorage.setItem('animalInfo', individualAnimal);
+            sessionStorage.setItem('thisAnimalInfo', individualAnimal);
             console.log( individualAnimal );
             location.href="/afterSearch/animalInfo/animalInfo.html";
         });

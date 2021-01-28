@@ -20,7 +20,7 @@ $(function(){
                 $('.type').append(contents[i].type);
                 $('.bodyWeight').append(contents[i].bodyWeight);
                 $('.bodyLength').append(contents[i].bodyLength);
-                $('.population').append(contents[i].population);
+                $('.population > img').attr('src', contents[i].population.url );
                 $('.animalInfo').append(contents[i].animalInfo);
             }
         }

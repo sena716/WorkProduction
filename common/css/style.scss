@@ -54,15 +54,6 @@ body {
     appearance: none;
   }
 
-  // サイト読み込み時無駄なアニメーション実行を行わないようにする
-  .preload * {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -ms-transition: none !important;
-    -o-transition: none !important;
-    transition: none !important;
-  }
-
   // ハンバーガーメニュー
   .Toggle {
     display: none;
