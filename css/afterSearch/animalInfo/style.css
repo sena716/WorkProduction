@@ -26,6 +26,10 @@ body .main__animal table tbody tr th {
   text-align: left;
 }
 
+body .main__animal table tbody tr td {
+  text-align: right;
+}
+
 body .main__animal table tbody tr td img {
   width: 100px;
 }
