@@ -27,7 +27,7 @@ body .main__animal table tbody tr th {
 }
 
 body .main__animal table tbody tr td {
-  text-align: right;
+  text-align: left;
 }
 
 body .main__animal table tbody tr td img {
