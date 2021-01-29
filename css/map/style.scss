@@ -5,7 +5,6 @@ $tb_l: 850px; //768pxだとipadできれいにうつらないため
 $pc: 980px;
 
 body {
-  background-image: url("../../common/images/ground_tizu.svg");
   background-size: 100% auto;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -272,5 +271,28 @@ body {
         }
       }
     }
+  }
+}
+
+@media (max-width: $pc) {
+  body {
+    background-image: url("../../common/images/ground_tabretL_tizu.svg");
+  }
+}
+@media (max-width: $tb) {
+  body {
+    background-image: url("../../common/images/ground_tabret_tizu.svg");
+  }
+}
+
+@media (max-width: $tb_l) {
+  body {
+    background-image: url("../../common/images/ground_tabretL_tizu.svg");
+  }
+}
+
+@media (max-width: $sm) {
+  body {
+    background-image: url("../../common/images/ground_tabret_tizu.svg");
   }
 }
