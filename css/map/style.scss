@@ -5,7 +5,6 @@ $tb_l: 850px; //768pxだとipadできれいにうつらないため
 $pc: 980px;
 
 body {
-  background-image: url("../../common/images/ground_tizu.svg");
   background-size: 100% auto;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -264,6 +263,6 @@ body {
 
 @media (max-width: $sm) {
   body {
-    background-image: url("../../common/images/ground_smartpone_tizu.svg");
+    background-image: url("../../common/images/ground_tabret_tizu.svg");
   }
 }
